@@ -1,0 +1,962 @@
+Date,Gender,Ethnicity,S_Ethnicity,Ethnicity_Black,DOB,Age,Age_Category,Height,Weight,BMI,BMI_Category,Systolic,Diastolic,Pulse_Pressure,BP_Category,Has_High_BP,Has_Diabetes,Has_KD,Has_HD,BP_Meds,Diabetes_Meds,Cholesterol_Meds,Other_Meds,Family_KD,uACR
+23/10/2022,Male,Black Caribbean,Black,True,21/05/1946,76.5,>70,161.0,64.0,24.7,HEALTHY,118.0,63.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,25/01/1970,52.8,41-55,163.0,78.0,29.4,OVERWEIGHT,128.0,69.0,59.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+26/08/2023,Male,Black Caribbean,Black,True,14/07/2005,18.1,<25,167.0,91.0,32.6,OBESE,128.0,73.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+28/04/2023,Male,Black Caribbean,Black,True,25/04/1969,54.0,41-55,168.0,87.0,30.8,OBESE,143.0,81.0,62.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+06/11/2022,Female,Black African (West Africa),Black,True,03/11/1979,43.0,41-55,187.0,109.0,31.2,OBESE,156.0,98.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,24/08/1969,53.2,41-55,174.0,114.0,37.7,OBESE,120.0,70.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Female,Black Caribbean,Black,True,27/10/1958,64.8,56-70,164.0,110.2,41.0,OBESE,165.0,82.0,83.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+29/07/2023,Female,Black African (West Africa),Black,True,11/08/1976,47.0,41-55,162.5,76.6,29.0,OVERWEIGHT,118.0,84.0,34.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,07/10/1988,34.8,25-40,168.9,91.4,32.0,OBESE,128.0,72.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2022,Female,Black African (West Africa),Black,True,13/05/1999,23.5,<25,162.0,64.0,24.4,HEALTHY,119.0,67.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Female,Black African (East Africa),Black,True,26/01/1988,34.8,25-40,169.0,78.6,27.5,OVERWEIGHT,124.0,77.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+27/11/2022,Female,Black African (West Africa),Black,True,03/02/1992,30.8,25-40,162.0,63.0,24.0,HEALTHY,113.0,67.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Male,Black African (West Africa),Black,True,11/05/1975,48.3,41-55,172.0,95.0,32.1,OBESE,140.0,76.0,64.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+29/07/2023,Female,Black African (West Africa),Black,True,05/05/1956,67.3,56-70,164.0,62.1,23.1,HEALTHY,181.0,108.0,73.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+29/07/2023,Female,Black African (West Africa),Black,True,13/09/1956,66.9,56-70,154.0,68.0,28.7,OVERWEIGHT,148.0,89.0,59.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+12/08/2023,Female,Black African (West Africa),Black,True,18/07/1992,31.1,25-40,151.0,70.0,30.7,OBESE,111.0,71.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/08/2023,Female,Black African (West Africa),Black,True,16/02/1979,44.5,41-55,159.0,60.0,23.7,HEALTHY,117.0,74.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/08/2023,Male,White British,White,False,25/05/1954,69.3,56-70,170.0,89.7,31.0,OBESE,151.0,73.0,78.0,HPT 1,False,False,False,False,False,False,False,False,Definitely yes,Normal
+12/08/2023,Female,Black African (East Africa),Black,True,01/07/1963,60.2,56-70,160.0,58.9,23.0,HEALTHY,122.0,75.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+27/11/2022,Female,Black African (North Africa),Black,True,22/04/1962,60.6,56-70,171.0,73.5,25.1,OVERWEIGHT,106.0,70.0,36.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+10/11/2022,Male,Mixed White/Black African,Mixed,True,14/07/1957,65.4,56-70,159.0,56.8,22.5,HEALTHY,151.0,87.0,64.0,PRE HPT,True,True,False,False,True,True,False,False,Not sure,Abnormal
+12/08/2023,Male,Black African (West Africa),Black,True,19/11/1947,75.8,>70,168.0,67.6,24.0,HEALTHY,136.0,69.0,67.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+23/01/2023,Male,Black African (unspecified),Black,True,15/02/1970,53.0,41-55,160.0,60.2,23.5,HEALTHY,133.0,76.0,57.0,NORMAL,True,False,False,False,True,False,False,False,Definitely yes,Normal
+23/10/2022,Female,Black African (West Africa),Black,True,02/05/1976,46.5,41-55,165.0,69.0,25.3,OVERWEIGHT,154.0,91.0,63.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+23/10/2022,Female,Black Caribbean,Black,True,02/05/1976,46.5,41-55,163.5,80.0,29.9,OVERWEIGHT,134.0,78.0,56.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+23/10/2022,Male,Mixed White/Black African,Mixed,True,22/10/1959,63.0,56-70,181.0,99.2,30.3,OBESE,165.0,97.0,68.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Female,Black Caribbean,Black,True,06/12/2000,21.9,<25,162.6,59.2,22.4,HEALTHY,101.0,71.0,30.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Female,Black African (West Africa),Black,True,01/07/1966,56.4,56-70,168.8,87.5,30.7,OBESE,126.0,77.0,49.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,22/06/1980,42.4,41-55,167.0,76.0,27.3,OVERWEIGHT,145.0,69.0,76.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+25/11/2022,Female,Black Caribbean,Black,True,20/10/1962,60.1,56-70,159.0,76.0,30.1,OBESE,128.0,67.0,61.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Abnormal
+19/08/2023,Male,Black African (West Africa),Black,True,26/07/1971,52.1,41-55,187.0,101.0,28.9,OVERWEIGHT,144.0,100.0,44.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+23/10/2022,Male,Pakistani,Indian,False,01/06/1981,41.4,41-55,182.0,80.0,24.2,HEALTHY,156.0,87.0,69.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2022,Male,Black African (West Africa),Black,True,16/04/1969,53.6,41-55,161.5,74.5,28.6,OVERWEIGHT,131.0,75.0,56.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/10/2022,Male,Black African (West Africa),Black,True,30/07/1980,42.3,41-55,163.3,88.6,33.2,OBESE,125.0,84.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+23/10/2022,Male,Black Caribbean,Black,True,04/12/1974,47.9,41-55,158.9,74.7,29.6,OVERWEIGHT,142.0,82.0,60.0,PRE HPT,False,True,False,False,False,True,False,False,Not sure,Normal
+23/10/2022,Female,Black African (unspecified),Black,True,26/11/1964,57.9,56-70,167.0,87.0,31.2,OBESE,167.0,98.0,69.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2022,Male,Black African (West Africa),Black,True,04/03/1997,25.7,25-40,177.5,120.5,38.2,OBESE,107.0,68.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2022,Male,Black African (West Africa),Black,True,03/07/1978,44.3,41-55,165.0,71.6,26.3,OVERWEIGHT,118.0,74.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2022,Male,Black African (West Africa),Black,True,03/07/1978,44.3,41-55,165.0,71.6,26.3,OVERWEIGHT,118.0,74.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+10/11/2022,Female,Black other,Black,True,07/03/1949,73.7,>70,157.0,88.2,35.8,OBESE,114.0,59.0,55.0,NORMAL,True,True,False,False,True,True,False,True,Definitely yes,Abnormal
+12/08/2023,Male,Black African (West Africa),Black,True,21/12/1950,72.7,>70,153.0,61.8,26.4,OVERWEIGHT,146.0,72.0,74.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Normal
+12/08/2023,Male,Black African (West Africa),Black,True,05/10/1970,52.9,41-55,169.0,94.0,32.9,OBESE,106.0,69.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2022,Female,Black African (West Africa),Black,True,23/12/1982,39.9,25-40,163.0,77.7,29.2,OVERWEIGHT,145.0,76.0,69.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+23/10/2022,Female,Black African (West Africa),Black,True,24/04/1979,43.5,41-55,167.0,87.0,31.2,OBESE,134.0,94.0,40.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+10/11/2022,Female,Indian,Indian,False,11/01/1954,68.9,56-70,153.0,67.0,28.6,OVERWEIGHT,126.0,80.0,46.0,NORMAL,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+23/10/2022,Male,Pakistani,Indian,False,17/12/1964,57.9,56-70,167.0,82.0,29.4,OVERWEIGHT,156.0,87.0,69.0,PRE HPT,True,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2022,Female,Black African (unspecified),Black,True,16/07/1973,49.3,41-55,169.0,97.4,34.1,OBESE,158.0,93.0,65.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+12/08/2023,Male,Black African (unspecified),Black,True,10/09/1976,47.0,41-55,164.0,80.2,29.8,OVERWEIGHT,103.0,68.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2022,Male,Mixed White/Black Caribbean,Mixed,True,03/01/1968,54.8,41-55,178.0,95.5,30.1,OBESE,143.0,89.0,54.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+23/10/2022,Female,Black African (unspecified),Black,True,23/01/1974,48.8,41-55,159.0,79.8,31.6,OBESE,135.0,78.0,57.0,NORMAL,False,False,True,False,False,False,True,False,Definitely not,Abnormal
+23/10/2022,Female,Black African (West Africa),Black,True,28/07/1958,64.3,56-70,173.5,73.2,24.3,HEALTHY,123.0,81.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Abnormal
+09/12/2022,Male,Black African (West Africa),Black,True,25/12/1980,42.0,41-55,176.0,91.0,29.4,OVERWEIGHT,113.0,78.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Female,Black African (West Africa),Black,True,09/06/1963,59.4,56-70,158.0,87.0,34.9,OBESE,156.0,76.0,80.0,HPT 1,True,False,False,False,True,False,False,True,Not sure,High Abnormal
+12/08/2023,Female,Black other,Black,True,06/09/1932,91.0,>70,172.5,62.2,20.9,HEALTHY,126.0,70.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+10/11/2022,Female,Black African (unspecified),Black,True,24/12/1935,86.9,>70,155.75,89.4,36.9,OBESE,172.0,109.0,63.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Abnormal
+27/11/2022,Female,Black Caribbean,Black,True,14/08/1979,43.3,41-55,165.0,89.0,32.7,OBESE,154.0,96.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+24/10/2022,Male,Bangladeshi,Indian,False,10/08/1968,54.2,41-55,162.0,76.0,29.0,OVERWEIGHT,145.0,87.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+10/11/2022,Female,Black African (West Africa),Black,True,20/11/1958,64.0,56-70,168.0,81.8,29.0,OVERWEIGHT,126.0,65.0,61.0,NORMAL,True,False,False,False,False,False,False,True,Definitely not,Normal
+23/10/2022,Female,Black Caribbean,Black,True,12/02/1969,53.7,41-55,164.0,76.0,28.3,OVERWEIGHT,134.0,67.0,67.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,29/03/1959,63.6,56-70,154.0,64.0,27.0,OVERWEIGHT,119.0,81.0,38.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Female,Black African (unspecified),Black,True,11/08/1981,41.2,41-55,170.0,77.5,26.8,OVERWEIGHT,129.0,80.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,18/04/1967,55.6,56-70,156.0,65.7,27.0,OVERWEIGHT,138.0,87.0,51.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/10/2022,Male,Black African (West Africa),Black,True,12/04/1968,54.6,41-55,156.4,102.8,42.0,OBESE,112.0,72.0,40.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,05/06/1977,45.4,41-55,176.0,99.0,32.0,OBESE,121.0,88.0,33.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+23/10/2022,Female,White other,White,False,12/07/1980,42.3,41-55,176.0,91.4,29.5,OVERWEIGHT,156.0,100.0,56.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+06/11/2022,Female,Black African (East Africa),Black,True,29/02/1996,26.7,25-40,159.0,51.0,20.2,HEALTHY,101.0,63.0,38.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+27/11/2022,Male,Black Caribbean,Black,True,16/05/1960,62.6,56-70,158.0,61.0,24.4,HEALTHY,110.0,81.0,29.0,NORMAL,True,False,False,False,True,False,False,True,Definitely not,Abnormal
+12/08/2023,Male,Black African (West Africa),Black,True,29/01/1933,90.6,>70,184.0,80.1,23.7,HEALTHY,148.0,73.0,75.0,HPT 1,False,False,False,False,False,False,True,True,Not sure,Normal
+10/11/2022,Female,Black African (West Africa),Black,True,20/07/1960,62.4,56-70,159.0,76.0,30.1,OBESE,156.0,90.0,66.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+23/10/2022,Female,Black African (West Africa),Black,True,08/04/1947,75.6,>70,156.5,118.5,48.4,OBESE,146.0,83.0,63.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+23/10/2022,Male,Black African (West Africa),Black,True,12/01/1998,24.8,<25,159.0,88.0,34.8,OBESE,127.0,81.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+25/11/2022,Male,Black Caribbean,Black,True,23/08/1971,51.3,41-55,160.0,61.0,23.8,HEALTHY,134.0,90.0,44.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+25/11/2022,Female,Black African (West Africa),Black,True,24/11/1962,60.0,56-70,175.0,82.0,26.8,OVERWEIGHT,122.0,74.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+27/11/2022,Male,Black African (West Africa),Black,True,17/08/1967,55.3,56-70,158.0,87.0,34.9,OBESE,138.0,99.0,39.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+23/10/2022,Female,Black African (unspecified),Black,True,16/08/1970,52.2,41-55,160.0,61.6,24.1,HEALTHY,134.0,90.0,44.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+25/11/2022,Male,Black African (unspecified),Black,True,10/04/1995,27.6,25-40,157.0,91.0,36.9,OBESE,129.0,81.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/11/2022,Male,White British,White,False,30/09/1993,29.2,25-40,157.0,91.0,36.9,OBESE,129.0,81.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+10/11/2022,Male,Bangladeshi,Indian,False,13/10/1936,86.1,>70,155.0,62.5,26.0,OVERWEIGHT,140.0,82.0,58.0,PRE HPT,True,True,False,False,True,True,False,False,Definitely not,Normal
+10/11/2022,Female,Black African (West Africa),Black,True,16/07/1939,83.4,>70,169.0,72.7,25.5,OVERWEIGHT,127.0,72.0,55.0,NORMAL,False,True,False,False,True,True,False,False,Definitely not,Abnormal
+10/11/2022,Male,Black African (unspecified),Black,True,17/09/1944,78.2,>70,161.5,78.5,30.1,OBESE,153.0,89.0,64.0,PRE HPT,True,True,False,False,False,False,False,True,Definitely not,Abnormal
+10/11/2022,Male,Black African (West Africa),Black,True,19/02/1944,78.8,>70,158.0,48.8,19.5,HEALTHY,243.0,89.0,154.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+10/11/2022,Female,Black African (West Africa),Black,True,22/10/1930,92.1,>70,151.5,45.5,19.8,HEALTHY,134.0,66.0,68.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+20/08/2023,Female,Black African (West Africa),Black,True,03/03/1970,53.5,41-55,180.0,85.2,26.3,OVERWEIGHT,147.0,97.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+10/11/2022,Female,Black African (West Africa),Black,True,08/11/1952,70.1,>70,158.0,54.0,21.6,HEALTHY,165.0,62.0,103.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+10/11/2022,Female,Black African (West Africa),Black,True,19/09/1989,33.2,25-40,158.0,87.0,34.9,OBESE,145.0,76.0,69.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+10/11/2022,Female,Black African (West Africa),Black,True,03/09/1972,50.2,41-55,178.0,83.0,26.2,OVERWEIGHT,151.0,83.0,68.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+10/11/2022,Female,Black African (unspecified),Black,True,28/04/1950,72.6,>70,162.0,102.7,39.1,OBESE,113.0,67.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/12/2022,Female,Black African (West Africa),Black,True,16/05/1960,62.6,56-70,168.0,96.0,34.0,OBESE,121.0,77.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+27/11/2022,Male,Black African (East Africa),Black,True,20/12/1952,70.0,56-70,164.0,83.4,31.0,OBESE,136.0,80.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+20/08/2023,Male,Black African (West Africa),Black,True,18/04/1981,42.4,41-55,157.48,115.0,46.4,OBESE,159.0,89.0,70.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Normal
+06/12/2022,Female,Black African (West Africa),Black,True,12/12/1979,43.0,41-55,154.0,82.2,34.7,OBESE,130.0,79.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+04/12/2022,Male,Black African (West Africa),Black,True,03/11/1968,54.1,41-55,169.0,130.4,45.7,OBESE,134.0,78.0,56.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+07/12/2022,Male,Black African (South Africa),Black,True,02/02/1979,43.9,41-55,161.0,68.0,26.2,OVERWEIGHT,128.0,71.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+03/09/2023,Male,Black African (West Africa),Black,True,09/03/1982,41.5,41-55,161.0,64.8,25.0,OVERWEIGHT,141.0,76.0,65.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+06/12/2022,Male,Black African (West Africa),Black,True,19/08/1968,54.3,41-55,162.5,69.8,26.4,OVERWEIGHT,130.0,73.0,57.0,NORMAL,False,True,False,False,False,True,False,True,Definitely not,Abnormal
+12/08/2023,Male,Black African (West Africa),Black,True,31/12/1956,66.7,56-70,165.5,86.8,31.7,OBESE,122.0,77.0,45.0,NORMAL,False,False,False,False,False,False,True,False,Definitely yes,Normal
+05/12/2022,Male,Black African (East Africa),Black,True,06/12/1958,64.0,56-70,149.0,82.0,36.9,OBESE,123.0,71.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/12/2022,Female,Black African (West Africa),Black,True,07/07/1962,60.5,56-70,179.0,72.0,22.5,HEALTHY,116.0,89.0,27.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+02/12/2022,Female,Black Caribbean,Black,True,11/04/1964,58.7,56-70,180.0,112.5,34.7,OBESE,121.0,93.0,28.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+06/12/2022,Female,Black African (unspecified),Black,True,29/09/1976,46.2,41-55,161.0,93.7,36.1,OBESE,118.0,81.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+20/08/2023,Male,Black African (West Africa),Black,True,23/01/1965,58.6,56-70,169.0,80.7,28.3,OVERWEIGHT,129.0,81.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Male,White other,White,False,17/09/1978,45.0,41-55,158.0,122.3,49.0,OBESE,114.0,78.0,36.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+12/08/2023,Male,Black African (West Africa),Black,True,22/07/1958,65.1,56-70,164.0,68.0,25.3,OVERWEIGHT,134.0,76.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+12/08/2023,Female,Black African (West Africa),Black,True,15/11/1962,60.8,56-70,181.5,89.9,27.3,OVERWEIGHT,133.0,81.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+12/08/2023,Male,Pakistani,Indian,False,31/01/1985,38.6,25-40,177.0,75.0,23.9,HEALTHY,144.0,96.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+12/08/2023,Female,Black African (West Africa),Black,True,13/03/1989,34.4,25-40,161.0,66.8,25.8,OVERWEIGHT,128.0,71.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+19/12/2022,Female,Black African (West Africa),Black,True,24/12/1967,55.0,41-55,165.0,79.0,29.0,OVERWEIGHT,145.0,65.0,80.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+02/12/2022,Male,Black African (West Africa),Black,True,10/10/1962,60.2,56-70,155.0,80.7,33.6,OBESE,149.0,104.0,45.0,HPT 1,True,True,False,False,False,False,False,False,Definitely not,Normal
+27/11/2022,Female,Black African (West Africa),Black,True,03/07/1960,62.4,56-70,162.0,75.6,28.8,OVERWEIGHT,138.0,81.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+27/11/2022,Female,Black African (unspecified),Black,True,19/05/1967,55.6,56-70,167.0,84.9,30.4,OBESE,118.0,57.0,61.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+27/11/2022,Female,Asian other,SE Asian,False,24/09/1967,55.2,56-70,185.0,92.1,26.9,OVERWEIGHT,128.0,71.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+27/11/2022,Female,Black African (West Africa),Black,True,13/08/1940,82.3,>70,159.0,65.8,26.0,OVERWEIGHT,130.0,80.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+04/12/2022,Male,Black African (unspecified),Black,True,01/04/1959,63.7,56-70,156.0,67.0,27.5,OVERWEIGHT,139.0,94.0,45.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/12/2022,Male,Black African (West Africa),Black,True,11/04/1959,63.7,56-70,158.4,68.0,27.1,OVERWEIGHT,149.0,81.0,68.0,PRE HPT,False,False,False,False,False,False,True,False,Not sure,Normal
+04/12/2022,Female,Black African (West Africa),Black,True,24/11/1959,63.1,56-70,173.0,98.4,32.9,OBESE,121.0,75.0,46.0,NORMAL,True,True,False,False,True,True,False,False,Definitely not,High Abnormal
+06/12/2022,Female,Black African (unspecified),Black,True,22/06/1971,51.5,41-55,175.0,107.0,34.9,OBESE,135.0,81.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,02/04/1964,58.9,56-70,163.3,115.5,43.3,OBESE,142.0,98.0,44.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+29/11/2022,Female,Black African (West Africa),Black,True,25/09/1970,52.2,41-55,160.0,68.0,26.6,OVERWEIGHT,132.0,68.0,64.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+19/08/2023,Female,Black African (unspecified),Black,True,17/01/1967,56.6,56-70,156.0,52.2,21.4,HEALTHY,127.0,80.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/08/2023,Male,Black African (West Africa),Black,True,11/12/1967,55.7,56-70,182.0,93.0,28.1,OVERWEIGHT,134.0,65.0,69.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+04/12/2022,Male,Black African (West Africa),Black,True,13/08/1963,59.4,56-70,159.0,81.0,32.0,OBESE,113.0,76.0,37.0,NORMAL,False,False,False,False,False,False,True,False,Definitely not,Normal
+04/12/2022,Female,Black African (West Africa),Black,True,27/09/1957,65.2,56-70,157.6,100.7,40.5,OBESE,155.0,96.0,59.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+27/11/2022,Female,Black African (West Africa),Black,True,10/11/1982,40.1,41-55,169.6,63.6,22.1,HEALTHY,143.0,87.0,56.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+06/12/2022,Male,Black African (unspecified),Black,True,28/09/1974,48.2,41-55,155.0,78.0,32.5,OBESE,130.0,78.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/11/2022,Male,Black African (unspecified),Black,True,01/07/1951,71.5,>70,152.0,66.6,28.8,OVERWEIGHT,123.0,91.0,32.0,PRE HPT,True,True,False,False,True,False,False,False,Definitely not,Abnormal
+07/12/2022,Female,Black African (West Africa),Black,True,24/11/1962,60.1,56-70,174.0,97.0,32.0,OBESE,145.0,84.0,61.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+27/11/2022,Female,Black African (West Africa),Black,True,07/05/1967,55.6,56-70,149.0,66.6,30.0,OBESE,131.0,79.0,52.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+06/12/2022,Female,Black African (West Africa),Black,True,10/12/1971,51.0,41-55,158.0,73.0,29.2,OVERWEIGHT,132.0,54.0,78.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+23/01/2023,Female,Black African (West Africa),Black,True,08/01/1968,55.1,56-70,149.0,56.0,25.2,OVERWEIGHT,128.0,69.0,59.0,NORMAL,True,True,False,False,True,True,False,False,Not sure,Normal
+04/12/2022,Female,Black African (West Africa),Black,True,18/08/1969,53.3,41-55,159.0,65.0,25.7,OVERWEIGHT,144.0,65.0,79.0,HPT 1,True,True,False,False,True,True,False,False,Not sure,Abnormal
+20/08/2023,Female,Black African (South Africa),Black,True,09/11/1971,51.8,41-55,168.0,88.8,31.5,OBESE,117.0,84.0,33.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+10/11/2022,Male,Black African (West Africa),Black,True,17/10/1965,57.1,56-70,154.0,54.0,22.8,HEALTHY,125.0,67.0,58.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+20/08/2023,Male,Black African (West Africa),Black,True,13/09/1994,29.0,25-40,176.0,109.1,35.2,OBESE,127.0,84.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,28/11/1978,44.8,41-55,159.5,76.7,30.1,OBESE,121.0,75.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+20/08/2023,Male,White Irish,White,False,31/10/1978,44.8,41-55,172.0,81.3,27.5,OVERWEIGHT,114.0,83.0,31.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Male,Black African (unspecified),Black,True,25/07/1978,45.1,41-55,184.5,92.3,27.1,OVERWEIGHT,126.0,83.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+03/09/2023,Male,White other,White,False,01/05/1984,39.4,25-40,157.0,71.0,28.8,OVERWEIGHT,110.0,85.0,25.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+03/09/2023,Female,Black African (West Africa),Black,True,01/11/1998,24.9,<25,180.0,75.0,23.1,HEALTHY,142.0,65.0,77.0,HPT 1,False,False,False,False,False,False,False,False,Definitely yes,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,10/11/1985,37.8,25-40,183.0,83.2,24.8,HEALTHY,153.0,91.0,62.0,HPT 1,True,False,True,False,False,False,False,False,Not sure,High Abnormal
+03/09/2023,Male,Black African (unspecified),Black,True,05/07/1991,32.2,25-40,183.0,83.0,24.8,HEALTHY,141.0,92.0,49.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Male,White British,White,False,04/02/1946,77.6,>70,175.0,71.8,23.4,HEALTHY,122.0,66.0,56.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,High Abnormal
+03/09/2023,Male,Black African (West Africa),Black,True,20/09/1957,66.0,56-70,154.9,67.3,28.0,OVERWEIGHT,167.0,90.0,77.0,HPT 2,True,True,False,False,True,True,False,False,Definitely not,High Abnormal
+30/07/2023,Male,Black African (West Africa),Black,True,31/08/1971,51.9,41-55,154.0,61.0,25.7,OVERWEIGHT,155.0,85.0,70.0,PRE HPT,True,False,False,False,True,False,True,False,Definitely not,Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,30/06/1965,58.1,56-70,171.0,85.0,29.1,OVERWEIGHT,158.0,91.0,67.0,HPT 1,True,False,False,False,True,False,True,False,Not sure,Abnormal
+30/07/2023,Female,Black Caribbean,Black,True,02/11/1967,55.8,56-70,161.5,65.1,25.0,OVERWEIGHT,155.0,98.0,57.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+06/12/2022,Male,Black African (Central Africa),Black,True,02/07/1995,27.4,25-40,155.0,51.0,21.2,HEALTHY,108.0,53.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+05/12/2022,Female,Black African (West Africa),Black,True,22/01/1955,67.9,56-70,155.0,72.0,30.0,OBESE,110.0,70.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+07/12/2022,Male,Black African (East Africa),Black,True,29/12/1976,46.0,41-55,150.0,66.1,29.4,OVERWEIGHT,150.0,63.0,87.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+07/12/2022,Female,Black African (West Africa),Black,True,14/07/1985,37.4,25-40,183.5,83.5,24.8,HEALTHY,109.0,53.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+07/12/2022,Male,Black African (unspecified),Black,True,24/04/1997,25.6,25-40,146.0,54.0,25.3,OVERWEIGHT,103.0,61.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Mixed White/Black Caribbean,Mixed,True,05/05/1987,36.4,25-40,169.6,88.8,30.9,OBESE,127.0,80.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+07/12/2022,Male,Black African (West Africa),Black,True,08/01/1992,30.9,25-40,170.0,69.0,23.9,HEALTHY,119.0,63.0,56.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Abnormal
+07/12/2022,Female,Black African (West Africa),Black,True,26/11/1980,42.1,41-55,150.0,65.4,29.1,OVERWEIGHT,113.0,81.0,32.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+07/12/2022,Male,White British,White,False,12/11/1988,34.1,25-40,149.0,53.0,23.9,HEALTHY,108.0,81.0,27.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Abnormal
+07/12/2022,Male,Black African (West Africa),Black,True,10/03/1961,61.8,56-70,153.0,92.3,39.4,OBESE,148.0,83.0,65.0,PRE HPT,True,False,False,False,False,False,False,False,Definitely not,Abnormal
+07/12/2022,Female,Black African (West Africa),Black,True,25/10/1971,51.2,41-55,158.0,70.3,28.2,OVERWEIGHT,140.0,80.0,60.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+09/01/2023,Female,Black African (unspecified),Black,True,25/12/1980,42.1,41-55,168.0,80.7,28.6,OVERWEIGHT,100.0,68.0,32.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+09/01/2023,Female,Black African (West Africa),Black,True,19/12/1976,46.1,41-55,167.0,89.8,32.2,OBESE,137.0,108.0,29.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+22/01/2023,Male,Black African (unspecified),Black,True,19/12/1976,46.1,41-55,162.5,78.0,29.5,OVERWEIGHT,142.0,87.0,55.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+09/09/2023,Female,Black African (West Africa),Black,True,11/03/1940,83.6,>70,156.0,84.6,34.8,OBESE,165.0,91.0,74.0,HPT 1,True,True,False,False,True,True,True,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,13/10/1957,65.4,56-70,162.6,80.0,30.3,OBESE,107.0,76.0,31.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,03/08/1964,58.5,56-70,161.0,73.0,28.2,OVERWEIGHT,140.0,98.0,42.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+03/09/2023,Female,Black African (unspecified),Black,True,10/10/1968,54.9,41-55,172.0,76.4,25.8,OVERWEIGHT,123.0,77.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/01/2023,Female,Black African (West Africa),Black,True,17/08/1964,58.5,56-70,154.0,58.0,24.5,HEALTHY,135.0,67.0,68.0,NORMAL,True,True,False,False,True,True,False,False,Not sure,Normal
+05/02/2023,Male,White other,White,False,10/01/2001,22.1,<25,160.0,62.0,24.2,HEALTHY,136.0,86.0,50.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+27/11/2022,Female,Black African (West Africa),Black,True,12/01/1998,24.9,<25,160.0,61.6,24.1,HEALTHY,134.0,90.0,44.0,PRE HPT,True,False,False,False,False,False,False,False,Not sure,Abnormal
+22/01/2023,Female,Black African (West Africa),Black,True,10/01/2001,22.0,<25,170.9,91.1,31.2,OBESE,133.0,66.0,67.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,24/12/1988,34.1,25-40,156.0,74.0,30.4,OBESE,146.0,89.0,57.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Male,Black African (Central Africa),Black,True,23/04/1978,45.4,41-55,167.5,91.6,32.6,OBESE,130.0,91.0,39.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,17/04/1990,33.4,25-40,184.5,95.7,28.1,OVERWEIGHT,131.0,78.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+09/09/2023,Female,Black African (unspecified),Black,True,17/02/1948,75.6,>70,159.0,80.2,31.7,OBESE,130.0,75.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,23/08/1991,32.1,25-40,169.0,68.9,24.1,HEALTHY,128.0,93.0,35.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,19/04/1976,47.4,41-55,163.2,68.7,25.8,OVERWEIGHT,124.0,80.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black African (East Africa),Black,True,10/06/1985,38.3,25-40,167.1,73.2,26.2,OVERWEIGHT,121.0,84.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Female,Black African (unspecified),Black,True,28/03/1991,32.5,25-40,175.5,70.2,22.8,HEALTHY,129.0,64.0,65.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,11/05/1986,37.3,25-40,180.0,89.5,27.6,OVERWEIGHT,126.0,74.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Mixed White/Black African,Mixed,True,04/05/1965,58.4,56-70,171.1,82.4,28.1,OVERWEIGHT,128.0,68.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Female,Black African (Central Africa),Black,True,28/10/1976,46.9,41-55,190.5,120.0,33.1,OBESE,126.0,76.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black Caribbean,Black,True,09/12/1983,39.8,25-40,165.5,97.1,35.5,OBESE,123.0,81.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Female,Black African (West Africa),Black,True,07/02/1975,48.6,41-55,170.0,116.8,40.4,OBESE,119.0,80.0,39.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black African (Central Africa),Black,True,09/08/1979,44.1,41-55,172.1,81.7,27.6,OVERWEIGHT,127.0,84.0,43.0,NORMAL,True,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Female,White other,White,False,22/03/1980,43.5,41-55,156.0,105.0,43.1,OBESE,145.0,78.0,67.0,HPT 1,False,True,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,05/11/1984,38.3,25-40,160.5,85.6,33.2,OBESE,132.0,90.0,42.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black African (unspecified),Black,True,13/07/1964,58.6,56-70,168.9,77.4,27.1,OVERWEIGHT,120.0,73.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+03/02/2023,Female,Black other,Black,True,09/02/1967,56.0,56-70,164.5,76.8,28.4,OVERWEIGHT,129.0,82.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/02/2023,Female,Black African (unspecified),Black,True,14/01/1994,29.1,25-40,170.0,70.0,24.2,HEALTHY,128.0,69.0,59.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,16/11/1964,58.3,56-70,183.3,72.3,21.5,HEALTHY,150.0,93.0,57.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+05/02/2023,Female,Indian,Indian,False,25/03/1962,60.9,56-70,165.4,85.6,31.3,OBESE,147.0,68.0,79.0,HPT 1,True,True,False,False,True,True,False,False,Not sure,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,10/05/1977,45.8,41-55,164.8,83.5,30.7,OBESE,139.0,88.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+05/02/2023,Female,White other,White,False,02/02/1973,50.0,41-55,159.8,83.9,32.9,OBESE,123.0,77.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Abnormal
+15/01/2023,Female,Black Caribbean,Black,True,12/09/1985,37.4,25-40,167.0,87.0,31.2,OBESE,168.0,87.0,81.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,10/05/1977,45.8,41-55,164.0,83.5,31.0,OBESE,147.0,88.0,59.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely yes,Normal
+15/01/2023,Male,Black African (West Africa),Black,True,07/11/1977,45.2,41-55,151.7,81.8,35.5,OBESE,124.0,76.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+05/02/2023,Female,Black African (South Africa),Black,True,14/07/1962,60.6,56-70,164.5,106.9,39.5,OBESE,119.0,77.0,42.0,NORMAL,True,False,False,False,True,False,False,True,Definitely not,Normal
+05/02/2023,Male,Black African (West Africa),Black,True,12/05/1972,50.8,41-55,164.5,89.9,33.2,OBESE,135.0,91.0,44.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,17/12/1973,49.2,41-55,156.0,66.5,27.3,OVERWEIGHT,163.0,93.0,70.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,22/06/1976,46.7,41-55,152.5,54.6,23.5,HEALTHY,122.0,74.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+15/01/2023,Male,Black African (West Africa),Black,True,21/03/1978,44.9,41-55,160.9,74.2,28.7,OVERWEIGHT,117.0,73.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/01/2023,Female,Black African (West Africa),Black,True,12/06/1964,58.6,56-70,172.1,85.4,28.8,OVERWEIGHT,137.0,85.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Male,Black African (West Africa),Black,True,02/12/1970,52.2,41-55,167.4,84.7,30.2,OBESE,132.0,79.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,17/08/1947,75.5,>70,155.7,102.9,42.4,OBESE,139.0,75.0,64.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,22/12/1958,64.2,56-70,160.0,76.4,29.8,OVERWEIGHT,126.0,84.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Male,Black African (unspecified),Black,True,18/09/1977,45.4,41-55,157.2,91.9,37.2,OBESE,129.0,74.0,55.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black Caribbean,Black,True,25/05/1979,43.7,41-55,177.0,81.5,26.0,OVERWEIGHT,134.0,86.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+05/02/2023,Female,Black African (West Africa),Black,True,28/04/1966,56.8,56-70,160.5,100.7,39.1,OBESE,166.0,91.0,75.0,HPT 1,True,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,13/02/1974,49.0,41-55,171.6,120.0,40.8,OBESE,130.0,75.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,06/05/1969,53.8,41-55,161.6,98.2,37.6,OBESE,207.0,97.0,110.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black African (unspecified),Black,True,26/12/1974,48.1,41-55,172.0,78.0,26.4,OVERWEIGHT,147.0,93.0,54.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,27/01/1961,62.1,56-70,156.0,80.0,32.9,OBESE,150.0,93.0,57.0,HPT 1,False,False,False,False,False,False,True,False,Not sure,Normal
+05/02/2023,Male,Black other,Black,True,26/02/1999,24.0,<25,187.4,71.0,20.2,HEALTHY,93.0,53.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Male,Black Caribbean,Black,True,02/04/1964,58.9,56-70,159.5,104.1,40.9,OBESE,144.0,92.0,52.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black Caribbean,Black,True,01/01/1977,46.1,41-55,156.2,83.5,34.2,OBESE,118.0,76.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,06/06/1985,37.7,25-40,168.6,73.7,25.9,OVERWEIGHT,122.0,74.0,48.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,High Abnormal
+05/02/2023,Male,White British,White,False,01/01/1977,46.1,41-55,159.0,76.0,30.1,OBESE,143.0,78.0,65.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black Caribbean,Black,True,02/12/1952,70.2,>70,168.6,95.7,33.7,OBESE,168.0,96.0,72.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,08/11/1963,59.3,56-70,151.0,67.0,29.4,OVERWEIGHT,138.0,71.0,67.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+05/02/2023,Male,Black African (unspecified),Black,True,10/09/2008,14.4,<25,173.2,60.2,20.1,HEALTHY,102.0,59.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,07/08/1961,61.5,56-70,161.2,78.4,30.2,OBESE,136.0,95.0,41.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,High Abnormal
+03/09/2023,Male,Black African (West Africa),Black,True,07/10/1992,30.9,25-40,160.0,72.3,28.2,OVERWEIGHT,120.0,80.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Female,Black African (East Africa),Black,True,19/04/1973,49.8,41-55,162.5,92.3,35.0,OBESE,125.0,91.0,34.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+15/01/2023,Male,Pakistani,Indian,False,24/09/1975,47.3,41-55,168.0,93.6,33.2,OBESE,181.0,115.0,66.0,HPT CRISIS,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+05/02/2023,Female,Mixed White/Black Caribbean,Mixed,True,24/02/1996,27.0,25-40,153.0,74.4,31.8,OBESE,113.0,62.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black African (West Africa),Black,True,23/03/1965,57.9,56-70,183.5,101.1,30.0,OBESE,151.0,94.0,57.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Abnormal
+15/01/2023,Female,Black African (unspecified),Black,True,04/06/1968,54.7,41-55,170.1,99.3,34.3,OBESE,176.0,125.0,51.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+15/01/2023,Female,Mixed White/Black Caribbean,Mixed,True,25/04/1957,65.8,56-70,156.5,101.0,41.2,OBESE,162.0,77.0,85.0,HPT 2,True,True,False,False,True,False,False,False,Not sure,Abnormal
+03/09/2023,Female,Bangladeshi,Indian,False,16/04/1979,44.4,41-55,162.56,68.1,25.8,OVERWEIGHT,165.0,78.0,87.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Normal
+17/07/2023,Female,Black African (West Africa),Black,True,10/12/1991,31.6,25-40,162.0,77.1,29.4,OVERWEIGHT,118.0,83.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (unspecified),Black,True,24/12/1967,55.2,56-70,155.4,77.3,32.0,OBESE,116.0,73.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Female,Black African (West Africa),Black,True,21/06/1961,62.2,56-70,157.0,86.0,34.9,OBESE,146.0,75.0,71.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,20/09/1953,69.4,56-70,151.5,70.6,30.8,OBESE,146.0,91.0,55.0,HPT 1,False,True,False,False,False,False,False,False,Definitely not,Abnormal
+05/02/2023,Female,Black African (unspecified),Black,True,20/06/1968,54.7,41-55,158.9,93.4,37.0,OBESE,124.0,77.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+15/01/2023,Female,Black African (West Africa),Black,True,11/07/1966,56.6,56-70,172.7,73.9,24.8,HEALTHY,134.0,73.0,61.0,NORMAL,True,True,False,False,True,True,False,True,Not sure,Abnormal
+15/01/2023,Female,Black African (West Africa),Black,True,04/09/1963,59.4,56-70,152.5,101.9,43.8,OBESE,144.0,78.0,66.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+03/09/2023,Female,Black African (West Africa),Black,True,18/08/1974,49.1,41-55,162.6,99.0,37.4,OBESE,146.0,92.0,54.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+15/01/2023,Female,Mixed White/Black African,Mixed,True,17/11/1965,57.2,56-70,156.4,78.6,32.1,OBESE,132.0,85.0,47.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,01/01/1954,69.1,56-70,156.0,76.0,31.2,OBESE,160.0,79.0,81.0,HPT 2,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+15/01/2023,Male,Black African (West Africa),Black,True,01/01/1966,57.1,56-70,162.5,85.3,32.3,OBESE,132.0,81.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+15/01/2023,Male,Black African (West Africa),Black,True,30/05/1967,55.7,56-70,172.9,85.0,28.4,OVERWEIGHT,143.0,89.0,54.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,18/12/1951,71.2,>70,178.0,81.01,25.6,OVERWEIGHT,159.0,93.0,66.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Abnormal
+15/01/2023,Female,Black African (Central Africa),Black,True,09/08/1956,66.5,56-70,161.0,110.0,42.4,OBESE,151.0,93.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+15/01/2023,Male,Black African (West Africa),Black,True,18/09/1954,68.4,56-70,150.0,67.0,29.8,OVERWEIGHT,170.0,68.0,102.0,HPT 2,True,True,False,False,True,True,False,False,Not sure,High Abnormal
+15/01/2023,Male,Black African (West Africa),Black,True,14/09/1972,50.4,41-55,175.8,70.2,22.7,HEALTHY,119.0,70.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Female,Black African (unspecified),Black,True,12/09/1975,48.0,41-55,167.5,78.8,28.1,OVERWEIGHT,112.0,73.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/01/2023,Male,Black Caribbean,Black,True,12/11/1987,35.2,25-40,163.6,64.7,24.2,HEALTHY,109.0,68.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/01/2023,Male,Mixed other,Mixed,False,07/11/1957,65.2,56-70,168.5,125.6,44.2,OBESE,142.0,76.0,66.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+05/02/2023,Male,White other,White,False,02/10/1961,61.4,56-70,161.3,101.7,39.1,OBESE,161.0,90.0,71.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Normal
+15/01/2023,Male,Black African (West Africa),Black,True,07/12/1966,56.1,56-70,153.4,90.6,38.5,OBESE,140.0,95.0,45.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+15/01/2023,Female,Black other,Black,True,14/02/1973,50.0,41-55,162.9,86.7,32.7,OBESE,126.0,79.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/01/2023,Male,Black African (West Africa),Black,True,13/08/1972,50.5,41-55,150.0,78.0,34.7,OBESE,130.0,95.0,35.0,PRE HPT,True,True,False,False,True,True,False,False,Definitely not,Normal
+05/02/2023,Male,Black African (unspecified),Black,True,20/12/2001,21.1,<25,165.0,109.0,40.0,OBESE,183.0,102.0,81.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Mixed White/Black African,Mixed,True,24/02/1996,27.0,25-40,156.4,85.0,34.7,OBESE,108.0,73.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Male,Black Caribbean,Black,True,24/10/1986,36.3,25-40,157.6,69.8,28.1,OVERWEIGHT,135.0,87.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,30/06/1977,46.2,41-55,180.2,95.1,29.3,OVERWEIGHT,126.0,73.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Female,Black African (unspecified),Black,True,13/04/1968,54.9,41-55,157.0,86.4,35.1,OBESE,129.0,81.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,23/09/1947,75.4,>70,172.2,86.4,29.1,OVERWEIGHT,131.0,83.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+05/02/2023,Female,Black African (East Africa),Black,True,29/10/1972,50.3,41-55,149.3,101.1,45.4,OBESE,112.0,73.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (West Africa),Black,True,04/04/1967,55.9,56-70,167.0,90.6,32.5,OBESE,156.0,91.0,65.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black African (unspecified),Black,True,27/02/1970,53.0,41-55,156.5,90.8,37.1,OBESE,137.0,84.0,53.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Abnormal
+05/02/2023,Female,Black Caribbean,Black,True,16/06/1961,61.7,56-70,161.0,81.0,31.2,OBESE,142.0,79.0,63.0,HPT 1,True,True,False,False,True,True,False,False,Not sure,Abnormal
+05/02/2023,Male,Black African (unspecified),Black,True,01/05/2002,20.8,<25,170.0,73.0,25.3,OVERWEIGHT,119.0,61.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Female,Black Caribbean,Black,True,09/12/1959,63.2,56-70,163.0,79.9,30.1,OBESE,147.0,88.0,59.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+03/09/2023,Male,Black African (West Africa),Black,True,22/06/1962,61.2,56-70,170.0,81.0,28.0,OVERWEIGHT,151.0,95.0,56.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+03/09/2023,Female,Black Caribbean,Black,True,28/06/1982,41.2,41-55,167.0,81.6,29.3,OVERWEIGHT,122.0,77.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Female,Black Caribbean,Black,True,01/06/1978,44.7,41-55,160.0,81.0,31.6,OBESE,160.0,90.0,70.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Male,Black African (West Africa),Black,True,10/03/1967,56.5,56-70,160.0,92.0,35.9,OBESE,156.0,102.0,54.0,HPT 1,True,True,True,False,True,True,False,False,Definitely not,Normal
+12/02/2023,Female,Black African (West Africa),Black,True,27/08/1978,44.5,41-55,166.0,82.0,29.8,OVERWEIGHT,116.0,74.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,19/02/1962,61.6,56-70,158.0,89.0,35.7,OBESE,137.0,77.0,60.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Normal
+03/09/2023,Female,Black Caribbean,Black,True,27/07/1994,29.1,25-40,164.9,84.9,31.2,OBESE,125.0,80.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+17/02/2023,Male,Black African (West Africa),Black,True,20/05/1958,64.8,56-70,172.0,66.0,22.3,HEALTHY,133.0,85.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/02/2023,Male,Black African (unspecified),Black,True,22/06/1967,55.7,56-70,171.0,69.0,23.6,HEALTHY,118.0,71.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+05/02/2023,Female,Black African (West Africa),Black,True,23/09/1978,44.4,41-55,185.5,130.0,37.8,OBESE,141.0,85.0,56.0,PRE HPT,True,True,False,True,True,True,False,False,Definitely yes,High Abnormal
+12/02/2023,Female,Black African (West Africa),Black,True,26/02/1993,30.0,25-40,166.5,86.4,31.2,OBESE,136.0,80.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+17/02/2023,Female,Indian,Indian,False,23/03/1976,46.9,41-55,177.0,92.6,29.6,OVERWEIGHT,148.0,101.0,47.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+17/02/2023,Female,Black African (unspecified),Black,True,24/11/1972,50.3,41-55,162.0,122.3,46.6,OBESE,146.0,95.0,51.0,HPT 1,True,False,False,False,True,False,False,True,Not sure,High Abnormal
+17/02/2023,Male,Black African (West Africa),Black,True,12/02/1972,51.0,41-55,169.0,94.2,33.0,OBESE,117.0,94.0,23.0,HPT 1,False,False,False,False,False,False,False,True,Definitely yes,High Abnormal
+19/03/2023,Female,Black African (West Africa),Black,True,17/06/1950,72.8,>70,172.0,94.5,31.9,OBESE,195.0,109.0,86.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Normal
+12/03/2023,Male,Black African (West Africa),Black,True,14/11/2003,19.3,<25,173.0,83.0,27.7,OVERWEIGHT,116.0,74.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+03/09/2023,Male,Black African (West Africa),Black,True,07/09/1982,41.0,41-55,162.9,87.5,33.0,OBESE,145.0,94.0,51.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+17/02/2023,Female,Black African (West Africa),Black,True,01/12/1964,58.3,56-70,167.0,78.0,28.0,OVERWEIGHT,168.0,93.0,75.0,HPT 1,True,True,False,False,True,True,False,False,Definitely not,Normal
+02/09/2023,Female,Mixed White/Black African,Mixed,True,09/07/1989,34.2,25-40,163.8,83.5,31.1,OBESE,154.0,96.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Female,Black Caribbean,Black,True,25/01/1980,43.6,41-55,169.0,72.0,25.2,OVERWEIGHT,150.0,88.0,62.0,PRE HPT,True,False,True,False,False,True,True,False,Definitely not,Abnormal
+17/02/2023,Female,Black African (West Africa),Black,True,13/12/1994,28.2,25-40,198.0,75.5,19.3,HEALTHY,138.0,91.0,47.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+28/02/2023,Female,Black African (West Africa),Black,True,22/07/1958,64.6,56-70,167.0,76.0,27.3,OVERWEIGHT,134.0,78.0,56.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+02/03/2023,Female,Black African (West Africa),Black,True,18/10/1963,59.4,56-70,158.0,64.0,25.6,OVERWEIGHT,131.0,80.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+12/03/2023,Female,Black African (unspecified),Black,True,06/12/1974,48.3,41-55,171.0,70.0,23.9,HEALTHY,131.0,79.0,52.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+19/03/2023,Male,Black African (West Africa),Black,True,16/01/1966,57.2,56-70,167.0,73.5,26.4,OVERWEIGHT,160.0,105.0,55.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+26/02/2023,Female,Black African (unspecified),Black,True,10/03/1988,35.0,25-40,168.0,72.0,25.5,OVERWEIGHT,123.0,88.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Female,Black African (unspecified),Black,True,10/10/1968,54.4,41-55,162.5,95.3,36.1,OBESE,138.0,86.0,52.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+03/09/2023,Female,Black African (West Africa),Black,True,14/02/2001,22.6,<25,175.0,96.0,31.3,OBESE,117.0,75.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+03/09/2023,Female,White British,White,False,03/08/1978,45.1,41-55,169.0,103.0,36.1,OBESE,127.0,85.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Asian other,SE Asian,False,04/07/1983,40.2,41-55,169.5,72.6,25.3,OVERWEIGHT,114.0,89.0,25.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+03/09/2023,Male,Black Caribbean,Black,True,22/07/1982,41.1,41-55,179.5,104.0,32.3,OBESE,124.0,80.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+03/09/2023,Male,Black African (West Africa),Black,True,05/09/1972,51.0,41-55,158.0,83.2,33.3,OBESE,123.0,82.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Female,White British,White,False,23/02/1965,58.0,56-70,156.0,99.0,40.7,OBESE,180.0,112.0,68.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Abnormal
+17/02/2023,Female,Black other,Black,True,14/12/1994,28.2,25-40,165.0,65.0,23.9,HEALTHY,112.0,66.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/02/2023,Male,Black African (West Africa),Black,True,12/02/1958,65.0,56-70,178.0,80.2,25.3,OVERWEIGHT,166.0,99.0,67.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Abnormal
+17/02/2023,Female,Black African (East Africa),Black,True,01/09/1985,37.5,25-40,167.0,81.8,29.3,OVERWEIGHT,128.0,79.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Female,Black African (West Africa),Black,True,12/08/1974,48.5,41-55,144.0,57.4,27.7,OVERWEIGHT,215.0,115.0,100.0,HPT CRISIS,False,False,False,False,False,False,False,False,Not sure,Abnormal
+12/02/2023,Female,Black African (West Africa),Black,True,01/01/1985,38.1,25-40,164.0,71.7,26.7,OVERWEIGHT,159.0,107.0,52.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Male,White British,White,False,28/07/1970,52.6,41-55,180.5,89.8,27.6,OVERWEIGHT,144.0,83.0,61.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+17/02/2023,Female,Black African (unspecified),Black,True,06/11/1969,53.3,41-55,151.0,83.9,36.8,OBESE,178.0,98.0,80.0,HPT 1,True,False,False,False,False,False,False,False,Not sure,Abnormal
+12/02/2023,Male,Black other,Black,True,23/03/1964,58.9,56-70,174.2,92.3,30.4,OBESE,163.0,99.0,64.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+17/02/2023,Male,Black other,Black,True,14/10/1976,46.4,41-55,167.0,92.1,33.0,OBESE,177.0,77.0,100.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+19/03/2023,Female,Black African (unspecified),Black,True,21/10/1966,56.4,56-70,159.0,78.0,30.9,OBESE,139.0,78.0,61.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+21/03/2023,Female,Black African (West Africa),Black,True,10/08/1970,52.6,41-55,161.0,67.0,25.8,OVERWEIGHT,134.0,78.0,56.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+16/03/2023,Female,Black African (West Africa),Black,True,17/03/1964,59.0,56-70,171.0,98.0,33.5,OBESE,139.0,87.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Male,Black African (West Africa),Black,True,05/05/1968,54.8,41-55,157.5,78.1,31.5,OBESE,154.0,96.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+02/09/2023,Male,Black African (West Africa),Black,True,10/06/1970,53.3,41-55,175.9,117.9,38.1,OBESE,148.0,97.0,51.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black other,Black,True,17/10/1966,56.9,56-70,165.0,80.4,29.5,OVERWEIGHT,150.0,77.0,73.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Female,Black African (West Africa),Black,True,21/02/1970,53.6,41-55,173.1,72.3,24.1,HEALTHY,177.0,101.0,76.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+02/09/2023,Female,Black African (West Africa),Black,True,15/01/1956,67.7,56-70,169.7,64.9,22.5,HEALTHY,112.0,83.0,29.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+15/01/2023,Female,Black African (East Africa),Black,True,14/02/1983,39.9,25-40,154.0,78.0,32.9,OBESE,146.0,79.0,67.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+02/09/2023,Male,Black African (unspecified),Black,True,17/09/1954,69.0,56-70,154.0,65.5,27.6,OVERWEIGHT,122.0,75.0,47.0,NORMAL,True,True,False,False,True,True,True,False,Definitely not,Abnormal
+09/09/2023,Female,Mixed White/Black African,Mixed,True,09/09/1965,58.0,56-70,165.0,80.0,29.4,OVERWEIGHT,153.0,96.0,57.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+12/02/2023,Female,Black African (unspecified),Black,True,14/02/1983,40.0,25-40,165.0,103.5,38.0,OBESE,132.0,68.0,64.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Female,Black African (West Africa),Black,True,23/11/1970,52.3,41-55,167.0,88.6,31.8,OBESE,193.0,108.0,85.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Abnormal
+12/02/2023,Female,Black African (unspecified),Black,True,06/06/1966,56.7,56-70,173.6,81.7,27.1,OVERWEIGHT,166.0,94.0,72.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+12/02/2023,Male,Black African (unspecified),Black,True,23/12/1986,36.2,25-40,157.5,73.0,29.4,OVERWEIGHT,128.0,78.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+12/02/2023,Male,Black Caribbean,Black,True,26/01/1969,54.1,41-55,184.0,107.7,31.8,OBESE,183.0,107.0,76.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Normal
+12/02/2023,Female,Black African (unspecified),Black,True,14/03/1960,63.0,56-70,160.0,93.1,36.4,OBESE,130.0,74.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Female,Black African (West Africa),Black,True,02/12/1976,46.2,41-55,159.0,102.9,40.7,OBESE,132.0,89.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+09/09/2023,Female,Black African (West Africa),Black,True,23/05/1965,58.3,56-70,160.0,83.0,32.4,OBESE,119.0,65.0,54.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,High Abnormal
+17/02/2023,Male,Black African (East Africa),Black,True,30/03/1968,54.9,41-55,165.2,97.0,35.5,OBESE,139.0,80.0,59.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Female,Black African (West Africa),Black,True,21/03/1981,41.9,41-55,165.5,93.4,34.1,OBESE,156.0,101.0,55.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+17/02/2023,Male,Black African (West Africa),Black,True,04/12/1958,64.2,56-70,174.0,99.7,32.9,OBESE,168.0,75.0,93.0,HPT 2,True,True,False,False,True,True,False,False,Not sure,Abnormal
+12/02/2023,Female,Black Caribbean,Black,True,25/06/1976,46.7,41-55,171.0,83.9,28.7,OVERWEIGHT,174.0,95.0,79.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+12/02/2023,Male,Black African (West Africa),Black,True,27/07/1966,56.6,56-70,171.0,86.3,29.5,OVERWEIGHT,178.0,108.0,70.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+12/02/2023,Male,Black African (unspecified),Black,True,15/03/1962,61.0,56-70,180.0,82.3,25.4,OVERWEIGHT,176.0,93.0,83.0,HPT 1,True,False,False,False,False,False,False,False,Definitely not,Normal
+09/09/2023,Female,Mixed White/Black African,Mixed,True,22/01/1964,59.7,56-70,163.5,74.9,28.0,OVERWEIGHT,146.0,99.0,47.0,HPT 1,False,False,False,False,False,False,False,True,Not sure,Normal
+12/02/2023,Female,Black African (West Africa),Black,True,02/05/1971,51.8,41-55,166.0,82.9,30.1,OBESE,142.0,87.0,55.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Female,Black African (unspecified),Black,True,25/11/1976,46.3,41-55,167.6,80.0,28.5,OVERWEIGHT,125.0,68.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+05/02/2023,Female,Black Caribbean,Black,True,19/12/1966,56.2,56-70,162.0,105.3,40.1,OBESE,141.0,83.0,58.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Normal
+12/02/2023,Female,Black African (West Africa),Black,True,18/04/1964,58.9,56-70,154.0,80.7,34.0,OBESE,136.0,94.0,42.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+17/02/2023,Male,Indian,Indian,False,06/07/1966,56.7,56-70,148.0,64.1,29.3,OVERWEIGHT,125.0,71.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+05/02/2023,Female,Black African (unspecified),Black,True,02/07/1988,34.6,25-40,175.0,82.0,26.8,OVERWEIGHT,120.0,79.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/02/2023,Male,Black African (West Africa),Black,True,10/05/1975,47.8,41-55,154.5,78.5,32.9,OBESE,154.0,88.0,66.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/02/2023,Female,Black African (unspecified),Black,True,22/11/1961,61.3,56-70,165.0,78.1,28.7,OVERWEIGHT,174.0,96.0,78.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+17/02/2023,Male,Black African (West Africa),Black,True,30/06/1965,57.7,56-70,166.5,74.3,26.8,OVERWEIGHT,129.0,84.0,45.0,NORMAL,True,True,False,False,True,False,False,False,Not sure,Abnormal
+12/02/2023,Female,Black Caribbean,Black,True,08/11/1975,47.3,41-55,172.0,111.8,37.8,OBESE,172.0,104.0,68.0,HPT 2,True,False,False,False,False,False,False,False,Not sure,Abnormal
+10/02/2023,Female,White British,White,False,14/12/1964,58.2,56-70,157.0,54.0,21.9,HEALTHY,105.0,45.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+10/02/2023,Male,Black African (West Africa),Black,True,09/05/1999,23.8,<25,155.0,74.0,30.8,OBESE,108.0,63.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+09/09/2023,Male,Black Caribbean,Black,True,14/07/1967,56.2,56-70,172.5,95.8,32.2,OBESE,106.0,79.0,27.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+23/02/2023,Female,Pakistani,Indian,False,21/01/1984,39.1,25-40,181.0,75.7,23.1,HEALTHY,144.0,99.0,45.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/02/2023,Male,Asian other,SE Asian,False,18/11/1967,55.3,56-70,168.0,81.1,28.7,OVERWEIGHT,132.0,80.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/03/2023,Female,Black African (unspecified),Black,True,18/04/1966,57.0,56-70,174.0,80.0,26.4,OVERWEIGHT,166.0,104.0,62.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/03/2023,Female,Black African (West Africa),Black,True,15/10/1986,36.4,25-40,161.0,161.0,62.1,OBESE,129.0,73.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+10/09/2023,Male,Mixed White/Black African,Mixed,True,08/11/1947,75.9,>70,163.7,62.81,23.4,HEALTHY,141.0,85.0,56.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Female,Black African (unspecified),Black,True,07/01/1964,59.7,56-70,180.0,81.0,25.0,OVERWEIGHT,126.0,82.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Female,Black African (West Africa),Black,True,04/08/1980,42.6,41-55,172.0,109.9,37.1,OBESE,121.0,73.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Male,Black African (West Africa),Black,True,22/02/1960,63.0,56-70,181.0,96.1,29.3,OVERWEIGHT,136.0,81.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+17/02/2023,Female,White other,White,False,23/11/1988,34.3,25-40,163.0,68.7,25.9,OVERWEIGHT,128.0,82.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Female,Black African (West Africa),Black,True,21/09/1980,42.9,41-55,182.0,82.0,24.8,HEALTHY,112.0,81.0,31.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+15/02/2023,Male,Black African (North Africa),Black,True,21/09/1970,52.4,41-55,174.0,104.2,34.4,OBESE,128.0,75.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+12/03/2023,Male,Black African (West Africa),Black,True,01/01/1963,60.2,56-70,169.5,75.0,26.1,OVERWEIGHT,116.0,77.0,39.0,NORMAL,False,True,False,False,False,False,False,False,Not sure,Normal
+15/03/2023,Male,Black African (West Africa),Black,True,31/07/1986,36.6,25-40,176.0,82.9,26.8,OVERWEIGHT,110.0,70.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/03/2023,Female,Black African (unspecified),Black,True,25/02/1988,35.1,25-40,171.0,79.5,27.2,OVERWEIGHT,120.0,79.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/03/2023,Female,Black Caribbean,Black,True,03/01/1996,27.2,25-40,175.0,74.0,24.2,HEALTHY,113.0,74.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/03/2023,Female,Black African (West Africa),Black,True,23/03/1963,60.0,56-70,161.0,70.0,27.0,OVERWEIGHT,124.0,81.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+15/03/2023,Male,Asian other,SE Asian,False,30/05/1975,47.8,41-55,160.0,77.0,30.1,OBESE,123.0,76.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/03/2023,Male,Black African (West Africa),Black,True,20/12/1990,32.3,25-40,152.5,58.0,24.9,HEALTHY,115.0,60.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Female,Black Caribbean,Black,True,13/02/1976,47.5,41-55,178.0,79.5,25.1,OVERWEIGHT,125.0,78.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+15/03/2023,Female,Black Caribbean,Black,True,03/07/1990,32.7,25-40,163.0,76.0,28.6,OVERWEIGHT,130.0,86.0,44.0,NORMAL,False,True,False,False,False,True,False,False,Definitely yes,Normal
+15/03/2023,Female,White other,White,False,05/08/1955,67.7,56-70,163.5,89.4,33.4,OBESE,120.0,70.0,50.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+15/03/2023,Female,Black African (West Africa),Black,True,12/05/1967,55.9,56-70,176.5,85.0,27.3,OVERWEIGHT,112.0,87.0,25.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+15/03/2023,Male,Black African (West Africa),Black,True,27/03/1993,30.0,25-40,162.5,59.1,22.4,HEALTHY,132.0,86.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Female,Black African (West Africa),Black,True,18/09/1968,55.0,41-55,178.0,94.0,29.7,OVERWEIGHT,145.0,78.0,67.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/08/2023,Male,Indian,Indian,False,09/09/1988,35.0,25-40,175.0,90.0,29.4,OVERWEIGHT,136.0,87.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/08/2023,Male,Black Caribbean,Black,True,10/02/1963,60.6,56-70,153.0,64.0,27.3,OVERWEIGHT,131.0,81.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+09/09/2023,Female,Pakistani,Indian,False,06/10/1958,65.0,56-70,160.0,90.6,35.4,OBESE,110.0,77.0,33.0,NORMAL,False,False,False,False,False,False,True,False,Definitely not,Abnormal
+09/09/2023,Male,Black African (West Africa),Black,True,11/02/1953,70.6,>70,165.2,69.9,25.6,OVERWEIGHT,121.0,78.0,43.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+09/09/2023,Male,Black African (North Africa),Black,True,09/06/1956,67.3,56-70,175.0,60.5,19.8,HEALTHY,145.0,86.0,59.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+19/09/2023,Female,Black African (West Africa),Black,True,16/05/1950,73.4,>70,171.0,69.0,23.6,HEALTHY,153.0,83.0,70.0,PRE HPT,True,False,True,False,True,False,False,True,Not sure,High Abnormal
+15/03/2023,Female,White British,White,False,09/09/1984,38.5,25-40,161.0,91.0,35.1,OBESE,128.0,84.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/03/2023,Female,Black African (unspecified),Black,True,12/06/1956,66.8,56-70,156.0,69.0,28.4,OVERWEIGHT,113.0,73.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Male,Black African (West Africa),Black,True,14/08/1959,63.6,56-70,177.0,73.4,23.4,HEALTHY,126.0,78.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+09/09/2023,Female,Black African (unspecified),Black,True,07/05/1963,60.4,56-70,185.4,116.0,33.7,OBESE,140.0,83.0,57.0,PRE HPT,True,False,False,False,True,False,True,True,Not sure,Abnormal
+09/09/2023,Female,Black African (West Africa),Black,True,02/07/1950,73.2,>70,158.0,100.0,40.1,OBESE,131.0,90.0,41.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+09/09/2023,Female,Black African (West Africa),Black,True,29/05/1954,69.3,56-70,168.5,95.3,33.6,OBESE,133.0,68.0,65.0,NORMAL,True,False,False,False,True,False,False,False,Definitely yes,Abnormal
+20/08/2023,Male,Black African (West Africa),Black,True,14/11/2001,21.8,<25,186.9,81.8,23.4,HEALTHY,126.0,79.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+19/03/2023,Female,Black African (West Africa),Black,True,08/05/1970,52.9,41-55,176.0,89.8,29.0,OVERWEIGHT,133.0,91.0,42.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/03/2023,Female,Black Caribbean,Black,True,19/03/1972,51.0,41-55,169.0,111.6,39.1,OBESE,141.0,91.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Female,Black African (West Africa),Black,True,16/01/1982,41.2,41-55,168.0,85.6,30.3,OBESE,170.0,100.0,70.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+19/08/2023,Female,Black African (West Africa),Black,True,13/07/1972,51.1,41-55,165.0,78.0,28.7,OVERWEIGHT,134.0,56.0,78.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/03/2023,Female,Black African (unspecified),Black,True,10/04/1971,52.0,41-55,161.0,71.0,27.4,OVERWEIGHT,110.0,81.0,29.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/08/2023,Female,Black African (West Africa),Black,True,06/10/1989,33.9,25-40,173.0,76.0,25.4,OVERWEIGHT,128.0,68.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Male,Black other,Black,True,15/10/1977,45.5,41-55,166.0,97.9,35.5,OBESE,145.0,84.0,61.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+16/08/2023,Female,Black African (West Africa),Black,True,15/02/1991,32.5,25-40,162.0,79.1,30.1,OBESE,162.0,99.0,63.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+19/08/2023,Male,Black African (West Africa),Black,True,17/09/1991,31.9,25-40,158.5,63.1,25.1,OVERWEIGHT,120.0,81.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+19/03/2023,Female,Black African (West Africa),Black,True,16/08/1981,41.6,41-55,164.0,61.0,22.7,HEALTHY,117.0,82.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Female,Black African (unspecified),Black,True,16/09/1956,66.5,56-70,184.0,115.0,34.0,OBESE,183.0,95.0,88.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+19/03/2023,Female,Black African (West Africa),Black,True,04/09/1958,64.6,56-70,168.0,89.0,31.5,OBESE,149.0,91.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/08/2023,Male,Black Caribbean,Black,True,09/09/1968,55.0,41-55,176.0,117.0,37.8,OBESE,134.0,86.0,48.0,NORMAL,True,False,False,False,True,False,False,True,Definitely not,Normal
+15/08/2023,Female,Black African (West Africa),Black,True,22/08/1966,57.0,56-70,158.0,65.0,26.0,OVERWEIGHT,143.0,94.0,49.0,HPT 1,False,True,False,False,False,True,False,False,Not sure,Normal
+16/08/2023,Female,White British,White,False,04/11/1996,26.8,25-40,173.0,59.4,19.8,HEALTHY,118.0,80.0,38.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+19/03/2023,Female,Black Caribbean,Black,True,21/10/1966,56.4,56-70,184.0,105.7,31.2,OBESE,130.0,89.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/03/2023,Male,Black African (West Africa),Black,True,12/01/1977,46.2,41-55,173.0,117.2,39.2,OBESE,203.0,108.0,95.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+19/03/2023,Female,Black African (West Africa),Black,True,08/02/1973,50.1,41-55,172.0,99.9,33.8,OBESE,138.0,83.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Female,White British,White,False,08/01/1960,63.2,56-70,150.0,85.0,37.8,OBESE,210.0,141.0,69.0,HPT CRISIS,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+26/03/2023,Male,Asian other,SE Asian,False,22/06/1974,48.8,41-55,165.0,107.8,39.6,OBESE,111.0,88.0,23.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+16/08/2023,Female,Black African (unspecified),Black,True,15/05/1981,42.3,41-55,156.0,99.0,40.7,OBESE,129.0,85.0,44.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,09/05/1975,48.3,41-55,170.2,95.0,32.8,OBESE,134.0,76.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/08/2023,Female,Black African (West Africa),Black,True,17/02/1968,55.5,56-70,170.7,69.3,23.8,HEALTHY,106.0,72.0,34.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+26/03/2023,Male,Black African (unspecified),Black,True,10/11/1985,37.4,25-40,163.0,79.0,29.7,OVERWEIGHT,107.0,79.0,28.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/04/2023,Female,Black African (West Africa),Black,True,04/06/1965,57.9,56-70,156.0,79.3,32.6,OBESE,153.0,86.0,67.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+20/08/2023,Female,Black Caribbean,Black,True,14/03/1975,48.5,41-55,162.5,77.2,29.2,OVERWEIGHT,145.0,71.0,74.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Male,Black African (West Africa),Black,True,18/11/1968,54.4,41-55,170.0,84.0,29.1,OVERWEIGHT,180.0,106.0,74.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+19/03/2023,Female,Bangladeshi,Indian,False,12/02/1972,51.1,41-55,166.0,80.5,29.2,OVERWEIGHT,165.0,86.0,79.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/03/2023,Female,Black African (West Africa),Black,True,19/02/1970,53.1,41-55,175.0,73.5,24.0,HEALTHY,179.0,117.0,62.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Normal
+09/09/2023,Male,Black African (West Africa),Black,True,03/11/1968,54.9,41-55,151.0,69.0,30.3,OBESE,130.0,79.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+19/03/2023,Female,Black African (West Africa),Black,True,30/08/1963,59.6,56-70,175.0,88.5,28.9,OVERWEIGHT,166.0,101.0,65.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+19/03/2023,Female,Black African (Central Africa),Black,True,01/01/1959,64.3,56-70,171.0,79.0,27.0,OVERWEIGHT,170.0,108.0,62.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/03/2023,Male,Black African (West Africa),Black,True,19/03/1963,60.1,56-70,159.3,62.5,24.6,HEALTHY,145.0,103.0,42.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+19/03/2023,Male,Black Caribbean,Black,True,17/06/1950,72.8,>70,172.0,94.5,31.9,OBESE,195.0,109.0,86.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+24/03/2023,Female,Black African (unspecified),Black,True,26/02/1962,61.1,56-70,153.0,78.9,33.7,OBESE,135.0,91.0,44.0,PRE HPT,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+20/03/2023,Female,Black African (West Africa),Black,True,15/08/1968,54.6,41-55,186.0,90.9,26.3,OVERWEIGHT,145.0,87.0,58.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+24/03/2023,Female,Black African (Central Africa),Black,True,12/11/1967,55.4,56-70,161.2,68.7,26.4,OVERWEIGHT,149.0,76.0,73.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+24/03/2023,Male,Black African (West Africa),Black,True,18/01/1961,62.2,56-70,167.0,87.0,31.2,OBESE,134.0,87.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+24/03/2023,Male,Black African (West Africa),Black,True,24/09/1971,51.5,41-55,153.0,78.9,33.7,OBESE,135.0,81.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+24/03/2023,Male,Black African (West Africa),Black,True,28/07/1995,27.7,25-40,158.0,76.7,30.7,OBESE,119.0,83.0,36.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+24/03/2023,Female,Black African (West Africa),Black,True,07/07/1972,50.7,41-55,159.0,89.0,35.2,OBESE,145.0,93.0,52.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+24/03/2023,Female,White other,White,False,08/11/1959,63.4,56-70,161.0,81.0,31.2,OBESE,139.0,88.0,51.0,NORMAL,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+24/03/2023,Male,Black African (West Africa),Black,True,23/04/1969,54.0,41-55,167.0,65.0,23.3,HEALTHY,141.0,65.0,76.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+30/03/2023,Female,Black African (Central Africa),Black,True,18/10/1992,30.5,25-40,178.5,86.0,27.0,OVERWEIGHT,134.0,69.0,65.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+24/03/2023,Male,Bangladeshi,Indian,False,20/02/1965,58.1,56-70,185.0,101.6,29.7,OVERWEIGHT,131.0,61.0,70.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+24/03/2023,Male,Asian other,SE Asian,False,10/03/1993,30.1,25-40,168.5,89.3,31.5,OBESE,113.0,79.0,34.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+24/03/2023,Female,Black Caribbean,Black,True,20/08/1963,59.6,56-70,158.5,63.0,25.1,OVERWEIGHT,140.0,100.0,40.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+24/03/2023,Male,Black Caribbean,Black,True,01/05/1993,29.9,25-40,185.0,79.0,23.1,HEALTHY,128.0,73.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+24/03/2023,Female,Black Caribbean,Black,True,05/06/1962,60.8,56-70,155.0,88.0,36.6,OBESE,145.0,95.0,50.0,HPT 1,True,False,False,False,True,False,False,True,Definitely not,Normal
+24/03/2023,Male,Black African (West Africa),Black,True,18/04/1966,57.0,56-70,154.0,83.0,35.0,OBESE,128.0,91.0,37.0,PRE HPT,False,True,False,False,False,True,False,False,Definitely not,Abnormal
+26/03/2023,Male,Black African (West Africa),Black,True,06/12/1980,42.3,41-55,141.0,65.0,32.7,OBESE,101.0,89.0,12.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+26/03/2023,Female,Pakistani,Indian,False,19/12/1973,49.3,41-55,172.0,88.4,29.9,OVERWEIGHT,144.0,93.0,51.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+09/09/2023,Male,Black African (West Africa),Black,True,06/06/1953,70.3,>70,157.48,85.0,34.3,OBESE,120.0,84.0,36.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+09/09/2023,Female,Black Caribbean,Black,True,10/01/1977,46.7,41-55,148.0,64.6,29.5,OVERWEIGHT,158.0,94.0,64.0,HPT 1,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+26/03/2023,Female,Black African (West Africa),Black,True,10/02/1977,46.2,41-55,167.0,82.0,29.4,OVERWEIGHT,133.0,90.0,43.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/03/2023,Female,Black African (West Africa),Black,True,25/02/1971,52.1,41-55,174.0,68.9,22.8,HEALTHY,125.0,83.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+09/09/2023,Female,Black African (West Africa),Black,True,09/02/1970,53.6,41-55,164.3,69.8,25.9,OVERWEIGHT,126.0,96.0,30.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+09/09/2023,Female,Black African (West Africa),Black,True,10/12/1977,45.8,41-55,171.8,99.6,33.7,OBESE,130.0,84.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+09/09/2023,Female,Black African (West Africa),Black,True,02/08/1956,67.1,56-70,157.0,89.0,36.1,OBESE,120.0,78.0,42.0,NORMAL,True,True,False,False,True,True,True,False,Not sure,Normal
+02/09/2023,Male,Black Caribbean,Black,True,18/01/1961,62.7,56-70,152.5,67.0,28.8,OVERWEIGHT,167.0,88.0,79.0,PRE HPT,True,True,True,False,True,True,True,False,Definitely not,Abnormal
+26/08/2023,Male,Any other,Other,False,19/09/1968,55.0,41-55,183.5,128.4,38.1,OBESE,148.0,102.0,46.0,HPT 1,True,False,False,False,False,False,False,False,Not sure,Normal
+26/03/2023,Male,Black African (unspecified),Black,True,31/01/2003,20.2,<25,195.0,93.0,24.5,HEALTHY,109.0,48.0,61.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/03/2023,Male,Black Caribbean,Black,True,06/07/1942,80.8,>70,167.0,61.3,22.0,HEALTHY,148.0,70.0,78.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+28/03/2023,Male,Black African (West Africa),Black,True,26/12/1968,54.3,41-55,165.0,77.0,28.3,OVERWEIGHT,135.0,95.0,40.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+26/03/2023,Male,Black African (West Africa),Black,True,21/09/1988,34.5,25-40,188.4,90.8,25.6,OVERWEIGHT,143.0,77.0,66.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/03/2023,Female,Black African (West Africa),Black,True,25/03/1960,63.0,56-70,170.0,75.0,26.0,OVERWEIGHT,128.0,78.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/03/2023,Male,Mixed other,Mixed,False,17/10/1965,57.5,56-70,158.1,71.7,28.7,OVERWEIGHT,113.0,76.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/03/2023,Male,Black African (West Africa),Black,True,25/11/1979,43.4,41-55,180.0,82.1,25.3,OVERWEIGHT,132.0,77.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/03/2023,Female,Black African (unspecified),Black,True,13/04/1976,47.0,41-55,157.0,62.5,25.4,OVERWEIGHT,122.0,81.0,41.0,NORMAL,False,False,True,False,False,False,False,False,Definitely not,Abnormal
+26/03/2023,Female,Mixed White/Black African,Mixed,True,03/01/1952,71.3,>70,177.0,95.1,30.4,OBESE,126.0,64.0,62.0,NORMAL,False,True,False,False,False,True,True,False,Definitely yes,High Abnormal
+26/03/2023,Female,Black African (West Africa),Black,True,14/11/1984,38.4,25-40,156.0,71.0,29.2,OVERWEIGHT,111.0,83.0,28.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/03/2023,Male,Black African (unspecified),Black,True,20/03/1969,54.1,41-55,170.0,72.0,24.9,HEALTHY,118.0,63.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/03/2023,Female,Asian other,SE Asian,False,25/11/1979,43.4,41-55,180.0,82.1,25.3,OVERWEIGHT,132.0,77.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/03/2023,Male,Black African (West Africa),Black,True,17/05/1955,67.9,56-70,155.0,76.2,31.7,OBESE,124.0,74.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+30/03/2023,Female,Black African (West Africa),Black,True,25/12/2000,22.3,<25,175.0,68.1,22.2,HEALTHY,116.0,73.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/03/2023,Male,Black African (West Africa),Black,True,08/01/1970,53.3,41-55,168.0,93.9,33.3,OBESE,130.0,82.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+02/09/2023,Female,Black Caribbean,Black,True,21/02/1968,55.6,56-70,173.2,89.3,29.8,OVERWEIGHT,157.0,87.0,70.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/03/2023,Female,Black African (West Africa),Black,True,22/08/1973,49.6,41-55,160.3,61.2,23.8,HEALTHY,114.0,69.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/03/2023,Male,Black African (West Africa),Black,True,01/01/1963,60.3,56-70,176.0,83.0,26.8,OVERWEIGHT,128.0,81.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+20/08/2023,Female,Black African (West Africa),Black,True,07/09/1961,62.0,56-70,151.2,66.6,29.1,OVERWEIGHT,133.0,77.0,56.0,NORMAL,True,True,False,False,True,True,True,False,Definitely not,Abnormal
+30/03/2023,Male,Black Caribbean,Black,True,11/02/1969,54.2,41-55,161.5,86.6,33.2,OBESE,127.0,84.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/03/2023,Female,Black African (West Africa),Black,True,20/08/2002,20.6,<25,170.5,86.1,29.6,OVERWEIGHT,120.0,71.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/03/2023,Female,Black African (West Africa),Black,True,23/01/1984,39.2,25-40,157.0,58.7,23.8,HEALTHY,134.0,96.0,38.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,23/07/1977,46.1,41-55,169.0,87.5,30.6,OBESE,179.0,101.0,78.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+26/03/2023,Female,Mixed White/Asian,Mixed,False,11/03/1970,53.1,41-55,155.1,75.1,31.2,OBESE,113.0,67.0,46.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Normal
+02/09/2023,Female,Black African (unspecified),Black,True,02/01/1978,45.7,41-55,160.0,54.6,21.3,HEALTHY,94.0,64.0,30.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+01/04/2023,Female,Black African (West Africa),Black,True,12/10/1960,62.5,56-70,162.0,58.0,22.1,HEALTHY,91.0,69.0,22.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+01/04/2023,Female,Black African (unspecified),Black,True,26/04/1974,49.0,41-55,164.0,78.0,29.0,OVERWEIGHT,118.0,71.0,47.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Abnormal
+01/04/2023,Male,Black African (West Africa),Black,True,24/12/1965,57.3,56-70,159.0,78.0,30.9,OBESE,118.0,73.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+01/04/2023,Female,Black African (Central Africa),Black,True,02/04/1975,48.0,41-55,169.0,79.0,27.7,OVERWEIGHT,113.0,89.0,24.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+01/04/2023,Male,Black African (West Africa),Black,True,01/08/1975,47.7,41-55,167.0,87.0,31.2,OBESE,126.0,87.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/04/2023,Female,Black African (West Africa),Black,True,01/04/1963,60.0,56-70,171.0,81.0,27.7,OVERWEIGHT,149.0,89.0,60.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,16/12/1955,67.8,56-70,151.0,81.0,35.5,OBESE,130.0,81.0,49.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,High Abnormal
+02/04/2023,Female,Black Caribbean,Black,True,23/11/1985,37.4,25-40,174.5,64.9,21.3,HEALTHY,118.0,68.0,50.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+02/04/2023,Male,Black African (unspecified),Black,True,17/12/1962,60.3,56-70,183.0,84.4,25.2,OVERWEIGHT,180.0,100.0,80.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Normal
+02/04/2023,Male,Black Caribbean,Black,True,07/11/1961,61.4,56-70,177.5,76.2,24.2,HEALTHY,153.0,87.0,66.0,PRE HPT,True,True,False,False,False,False,False,False,Definitely not,Abnormal
+02/04/2023,Male,Black Caribbean,Black,True,01/01/1976,47.3,41-55,164.5,105.6,39.0,OBESE,122.0,81.0,41.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+02/04/2023,Male,Black African (Central Africa),Black,True,04/11/1963,59.4,56-70,151.0,89.6,39.3,OBESE,125.0,78.0,47.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+02/04/2023,Female,Black African (West Africa),Black,True,17/04/1962,61.0,56-70,169.0,68.4,23.9,HEALTHY,139.0,82.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+01/04/2023,Male,Black African (West Africa),Black,True,20/04/1948,75.0,>70,156.0,118.7,48.8,OBESE,141.0,82.0,59.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+02/09/2023,Male,White British,White,False,16/09/1957,66.0,56-70,159.0,95.8,37.9,OBESE,157.0,85.0,72.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+02/09/2023,Female,Black African (East Africa),Black,True,30/11/1966,56.8,56-70,164.2,64.3,23.8,HEALTHY,139.0,91.0,48.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+02/04/2023,Male,Black African (West Africa),Black,True,06/01/1992,31.3,25-40,167.0,71.8,25.7,OVERWEIGHT,120.0,83.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+26/08/2023,Female,Black African (West Africa),Black,True,15/08/1971,52.1,41-55,156.0,85.0,34.9,OBESE,120.0,96.0,24.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+02/04/2023,Female,Black African (West Africa),Black,True,13/04/1959,64.0,56-70,161.5,89.0,34.1,OBESE,164.0,76.0,88.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Normal
+02/04/2023,Female,White British,White,False,29/06/1962,60.8,56-70,171.0,90.0,30.8,OBESE,118.0,71.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+02/04/2023,Female,Black African (West Africa),Black,True,20/08/1975,47.6,41-55,161.0,87.3,33.7,OBESE,176.0,99.0,77.0,HPT 1,True,False,False,False,True,False,False,True,Not sure,Abnormal
+26/08/2023,Male,Black African (unspecified),Black,True,15/04/1985,38.4,25-40,166.0,55.3,20.1,HEALTHY,121.0,77.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+20/08/2023,Male,Black African (West Africa),Black,True,01/01/1985,38.7,25-40,160.5,80.0,31.1,OBESE,115.0,58.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+02/09/2023,Female,Black African (unspecified),Black,True,01/07/1967,56.2,56-70,170.0,100.0,34.6,OBESE,148.0,88.0,60.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+02/09/2023,Male,Mixed White/Black African,Mixed,True,25/09/1952,71.0,>70,164.0,77.0,28.6,OVERWEIGHT,116.0,68.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,25/12/1957,65.7,56-70,179.5,87.3,27.1,OVERWEIGHT,116.0,72.0,44.0,NORMAL,False,True,True,False,False,True,True,False,Not sure,Abnormal
+02/04/2023,Male,Black other,Black,True,28/09/1960,62.6,56-70,178.0,94.9,30.0,OBESE,146.0,81.0,65.0,PRE HPT,True,False,False,False,False,False,False,True,Not sure,Normal
+02/09/2023,Male,Mixed White/Black African,Mixed,True,22/08/1962,61.1,56-70,178.0,86.1,27.2,OVERWEIGHT,179.0,102.0,77.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+02/09/2023,Male,Black Caribbean,Black,True,12/05/1955,68.4,56-70,178.0,83.3,26.3,OVERWEIGHT,130.0,75.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/04/2023,Male,Black African (unspecified),Black,True,06/03/2002,21.1,<25,174.0,65.0,21.5,HEALTHY,121.0,62.0,59.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+01/04/2023,Female,Black African (West Africa),Black,True,15/06/1954,68.8,56-70,161.0,72.0,27.8,OVERWEIGHT,114.0,73.0,41.0,NORMAL,False,True,False,False,False,True,False,False,Definitely yes,Normal
+11/04/2023,Female,White British,White,False,09/12/1964,58.4,56-70,171.0,89.0,30.4,OBESE,154.0,90.0,64.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+10/04/2023,Male,Black African (West Africa),Black,True,14/10/1981,41.5,41-55,154.0,70.0,29.5,OVERWEIGHT,113.0,69.0,44.0,NORMAL,False,False,False,False,True,False,False,False,Not sure,Normal
+15/09/2023,Male,Black Caribbean,Black,True,27/09/1994,29.0,25-40,168.0,78.0,27.6,OVERWEIGHT,119.0,75.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+09/09/2023,Female,Black African (West Africa),Black,True,06/07/1999,24.2,<25,177.0,99.6,31.8,OBESE,130.0,74.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+09/09/2023,Female,Black African (West Africa),Black,True,17/03/1965,58.5,56-70,169.0,86.9,30.4,OBESE,125.0,85.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+10/08/2023,Male,Black African (West Africa),Black,True,13/10/1962,60.9,56-70,170.0,69.8,24.2,HEALTHY,143.0,89.0,54.0,PRE HPT,True,True,False,False,True,True,True,False,Definitely not,Abnormal
+03/09/2023,Female,Black Caribbean,Black,True,10/08/1979,44.1,41-55,156.0,67.0,27.5,OVERWEIGHT,135.0,81.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Female,Black African (West Africa),Black,True,17/03/1970,53.5,41-55,167.6,75.0,26.7,OVERWEIGHT,154.0,93.0,61.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+09/09/2023,Male,Black African (West Africa),Black,True,26/07/1970,53.2,41-55,157.0,77.0,31.2,OBESE,153.0,93.0,60.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+09/09/2023,Male,Black African (West Africa),Black,True,21/12/1960,62.8,56-70,154.0,71.0,29.9,OVERWEIGHT,137.0,93.0,44.0,PRE HPT,True,False,False,False,False,False,False,False,Not sure,Abnormal
+09/09/2023,Female,Black African (unspecified),Black,True,19/12/1951,71.8,>70,176.0,88.7,28.6,OVERWEIGHT,123.0,73.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+09/09/2023,Female,Black African (unspecified),Black,True,15/02/1939,84.6,>70,163.5,90.6,33.9,OBESE,121.0,65.0,56.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,Abnormal
+09/09/2023,Female,Black African (West Africa),Black,True,17/06/1952,71.3,>70,180.4,96.0,29.5,OVERWEIGHT,147.0,89.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+09/09/2023,Male,Black African (West Africa),Black,True,31/10/1940,82.9,>70,155.0,90.3,37.6,OBESE,155.0,87.0,68.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+10/09/2023,Female,Black African (West Africa),Black,True,13/05/1965,58.4,56-70,157.5,81.0,32.7,OBESE,121.0,79.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Male,Black African (West Africa),Black,True,29/10/1957,65.9,56-70,152.5,79.1,34.0,OBESE,137.0,78.0,59.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Abnormal
+10/09/2023,Female,Mixed White/Black African,Mixed,True,28/02/1961,62.6,56-70,160.0,81.0,31.6,OBESE,141.0,71.0,70.0,HPT 1,True,True,False,False,True,True,False,False,Not sure,Normal
+30/09/2023,Female,White British,White,False,03/03/1963,60.6,56-70,165.5,59.5,21.7,HEALTHY,113.0,75.0,38.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+15/09/2023,Male,Black African (West Africa),Black,True,17/10/1969,53.9,41-55,171.0,85.0,29.1,OVERWEIGHT,175.0,95.0,80.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/09/2023,Male,Black African (West Africa),Black,True,05/09/1966,57.1,56-70,168.0,65.0,23.0,HEALTHY,145.0,85.0,60.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+10/09/2023,Female,Indian,Indian,False,13/01/1977,46.7,41-55,173.3,80.5,26.8,OVERWEIGHT,154.0,90.0,64.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+10/09/2023,Male,Black African (unspecified),Black,True,07/10/1956,67.0,56-70,162.4,62.4,23.7,HEALTHY,127.0,80.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+10/09/2023,Female,Black African (unspecified),Black,True,08/10/1974,49.0,41-55,167.9,94.4,33.5,OBESE,111.0,79.0,32.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,Abnormal
+10/09/2023,Male,White British,White,False,06/06/1982,41.3,41-55,162.8,62.3,23.5,HEALTHY,136.0,81.0,55.0,NORMAL,True,False,True,False,True,False,False,False,Definitely yes,Normal
+15/09/2023,Male,Black African (West Africa),Black,True,19/03/1979,44.5,41-55,161.0,71.4,27.5,OVERWEIGHT,105.0,70.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+10/09/2023,Female,Black African (unspecified),Black,True,26/01/1970,53.7,41-55,174.3,90.1,29.7,OVERWEIGHT,144.0,83.0,61.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+10/09/2023,Female,Black African (West Africa),Black,True,10/08/1979,44.1,41-55,162.0,78.0,29.7,OVERWEIGHT,145.0,87.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black African (East Africa),Black,True,25/11/1983,39.8,25-40,164.0,54.5,20.3,HEALTHY,123.0,84.0,39.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,High Abnormal
+15/09/2023,Female,White other,White,False,19/08/1952,71.1,>70,151.1,74.7,32.7,OBESE,166.0,96.0,70.0,HPT 1,True,False,False,False,True,False,False,True,Not sure,Abnormal
+27/04/2023,Male,Black African (West Africa),Black,True,31/07/1971,51.8,41-55,180.9,92.0,28.1,OVERWEIGHT,190.0,111.0,79.0,HPT CRISIS,False,False,False,False,False,False,False,False,Definitely yes,Abnormal
+20/08/2023,Male,Black African (West Africa),Black,True,01/01/1976,47.7,41-55,170.6,76.0,26.1,OVERWEIGHT,127.0,82.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+02/09/2023,Male,Bangladeshi,Indian,False,26/04/1977,46.4,41-55,167.0,90.7,32.5,OBESE,160.0,99.0,61.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black other,Black,True,30/08/1992,31.0,25-40,175.5,110.6,35.9,OBESE,121.0,73.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+26/08/2023,Male,Mixed White/Black Caribbean,Mixed,True,16/09/1965,58.0,56-70,159.1,83.0,32.8,OBESE,134.0,79.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,11/12/1964,58.8,56-70,175.0,169.0,55.2,OBESE,134.0,78.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,23/05/1999,24.3,<25,174.9,75.1,24.6,HEALTHY,128.0,71.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+20/08/2023,Male,Black African (West Africa),Black,True,02/06/1973,50.2,41-55,159.0,70.9,28.0,OVERWEIGHT,151.0,91.0,60.0,HPT 1,True,False,False,False,False,False,False,False,Definitely not,Normal
+25/05/2023,Female,White British,White,False,24/12/1987,35.4,25-40,165.0,75.0,27.5,OVERWEIGHT,99.0,58.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+20/08/2023,Male,Asian other,SE Asian,False,21/01/1990,33.6,25-40,161.5,63.5,24.3,HEALTHY,118.0,79.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+27/04/2023,Female,Black African (West Africa),Black,True,26/05/1982,40.9,41-55,195.0,95.8,25.2,OVERWEIGHT,117.0,69.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+12/02/2023,Female,Black African (West Africa),Black,True,28/07/1972,50.6,41-55,168.0,87.0,30.8,OBESE,134.0,78.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/04/2023,Female,Black African (West Africa),Black,True,18/11/1964,58.5,56-70,164.0,83.0,30.9,OBESE,143.0,98.0,45.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+28/04/2023,Female,Black African (unspecified),Black,True,27/02/1992,31.2,25-40,155.0,63.0,26.2,OVERWEIGHT,118.0,63.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+28/04/2023,Female,Black African (unspecified),Black,True,05/05/1966,57.0,56-70,170.0,91.0,31.5,OBESE,135.0,81.0,54.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Abnormal
+28/04/2023,Male,Black Caribbean,Black,True,23/12/1970,52.4,41-55,155.0,73.0,30.4,OBESE,139.0,81.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+28/04/2023,Male,Black African (West Africa),Black,True,13/03/1973,50.2,41-55,153.0,55.0,23.5,HEALTHY,121.0,81.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+28/04/2023,Female,Black African (unspecified),Black,True,09/06/1978,44.9,41-55,159.0,90.2,35.7,OBESE,135.0,69.0,66.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,Abnormal
+28/04/2023,Male,Black Caribbean,Black,True,10/08/1992,30.7,25-40,158.0,63.0,25.2,OVERWEIGHT,121.0,81.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+28/04/2023,Female,Black African (West Africa),Black,True,28/04/1984,39.0,25-40,170.0,72.0,24.9,HEALTHY,118.0,67.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+28/04/2023,Female,Black African (unspecified),Black,True,25/03/1981,42.1,41-55,170.0,65.0,22.5,HEALTHY,138.0,91.0,47.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black Caribbean,Black,True,23/04/1978,45.0,41-55,167.4,91.3,32.6,OBESE,115.0,69.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (West Africa),Black,True,18/02/1961,62.2,56-70,165.0,89.0,32.7,OBESE,145.0,89.0,56.0,PRE HPT,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (West Africa),Black,True,01/02/1961,62.3,56-70,164.0,69.8,26.0,OVERWEIGHT,113.0,74.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black African (unspecified),Black,True,22/02/1972,51.2,41-55,153.0,91.0,38.9,OBESE,167.0,117.0,50.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+29/04/2023,Male,Black Caribbean,Black,True,25/12/1993,29.4,25-40,168.0,74.8,26.5,OVERWEIGHT,118.0,78.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,04/12/1975,47.4,41-55,177.0,99.7,31.8,OBESE,155.0,88.0,67.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (unspecified),Black,True,16/05/1986,37.0,25-40,158.0,71.0,28.4,OVERWEIGHT,128.0,82.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (unspecified),Black,True,21/03/1961,62.1,56-70,165.5,95.7,34.9,OBESE,180.0,96.0,84.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+15/09/2023,Female,Black African (West Africa),Black,True,17/05/1970,53.4,41-55,166.4,103.0,37.2,OBESE,150.0,82.0,68.0,PRE HPT,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,07/07/1965,57.8,56-70,169.1,80.8,28.3,OVERWEIGHT,146.0,90.0,56.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Female,Black Caribbean,Black,True,08/12/1986,36.4,25-40,169.0,95.9,33.6,OBESE,132.0,80.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,18/04/1969,54.1,41-55,170.0,92.9,32.1,OBESE,140.0,86.0,54.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Female,Black African (West Africa),Black,True,21/01/1969,54.3,41-55,164.7,80.1,29.5,OVERWEIGHT,128.0,91.0,37.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+10/09/2023,Female,Black African (West Africa),Black,True,19/01/1976,47.7,41-55,158.4,74.8,29.8,OVERWEIGHT,156.0,105.0,51.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+10/09/2023,Female,Black African (unspecified),Black,True,13/08/1986,37.1,25-40,171.5,71.1,24.2,HEALTHY,125.0,80.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+29/04/2023,Female,Black African (West Africa),Black,True,19/03/1979,44.1,41-55,174.5,84.4,27.7,OVERWEIGHT,104.0,81.0,23.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,27/07/1981,41.8,41-55,165.0,65.0,23.9,HEALTHY,112.0,83.0,29.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Female,Black African (West Africa),Black,True,03/01/1979,44.3,41-55,164.6,105.4,38.9,OBESE,138.0,93.0,45.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+29/04/2023,Male,Black African (West Africa),Black,True,01/08/1977,45.8,41-55,176.0,101.5,32.8,OBESE,108.0,71.0,37.0,NORMAL,True,False,False,False,False,False,False,False,Definitely not,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,22/10/1967,55.9,56-70,187.0,79.9,22.8,HEALTHY,147.0,96.0,51.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+29/04/2023,Female,White British,White,False,09/06/1968,54.9,41-55,165.5,57.7,21.1,HEALTHY,97.0,67.0,30.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+14/05/2023,Male,Black African (West Africa),Black,True,24/06/1962,60.9,56-70,169.0,97.3,34.1,OBESE,142.0,98.0,44.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+14/05/2023,Female,Black African (West Africa),Black,True,01/11/1965,57.6,56-70,154.0,73.5,31.0,OBESE,120.0,80.0,40.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+14/05/2023,Female,Black African (West Africa),Black,True,19/08/1948,74.8,>70,148.0,91.6,41.8,OBESE,137.0,76.0,61.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,19/12/1973,49.4,41-55,157.0,78.0,31.6,OBESE,134.0,89.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+14/05/2023,Male,Black African (West Africa),Black,True,25/04/1967,56.1,56-70,162.5,57.5,21.8,HEALTHY,138.0,104.0,34.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,25/05/1964,59.0,56-70,160.5,76.4,29.7,OVERWEIGHT,144.0,99.0,45.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (West Africa),Black,True,18/01/1990,33.3,25-40,158.0,86.0,34.4,OBESE,128.0,73.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,White British,White,False,23/12/1977,45.4,41-55,164.4,76.1,28.2,OVERWEIGHT,128.0,71.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Female,Black Caribbean,Black,True,21/03/1996,27.1,25-40,152.5,64.7,27.8,OVERWEIGHT,130.0,80.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,05/10/1961,61.6,56-70,182.0,114.0,34.4,OBESE,125.0,70.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+29/04/2023,Female,Black African (West Africa),Black,True,14/07/1968,54.8,41-55,162.0,103.0,39.2,OBESE,160.0,93.0,67.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Any other,Other,False,11/08/1969,53.8,41-55,163.0,87.0,32.7,OBESE,146.0,87.0,59.0,PRE HPT,True,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,22/01/1969,54.3,41-55,156.0,93.5,38.4,OBESE,139.0,91.0,48.0,PRE HPT,False,True,False,False,False,True,False,False,Definitely not,Abnormal
+08/07/2023,Male,Black African (West Africa),Black,True,13/05/1972,51.2,41-55,180.0,95.0,29.3,OVERWEIGHT,146.0,86.0,60.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Male,Black African (North Africa),Black,True,01/12/1996,26.5,25-40,163.0,81.0,30.5,OBESE,143.0,85.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Female,Mixed other,Mixed,False,14/07/1968,54.8,41-55,162.0,103.0,39.2,OBESE,160.0,93.0,67.0,HPT 1,True,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,10/12/1970,52.5,41-55,176.5,101.6,32.6,OBESE,143.0,94.0,49.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+02/09/2023,Male,Black African (West Africa),Black,True,18/12/1961,61.7,56-70,161.0,72.3,27.9,OVERWEIGHT,131.0,94.0,37.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+02/09/2023,Male,Asian other,SE Asian,False,30/06/1960,63.2,56-70,172.5,81.6,27.4,OVERWEIGHT,118.0,95.0,23.0,HPT 1,False,True,False,False,False,True,False,False,Definitely not,Normal
+29/04/2023,Female,Black African (West Africa),Black,True,10/05/1979,44.0,41-55,169.3,84.6,29.5,OVERWEIGHT,177.0,110.0,67.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,26/03/1981,42.2,41-55,161.9,83.9,32.0,OBESE,132.0,82.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (unspecified),Black,True,25/09/1959,63.7,56-70,159.0,97.4,38.5,OBESE,159.0,92.0,67.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+29/04/2023,Male,Black African (West Africa),Black,True,21/08/1968,54.7,41-55,164.5,76.0,28.1,OVERWEIGHT,124.0,77.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Male,Black African (Central Africa),Black,True,26/03/1965,58.1,56-70,175.0,65.1,21.3,HEALTHY,179.0,102.0,77.0,HPT 2,True,True,False,False,True,True,False,False,Definitely not,Normal
+29/04/2023,Male,Black Caribbean,Black,True,01/01/1970,53.4,41-55,164.5,74.3,27.5,OVERWEIGHT,140.0,92.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+21/05/2023,Male,Black African (West Africa),Black,True,12/02/1973,50.3,41-55,162.2,71.0,27.0,OVERWEIGHT,154.0,102.0,52.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+21/05/2023,Female,Black Caribbean,Black,True,21/05/1951,72.0,>70,165.0,70.4,25.9,OVERWEIGHT,170.0,90.0,80.0,HPT 2,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+14/05/2023,Male,Pakistani,Indian,False,12/06/1960,63.0,56-70,164.1,90.0,33.4,OBESE,167.0,92.0,75.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+29/04/2023,Male,Black African (West Africa),Black,True,10/12/1961,61.4,56-70,161.5,89.9,34.5,OBESE,152.0,86.0,66.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (West Africa),Black,True,03/02/1983,40.3,41-55,161.0,81.0,31.2,OBESE,128.0,73.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+14/05/2023,Female,Indian,Indian,False,05/07/1978,44.9,41-55,164.7,83.4,30.7,OBESE,120.0,76.0,44.0,NORMAL,False,True,False,False,False,True,True,False,Definitely not,Normal
+14/05/2023,Female,Black African (West Africa),Black,True,11/07/1973,49.9,41-55,160.0,85.0,33.2,OBESE,122.0,71.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+29/04/2023,Female,Black African (unspecified),Black,True,05/04/1967,56.1,56-70,154.0,78.2,33.0,OBESE,136.0,84.0,52.0,NORMAL,True,True,True,False,True,True,False,True,Definitely not,Abnormal
+21/05/2023,Female,Black African (West Africa),Black,True,23/08/1976,46.8,41-55,171.0,72.6,24.8,HEALTHY,118.0,73.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+21/05/2023,Male,Black African (unspecified),Black,True,25/01/1970,53.4,41-55,179.0,120.4,37.6,OBESE,143.0,78.0,65.0,HPT 1,True,True,False,False,True,True,False,False,Not sure,Abnormal
+29/04/2023,Female,Black Caribbean,Black,True,29/01/1966,57.3,56-70,173.0,74.1,24.8,HEALTHY,126.0,85.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/04/2023,Male,Black African (unspecified),Black,True,02/01/1986,37.3,25-40,150.0,52.1,23.2,HEALTHY,157.0,109.0,48.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+26/08/2023,Female,White Irish,White,False,27/04/1972,51.4,41-55,167.0,86.0,30.8,OBESE,149.0,76.0,73.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+14/05/2023,Male,Mixed other,Mixed,False,11/12/1964,58.5,56-70,164.0,87.0,32.3,OBESE,165.0,101.0,64.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Normal
+21/05/2023,Female,Black African (unspecified),Black,True,07/04/1956,67.2,56-70,164.0,72.0,26.8,OVERWEIGHT,126.0,72.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+14/05/2023,Male,Black African (unspecified),Black,True,21/09/1978,44.7,41-55,177.1,76.3,24.3,HEALTHY,143.0,87.0,56.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (unspecified),Black,True,14/06/1957,66.2,56-70,170.0,96.9,33.5,OBESE,136.0,85.0,51.0,NORMAL,False,False,True,False,False,False,False,False,Not sure,Abnormal
+30/07/2023,Female,Mixed other,Mixed,False,10/01/1942,81.6,>70,150.0,63.5,28.2,OVERWEIGHT,149.0,94.0,55.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+15/05/2023,Female,Black African (West Africa),Black,True,20/04/1948,75.1,>70,153.0,65.5,28.0,OVERWEIGHT,178.0,76.0,102.0,HPT 2,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+08/07/2023,Male,Black African (unspecified),Black,True,20/08/1962,60.9,56-70,111.5,75.0,60.3,OBESE,142.0,92.0,50.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Normal
+14/05/2023,Male,Black African (West Africa),Black,True,06/01/1998,25.4,25-40,179.0,92.95,29.0,OVERWEIGHT,135.0,70.0,65.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+21/05/2023,Female,Black African (West Africa),Black,True,21/11/1969,53.5,41-55,164.7,80.1,29.5,OVERWEIGHT,128.0,91.0,37.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+21/05/2023,Female,Black African (West Africa),Black,True,22/10/2004,18.6,<25,169.2,61.3,21.4,HEALTHY,119.0,63.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,11/01/1956,67.6,56-70,170.8,82.0,28.1,OVERWEIGHT,171.0,87.0,84.0,PRE HPT,True,False,False,False,True,False,True,False,Definitely not,Normal
+30/07/2023,Male,Black Caribbean,Black,True,08/02/1968,55.5,56-70,182.5,99.0,29.7,OVERWEIGHT,169.0,110.0,59.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Abnormal
+21/05/2023,Female,Black African (unspecified),Black,True,16/03/1935,88.2,>70,147.2,55.5,25.6,OVERWEIGHT,170.0,76.0,94.0,HPT 2,True,True,False,False,True,True,False,False,Definitely not,Normal
+21/05/2023,Female,Black Caribbean,Black,True,26/04/1975,48.1,41-55,164.0,81.0,30.1,OBESE,113.0,63.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+14/05/2023,Female,Black African (West Africa),Black,True,09/01/1979,44.4,41-55,169.8,60.0,20.8,HEALTHY,120.0,70.0,50.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+21/05/2023,Male,Black Caribbean,Black,True,03/08/1959,63.8,56-70,152.5,77.7,33.4,OBESE,129.0,80.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+14/05/2023,Female,Black African (East Africa),Black,True,09/01/1979,44.4,41-55,169.8,60.0,20.8,HEALTHY,120.0,74.0,46.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (unspecified),Black,True,15/10/1989,33.8,25-40,176.7,75.0,24.0,HEALTHY,160.0,85.0,75.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+08/07/2023,Female,Black African (West Africa),Black,True,27/01/1965,58.5,56-70,176.0,110.2,35.6,OBESE,153.0,85.0,68.0,PRE HPT,True,False,False,False,True,False,True,False,Not sure,Abnormal
+31/05/2023,Male,Black Caribbean,Black,True,15/02/1968,55.3,56-70,167.0,83.0,29.8,OVERWEIGHT,127.0,71.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+21/05/2023,Male,Indian,Indian,False,08/03/1982,41.2,41-55,170.5,77.3,26.6,OVERWEIGHT,122.0,84.0,38.0,NORMAL,False,False,True,False,False,False,False,True,Not sure,Normal
+21/05/2023,Female,White British,White,False,24/08/1961,61.8,56-70,162.0,120.0,45.7,OBESE,184.0,104.0,80.0,HPT 2,True,True,False,False,True,True,False,False,Not sure,Normal
+21/05/2023,Female,Black African (West Africa),Black,True,03/05/1970,53.1,41-55,153.5,68.0,28.9,OVERWEIGHT,94.0,61.0,33.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,26/09/2003,19.9,<25,154.0,78.0,32.9,OBESE,145.0,89.0,56.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+08/07/2023,Female,Black African (West Africa),Black,True,01/01/1978,45.5,41-55,152.0,68.9,29.8,OVERWEIGHT,140.0,82.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+08/07/2023,Male,Black African (West Africa),Black,True,13/03/1942,81.4,>70,188.9,85.0,23.8,HEALTHY,145.0,87.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+08/07/2023,Male,Black African (West Africa),Black,True,13/07/1963,60.0,56-70,158.0,63.0,25.2,OVERWEIGHT,119.0,67.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+08/07/2023,Male,Black African (West Africa),Black,True,02/08/1964,59.0,56-70,177.0,98.4,31.4,OBESE,128.0,71.0,57.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Normal
+08/07/2023,Female,Black African (West Africa),Black,True,16/02/1967,56.4,56-70,164.0,69.8,26.0,OVERWEIGHT,132.0,70.0,62.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+08/07/2023,Male,Black African (West Africa),Black,True,06/12/1965,57.6,56-70,161.0,72.0,27.8,OVERWEIGHT,127.0,71.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+08/07/2023,Female,Black African (West Africa),Black,True,16/11/1980,42.7,41-55,153.0,69.8,29.8,OVERWEIGHT,132.0,87.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+08/07/2023,Female,Black African (West Africa),Black,True,12/11/1995,27.7,25-40,185.0,76.0,22.2,HEALTHY,120.0,62.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,08/09/1987,35.9,25-40,163.5,60.0,22.4,HEALTHY,106.0,71.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/09/2023,Female,Black African (West Africa),Black,True,30/05/1976,47.3,41-55,161.5,70.0,26.8,OVERWEIGHT,132.0,80.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+29/07/2023,Male,Black African (West Africa),Black,True,15/10/1977,45.8,41-55,164.0,96.6,35.9,OBESE,132.0,74.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/07/2023,Male,Black African (unspecified),Black,True,07/04/1975,48.3,41-55,164.5,85.0,31.4,OBESE,132.0,76.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+29/07/2023,Female,Black African (West Africa),Black,True,02/10/1966,56.9,56-70,166.5,65.7,23.7,HEALTHY,124.0,81.0,43.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Normal
+21/05/2023,Female,Black African (West Africa),Black,True,11/08/1963,59.8,56-70,165.0,85.4,31.4,OBESE,120.0,84.0,36.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+21/05/2023,Female,Black African (West Africa),Black,True,12/06/1960,63.0,56-70,163.2,80.1,30.1,OBESE,126.0,85.0,41.0,NORMAL,False,True,False,False,False,False,False,False,Definitely not,Normal
+25/05/2023,Male,Black Caribbean,Black,True,20/02/1982,41.3,41-55,164.0,74.4,27.7,OVERWEIGHT,113.0,75.0,38.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+21/05/2023,Female,Black Caribbean,Black,True,14/08/1979,43.8,41-55,156.0,87.0,35.7,OBESE,143.0,95.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+21/05/2023,Male,Black African (West Africa),Black,True,14/08/1979,43.8,41-55,168.0,89.0,31.5,OBESE,165.0,98.0,67.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+14/05/2023,Male,Black African (West Africa),Black,True,18/01/1963,60.4,56-70,170.0,76.6,26.5,OVERWEIGHT,125.0,67.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+21/05/2023,Female,Black African (West Africa),Black,True,18/12/1965,57.5,56-70,161.0,72.3,27.9,OVERWEIGHT,131.0,94.0,37.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+21/05/2023,Male,Black African (West Africa),Black,True,06/03/1947,76.3,>70,156.5,81.0,33.1,OBESE,131.0,72.0,59.0,NORMAL,True,False,False,False,True,True,False,False,Definitely not,Abnormal
+08/07/2023,Male,Black African (West Africa),Black,True,11/07/1973,50.0,41-55,159.4,85.9,33.8,OBESE,142.0,71.0,71.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,11/03/1972,51.2,41-55,169.0,80.0,28.0,OVERWEIGHT,100.0,60.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+21/05/2023,Female,Mixed White/Black Caribbean,Mixed,True,03/07/1960,62.9,56-70,161.0,78.0,30.1,OBESE,138.0,81.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+08/07/2023,Female,Black African (West Africa),Black,True,03/05/1962,61.2,56-70,168.0,80.7,28.6,OVERWEIGHT,168.0,88.0,80.0,PRE HPT,True,True,False,False,True,True,True,False,Definitely yes,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,08/01/1963,60.4,56-70,173.7,63.5,21.0,HEALTHY,120.0,66.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,10/12/1960,62.5,56-70,162.5,99.9,37.8,OBESE,162.0,86.0,76.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+21/05/2023,Female,Black African (West Africa),Black,True,26/09/2003,19.7,<25,169.0,93.0,32.6,OBESE,141.0,84.0,57.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+10/09/2023,Male,Black Caribbean,Black,True,24/12/1967,55.8,56-70,178.0,93.2,29.4,OVERWEIGHT,156.0,87.0,69.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+14/05/2023,Female,Black African (West Africa),Black,True,16/10/1963,59.6,56-70,174.5,69.3,22.8,HEALTHY,158.0,118.0,40.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Normal
+14/05/2023,Male,Black African (Central Africa),Black,True,03/08/1959,63.8,56-70,152.5,77.7,33.4,OBESE,129.0,80.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/09/2023,Female,Mixed White/Black Caribbean,Mixed,True,25/09/1959,64.0,56-70,169.0,99.4,34.8,OBESE,179.0,92.0,87.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+30/07/2023,Female,Black African (unspecified),Black,True,08/02/1980,43.5,41-55,167.0,73.0,26.2,OVERWEIGHT,151.0,86.0,65.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/07/2023,Male,Black African (West Africa),Black,True,28/04/1963,60.3,56-70,171.0,89.1,30.5,OBESE,186.0,101.0,85.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Normal
+10/09/2023,Male,Black African (unspecified),Black,True,22/08/1971,52.1,41-55,170.6,114.8,39.4,OBESE,194.0,109.0,85.0,HPT 2,True,True,False,False,True,True,False,False,Not sure,Abnormal
+10/09/2023,Female,Black Caribbean,Black,True,12/03/1960,63.5,56-70,160.4,55.9,21.7,HEALTHY,119.0,61.0,58.0,NORMAL,False,True,False,False,False,True,False,False,Definitely yes,Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,12/03/1960,63.4,56-70,165.0,98.0,36.0,OBESE,187.0,103.0,84.0,HPT 2,False,False,False,False,False,False,False,True,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,24/11/1953,69.7,56-70,170.0,72.8,25.2,OVERWEIGHT,144.0,96.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Abnormal
+29/07/2023,Male,Black African (unspecified),Black,True,10/05/1977,46.2,41-55,165.8,93.6,34.0,OBESE,211.0,105.0,106.0,HPT 2,False,True,False,False,False,True,False,False,Not sure,Normal
+30/07/2023,Female,Black Caribbean,Black,True,15/12/1962,60.7,56-70,156.0,80.1,32.9,OBESE,138.0,78.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Male,Black African (West Africa),Black,True,03/01/1960,63.7,56-70,165.0,65.0,23.9,HEALTHY,127.0,74.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+29/07/2023,Male,Black African (North Africa),Black,True,08/06/1965,58.2,56-70,169.5,77.8,27.1,OVERWEIGHT,137.0,90.0,47.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/07/2023,Male,Black African (West Africa),Black,True,10/03/2001,22.4,<25,184.9,77.5,22.7,HEALTHY,140.0,82.0,58.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,17/05/1969,54.2,41-55,174.0,88.4,29.2,OVERWEIGHT,145.0,100.0,45.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Male,Black African (West Africa),Black,True,14/10/1971,51.8,41-55,177.9,89.4,28.2,OVERWEIGHT,135.0,87.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+29/07/2023,Male,Black African (unspecified),Black,True,26/11/1943,79.7,>70,159.0,84.5,33.4,OBESE,156.0,96.0,60.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+29/07/2023,Male,Mixed White/Black African,Mixed,True,01/10/1970,52.9,41-55,160.5,82.0,31.8,OBESE,153.0,90.0,63.0,HPT 1,True,False,False,False,True,False,False,True,Not sure,Normal
+30/07/2023,Male,Black Caribbean,Black,True,13/09/1956,66.9,56-70,170.0,90.0,31.1,OBESE,155.0,75.0,80.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (unspecified),Black,True,01/10/1989,33.8,25-40,175.9,82.1,26.5,OVERWEIGHT,121.0,82.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+30/07/2023,Male,Black African (West Africa),Black,True,28/04/1983,40.3,41-55,156.5,66.6,27.2,OVERWEIGHT,140.0,80.0,60.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,16/02/1975,48.5,41-55,178.0,74.4,23.5,HEALTHY,139.0,82.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+30/07/2023,Female,Mixed other,Mixed,False,21/07/2004,19.0,<25,152.5,62.7,27.0,OVERWEIGHT,149.0,82.0,67.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,27/09/1967,55.9,56-70,177.5,84.6,26.9,OVERWEIGHT,134.0,98.0,36.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+29/07/2023,Female,Black African (West Africa),Black,True,22/09/1967,55.9,56-70,158.5,75.2,29.9,OVERWEIGHT,133.0,93.0,40.0,PRE HPT,True,True,False,False,True,False,True,False,Definitely not,Abnormal
+30/07/2023,Male,Black African (unspecified),Black,True,17/06/1952,71.2,>70,178.0,90.0,28.4,OVERWEIGHT,136.0,95.0,41.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+29/07/2023,Female,Black African (unspecified),Black,True,29/03/1966,57.4,56-70,183.5,88.4,26.3,OVERWEIGHT,123.0,76.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+29/07/2023,Female,Black African (West Africa),Black,True,16/12/1968,54.7,41-55,181.5,82.1,24.9,HEALTHY,104.0,74.0,30.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/07/2023,Female,Black African (unspecified),Black,True,05/08/1963,60.0,56-70,156.0,74.9,30.8,OBESE,126.0,78.0,48.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,High Abnormal
+30/07/2023,Male,Black African (West Africa),Black,True,14/04/1963,60.3,56-70,176.5,104.0,33.4,OBESE,142.0,92.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+29/07/2023,Female,Indian,Indian,False,30/04/1974,49.3,41-55,169.3,73.0,25.5,OVERWEIGHT,136.0,87.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Male,Black Caribbean,Black,True,28/08/1967,56.0,56-70,162.0,99.5,37.9,OBESE,150.0,94.0,56.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+30/07/2023,Female,White British,White,False,20/08/1974,49.0,41-55,157.0,74.5,30.2,OBESE,145.0,95.0,50.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (unspecified),Black,True,22/09/1962,60.9,56-70,158.0,57.7,23.1,HEALTHY,111.0,83.0,28.0,NORMAL,False,False,False,False,False,False,True,False,Not sure,Abnormal
+30/07/2023,Male,Black African (unspecified),Black,True,04/11/1975,47.8,41-55,162.0,74.7,28.5,OVERWEIGHT,120.0,73.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,11/09/1981,41.9,41-55,167.0,87.8,31.5,OBESE,134.0,82.0,52.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,30/04/1963,60.3,56-70,175.5,74.7,24.3,HEALTHY,174.0,87.0,87.0,PRE HPT,True,False,False,False,True,False,True,False,Definitely not,Normal
+30/07/2023,Male,Black African (West Africa),Black,True,20/08/1961,62.0,56-70,165.0,65.0,23.9,HEALTHY,149.0,94.0,55.0,HPT 1,True,True,False,False,True,True,False,False,Definitely not,Abnormal
+30/07/2023,Male,Black African (West Africa),Black,True,29/06/1966,57.1,56-70,151.0,71.6,31.4,OBESE,179.0,95.0,84.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,Abnormal
+30/07/2023,Female,Black other,Black,True,03/06/1965,58.2,56-70,157.5,84.0,33.9,OBESE,139.0,91.0,48.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+30/07/2023,Female,White British,White,False,30/07/1960,63.0,56-70,167.0,76.0,27.3,OVERWEIGHT,143.0,97.0,46.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Asian other,SE Asian,False,24/07/1961,62.1,56-70,181.0,90.0,27.5,OVERWEIGHT,124.0,76.0,48.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+30/07/2023,Male,Black African (West Africa),Black,True,12/10/1961,61.8,56-70,179.0,76.0,23.7,HEALTHY,125.0,77.0,48.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,10/05/1981,42.2,41-55,172.8,97.4,32.6,OBESE,137.0,92.0,45.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+30/07/2023,Female,White British,White,False,28/01/1980,43.5,41-55,168.5,61.2,21.6,HEALTHY,145.0,96.0,49.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,15/01/1978,45.6,41-55,165.5,103.5,37.8,OBESE,101.0,58.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,29/07/1958,65.0,56-70,170.7,75.0,25.7,OVERWEIGHT,139.0,86.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/07/2023,Female,Black African (West Africa),Black,True,15/02/1982,41.5,41-55,157.0,60.9,24.7,HEALTHY,146.0,90.0,56.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,09/10/1988,34.8,25-40,171.0,91.0,31.1,OBESE,130.0,93.0,37.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+30/07/2023,Female,Black African (West Africa),Black,True,22/02/1965,58.5,56-70,160.0,83.0,32.4,OBESE,128.0,71.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black Caribbean,Black,True,23/03/1978,45.4,41-55,160.0,87.1,34.0,OBESE,110.0,61.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/07/2023,Female,Black African (unspecified),Black,True,23/05/1989,34.2,25-40,148.0,75.0,34.2,OBESE,136.0,94.0,42.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/07/2023,Female,Black African (Central Africa),Black,True,06/08/1952,71.0,>70,173.5,80.0,26.6,OVERWEIGHT,138.0,71.0,67.0,NORMAL,True,False,False,False,False,False,False,True,Definitely not,Abnormal
+15/09/2023,Female,Black other,Black,True,29/04/1971,52.4,41-55,163.0,80.0,30.1,OBESE,168.0,107.0,61.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Male,Black African (West Africa),Black,True,26/12/1981,41.7,41-55,179.0,85.3,26.6,OVERWEIGHT,131.0,82.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Female,White British,White,False,11/12/1968,54.7,41-55,169.5,97.3,33.9,OBESE,150.0,84.0,66.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Male,Black African (West Africa),Black,True,02/02/1969,54.6,41-55,167.0,71.0,25.5,OVERWEIGHT,118.0,67.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+16/08/2023,Female,Black African (unspecified),Black,True,21/07/1976,47.1,41-55,162.0,67.0,25.5,OVERWEIGHT,145.0,98.0,47.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+19/08/2023,Female,Black African (unspecified),Black,True,02/09/1968,55.0,41-55,167.64,76.0,27.0,OVERWEIGHT,189.0,117.0,72.0,HPT CRISIS,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Male,Black African (West Africa),Black,True,18/10/1973,49.9,41-55,162.0,87.8,33.5,OBESE,165.0,94.0,71.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+16/08/2023,Female,Black African (unspecified),Black,True,24/02/1978,45.5,41-55,158.0,69.0,27.6,OVERWEIGHT,160.0,90.0,70.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,08/09/1973,50.0,41-55,171.0,71.0,24.3,HEALTHY,100.0,64.0,36.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+16/08/2023,Female,Black African (West Africa),Black,True,25/02/1984,39.5,25-40,165.5,85.0,31.0,OBESE,110.0,80.0,30.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+16/08/2023,Female,Black African (West Africa),Black,True,01/03/1996,27.5,25-40,162.5,121.7,46.1,OBESE,142.0,87.0,55.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,Normal
+16/08/2023,Female,Black African (East Africa),Black,True,06/11/1987,35.8,25-40,168.0,55.0,19.5,HEALTHY,134.0,88.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+16/08/2023,Female,Black African (West Africa),Black,True,19/09/1994,28.9,25-40,181.0,75.0,22.9,HEALTHY,138.0,82.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Male,Black African (West Africa),Black,True,01/03/1969,54.5,41-55,159.0,92.3,36.5,OBESE,111.0,78.0,33.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Male,Black African (unspecified),Black,True,15/11/1982,40.8,41-55,160.0,77.0,30.1,OBESE,122.0,74.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+19/08/2023,Female,Black African (West Africa),Black,True,15/11/1982,40.8,41-55,176.0,87.0,28.1,OVERWEIGHT,136.0,76.0,60.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+19/08/2023,Male,Black African (West Africa),Black,True,13/01/1987,36.6,25-40,190.0,105.0,29.1,OVERWEIGHT,147.0,97.0,50.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+16/08/2023,Female,Black African (unspecified),Black,True,10/05/1963,60.3,56-70,160.0,107.0,41.8,OBESE,143.0,89.0,54.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+15/08/2023,Female,Pakistani,Indian,False,09/08/1987,36.0,25-40,170.0,68.0,23.5,HEALTHY,109.0,79.0,30.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+10/09/2023,Male,Black African (West Africa),Black,True,01/07/1976,47.2,41-55,167.0,78.1,28.0,OVERWEIGHT,135.0,92.0,43.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+16/08/2023,Female,Black African (unspecified),Black,True,21/09/1974,48.9,41-55,157.48,82.4,33.2,OBESE,122.0,73.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Female,Black African (unspecified),Black,True,25/02/1984,39.5,25-40,167.0,79.0,28.3,OVERWEIGHT,143.0,98.0,45.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+16/08/2023,Male,White British,White,False,01/11/1980,42.8,41-55,154.4,102.2,42.9,OBESE,110.0,84.0,26.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+16/08/2023,Female,Black Caribbean,Black,True,20/03/1939,84.5,>70,160.0,59.5,23.2,HEALTHY,172.0,78.0,94.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Male,Black African (West Africa),Black,True,15/08/1975,48.0,41-55,152.0,120.0,51.9,OBESE,163.0,86.0,77.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+16/08/2023,Female,Black African (West Africa),Black,True,16/03/1973,50.5,41-55,165.0,78.0,28.7,OVERWEIGHT,143.0,76.0,67.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+16/08/2023,Male,Black African (West Africa),Black,True,08/01/1987,36.6,25-40,170.0,88.5,30.6,OBESE,136.0,93.0,43.0,PRE HPT,True,False,False,False,True,False,False,False,Definitely not,High Abnormal
+20/08/2023,Female,Black African (West Africa),Black,True,02/09/1959,64.0,56-70,166.0,71.0,25.8,OVERWEIGHT,128.0,83.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,02/01/1975,48.7,41-55,157.0,76.0,30.8,OBESE,143.0,79.0,64.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+19/08/2023,Female,Black African (unspecified),Black,True,26/05/1977,46.3,41-55,164.0,88.2,32.8,OBESE,139.0,100.0,39.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+26/08/2023,Female,Asian other,SE Asian,False,02/10/1943,80.0,>70,155.0,65.2,27.1,OVERWEIGHT,191.0,67.0,124.0,HPT CRISIS,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+10/09/2023,Female,Black African (West Africa),Black,True,07/10/1987,36.0,25-40,162.8,65.5,24.7,HEALTHY,132.0,71.0,61.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+15/09/2023,Female,Pakistani,Indian,False,10/12/1976,46.8,41-55,172.0,83.5,28.2,OVERWEIGHT,110.0,73.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+20/08/2023,Male,Black African (West Africa),Black,True,28/02/1985,38.5,25-40,194.9,113.0,29.7,OVERWEIGHT,166.0,109.0,57.0,HPT 2,True,False,False,False,True,False,False,False,Not sure,Abnormal
+15/09/2023,Female,Black African (West Africa),Black,True,06/05/1967,56.4,56-70,160.3,71.0,27.6,OVERWEIGHT,138.0,82.0,56.0,NORMAL,True,True,True,False,True,True,False,False,Not sure,Abnormal
+20/08/2023,Female,Black African (West Africa),Black,True,19/07/1972,51.1,41-55,169.5,76.0,26.5,OVERWEIGHT,143.0,87.0,56.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2023,Female,Black African (West Africa),Black,True,28/09/2000,23.1,<25,174.5,74.1,24.3,HEALTHY,139.0,81.0,58.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,02/07/1990,33.2,25-40,165.0,80.6,29.6,OVERWEIGHT,143.0,98.0,45.0,HPT 1,True,True,False,False,True,True,True,False,Definitely not,Abnormal
+19/08/2023,Female,Black African (West Africa),Black,True,08/01/1974,49.6,41-55,160.0,96.0,37.5,OBESE,165.0,102.0,63.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Abnormal
+20/08/2023,Male,Black African (unspecified),Black,True,18/11/1981,41.8,41-55,165.0,83.2,30.6,OBESE,133.0,92.0,41.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+26/08/2023,Male,Black other,Black,True,20/02/1987,36.5,25-40,173.0,79.0,26.4,OVERWEIGHT,144.0,100.0,44.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+26/07/2023,Female,Black African (East Africa),Black,True,06/10/1969,53.8,41-55,187.0,119.4,34.1,OBESE,132.0,76.0,56.0,NORMAL,True,False,False,False,False,False,False,False,Definitely not,Normal
+20/08/2023,Female,Mixed White/Black African,Mixed,True,28/01/1969,54.6,41-55,164.0,64.0,23.8,HEALTHY,150.0,90.0,60.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+20/10/2023,Female,Black Caribbean,Black,True,17/10/1966,57.0,56-70,164.0,73.0,27.1,OVERWEIGHT,129.0,84.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+20/08/2023,Male,White British,White,False,12/01/1988,35.6,25-40,170.0,151.7,52.5,OBESE,100.0,89.0,11.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,12/01/1988,35.6,25-40,159.0,87.4,34.6,OBESE,145.0,98.0,47.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+20/08/2023,Male,Black African (West Africa),Black,True,12/06/1967,56.2,56-70,180.0,120.8,37.3,OBESE,125.0,83.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,26/01/1970,53.6,41-55,159.0,86.4,34.2,OBESE,139.0,79.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+02/09/2023,Male,Black African (West Africa),Black,True,28/07/1976,47.1,41-55,168.5,73.4,25.9,OVERWEIGHT,114.0,64.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Female,White Gypsy/Traveller,White,False,31/12/1982,40.7,41-55,166.9,69.1,24.8,HEALTHY,135.0,85.0,50.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,High Abnormal
+26/08/2023,Female,Pakistani,Indian,False,24/08/1964,59.0,56-70,183.0,67.0,20.0,HEALTHY,103.0,74.0,29.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+20/08/2023,Female,White British,White,False,28/09/1967,55.9,56-70,178.5,89.7,28.2,OVERWEIGHT,132.0,89.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+20/08/2023,Female,Black African (West Africa),Black,True,10/03/1983,40.5,41-55,162.4,80.0,30.3,OBESE,102.0,65.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+20/08/2023,Female,Pakistani,Indian,False,07/07/1989,34.1,25-40,159.0,88.1,34.8,OBESE,143.0,93.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+26/08/2023,Male,Black Caribbean,Black,True,20/10/1980,42.9,41-55,170.0,82.1,28.4,OVERWEIGHT,128.0,84.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+19/08/2023,Female,Black African (West Africa),Black,True,31/12/1975,47.7,41-55,174.0,109.8,36.3,OBESE,132.0,78.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Male,White British,White,False,18/04/1989,34.4,25-40,177.5,86.0,27.3,OVERWEIGHT,108.0,58.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Female,Black other,Black,True,23/01/1969,54.7,41-55,183.0,82.0,24.5,HEALTHY,109.0,82.0,27.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Female,Black African (West Africa),Black,True,05/09/1981,42.1,41-55,186.3,92.6,26.7,OVERWEIGHT,137.0,93.0,44.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+15/09/2023,Male,Black African (West Africa),Black,True,28/09/1967,56.0,56-70,178.5,89.7,28.2,OVERWEIGHT,132.0,89.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Male,Black other,Black,True,04/01/1998,25.7,25-40,170.9,73.7,25.2,OVERWEIGHT,125.0,73.0,52.0,NORMAL,True,False,False,False,False,False,True,False,Not sure,Normal
+15/09/2023,Female,Black African (West Africa),Black,True,14/03/1970,53.5,41-55,170.6,97.2,33.4,OBESE,176.0,112.0,64.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Normal
+15/09/2023,Female,Black African (West Africa),Black,True,03/11/1971,51.9,41-55,174.0,100.9,33.3,OBESE,224.0,121.0,103.0,HPT CRISIS,False,False,False,False,False,False,False,False,Not sure,Normal
+23/09/2023,Female,Black African (West Africa),Black,True,03/11/1978,44.9,41-55,169.6,68.6,23.8,HEALTHY,121.0,67.0,54.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,16/01/1962,61.8,56-70,165.0,76.4,28.1,OVERWEIGHT,146.0,89.0,57.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black African (unspecified),Black,True,05/08/1965,58.2,56-70,170.5,64.6,22.2,HEALTHY,132.0,83.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Female,Any other,Other,False,13/08/1970,53.2,41-55,158.0,82.9,33.2,OBESE,131.0,75.0,56.0,NORMAL,True,False,False,False,True,False,False,True,Not sure,Normal
+30/09/2023,Female,Pakistani,Indian,False,13/04/1956,67.5,56-70,159.0,106.6,42.2,OBESE,137.0,84.0,53.0,NORMAL,True,False,False,False,True,False,False,True,Not sure,Normal
+23/09/2023,Female,Black African (West Africa),Black,True,13/04/1956,67.5,56-70,158.5,106.6,42.4,OBESE,137.0,84.0,53.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+23/09/2023,Female,Black African (West Africa),Black,True,21/04/1954,69.5,56-70,173.3,79.9,26.6,OVERWEIGHT,147.0,82.0,65.0,PRE HPT,False,False,False,False,True,True,False,False,Not sure,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,28/02/1961,62.6,56-70,170.5,87.2,30.0,OBESE,141.0,71.0,70.0,HPT 1,True,True,False,False,False,False,False,False,Definitely not,Normal
+23/09/2023,Male,Mixed White/Black Caribbean,Mixed,True,01/06/1963,60.4,56-70,160.0,96.0,37.5,OBESE,146.0,89.0,57.0,PRE HPT,True,False,True,False,True,False,False,True,Definitely not,High Abnormal
+15/09/2023,Female,Black African (West Africa),Black,True,16/03/1950,73.6,>70,156.0,61.9,25.4,OVERWEIGHT,141.0,74.0,67.0,HPT 1,False,True,False,False,True,True,False,False,Not sure,Normal
+15/09/2023,Female,Black African (unspecified),Black,True,25/06/1957,66.3,56-70,165.5,67.3,24.6,HEALTHY,122.0,72.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,15/11/1969,54.0,41-55,172.0,102.2,34.5,OBESE,163.0,97.0,66.0,HPT 1,False,False,False,False,False,False,False,False,Definitely yes,Normal
+23/09/2023,Female,Black African (West Africa),Black,True,28/06/1973,50.3,41-55,184.0,92.5,27.3,OVERWEIGHT,142.0,92.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/09/2023,Male,Black African (unspecified),Black,True,01/09/2000,23.1,<25,157.5,75.0,30.2,OBESE,119.0,93.0,26.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/09/2023,Male,Black African (unspecified),Black,True,12/12/1978,44.8,41-55,170.0,68.9,23.8,HEALTHY,121.0,76.0,45.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/09/2023,Male,Black Caribbean,Black,True,18/08/1963,60.1,56-70,178.5,76.3,23.9,HEALTHY,136.0,76.0,60.0,NORMAL,True,False,True,False,False,True,True,True,Not sure,Abnormal
+23/09/2023,Female,Black African (West Africa),Black,True,06/06/1952,71.3,>70,161.0,64.7,25.0,OVERWEIGHT,134.0,77.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/09/2023,Female,Black African (South Africa),Black,True,16/12/1968,54.8,41-55,152.5,65.5,28.2,OVERWEIGHT,116.0,75.0,41.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+25/10/2023,Male,Black African (West Africa),Black,True,08/08/1972,51.2,41-55,139.0,94.6,49.0,OBESE,114.0,72.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/09/2023,Female,Black African (West Africa),Black,True,12/06/1986,37.3,25-40,165.0,96.4,35.4,OBESE,117.0,81.0,36.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/09/2023,Female,Black African (West Africa),Black,True,03/10/1996,27.0,25-40,155.0,96.0,40.0,OBESE,128.0,77.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+23/09/2023,Female,Bangladeshi,Indian,False,04/09/1949,74.1,>70,177.8,85.0,26.9,OVERWEIGHT,163.0,100.0,63.0,HPT 2,False,False,False,False,False,False,False,False,Not sure,Normal
+23/09/2023,Male,Black African (West Africa),Black,True,01/10/1974,49.0,41-55,173.5,90.0,29.9,OVERWEIGHT,140.0,89.0,51.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+23/09/2023,Female,Black African (West Africa),Black,True,13/03/1984,39.6,25-40,151.5,64.6,28.1,OVERWEIGHT,124.0,69.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/09/2023,Female,Black African (unspecified),Black,True,30/01/1960,63.7,56-70,165.5,79.7,29.1,OVERWEIGHT,165.0,107.0,58.0,HPT 2,False,False,False,False,False,False,False,False,Definitely yes,Abnormal
+25/10/2023,Female,Black African (West Africa),Black,True,25/05/1978,45.4,41-55,170.9,73.4,25.1,OVERWEIGHT,123.0,69.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+25/10/2023,Female,Mixed White/Black Caribbean,Mixed,True,05/11/1945,78.0,>70,153.5,74.4,31.6,OBESE,113.0,68.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2023,Male,Black African (West Africa),Black,True,22/04/2005,18.5,<25,169.0,77.5,27.1,OVERWEIGHT,133.0,81.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,16/06/1967,56.3,56-70,163.5,65.5,24.5,HEALTHY,127.0,75.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black Caribbean,Black,True,23/01/1970,53.8,41-55,158.0,60.0,24.0,HEALTHY,194.0,95.0,99.0,HPT 1,True,False,False,False,True,False,False,False,Definitely not,Normal
+30/09/2023,Female,Black African (unspecified),Black,True,23/03/1969,54.6,41-55,154.1,70.7,29.8,OVERWEIGHT,148.0,100.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Female,White British,White,False,17/04/1979,44.5,41-55,167.6,116.0,41.3,OBESE,127.0,89.0,38.0,NORMAL,True,False,False,False,True,False,True,False,Definitely not,Normal
+30/09/2023,Male,Asian other,SE Asian,False,04/06/1965,58.4,56-70,170.7,70.5,24.2,HEALTHY,116.0,75.0,41.0,NORMAL,True,True,False,False,True,True,False,False,Not sure,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,08/10/1964,59.1,56-70,166.0,79.0,28.7,OVERWEIGHT,134.0,92.0,42.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black Caribbean,Black,True,06/09/1993,30.1,25-40,182.0,80.0,24.2,HEALTHY,126.0,87.0,39.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,09/07/1998,25.2,25-40,168.5,90.2,31.8,OBESE,136.0,86.0,50.0,NORMAL,False,True,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Male,Black African (unspecified),Black,True,01/07/1962,61.3,56-70,164.5,79.0,29.2,OVERWEIGHT,114.0,72.0,42.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/10/2023,Female,Black African (West Africa),Black,True,28/05/1957,66.4,56-70,158.5,84.9,33.8,OBESE,126.0,76.0,50.0,NORMAL,True,True,True,False,False,True,False,True,Not sure,High Abnormal
+30/09/2023,Female,Black African (West Africa),Black,True,29/07/1964,59.2,56-70,158.0,55.0,22.0,HEALTHY,125.0,82.0,43.0,NORMAL,True,True,False,False,True,True,False,False,Not sure,Normal
+30/09/2023,Female,Black African (Central Africa),Black,True,29/05/1960,63.4,56-70,176.0,85.3,27.5,OVERWEIGHT,148.0,91.0,57.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Female,Black African (unspecified),Black,True,11/09/1957,66.1,56-70,150.0,76.0,33.8,OBESE,127.0,80.0,47.0,NORMAL,False,False,False,False,False,False,True,False,Definitely yes,Normal
+30/09/2023,Male,Black African (unspecified),Black,True,30/01/1963,60.7,56-70,158.4,60.0,23.9,HEALTHY,140.0,70.0,70.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Male,Black African (West Africa),Black,True,12/10/1960,63.0,56-70,168.0,80.9,28.7,OVERWEIGHT,173.0,93.0,80.0,HPT 1,True,True,False,False,True,True,True,False,Not sure,Abnormal
+25/10/2023,Female,Black African (West Africa),Black,True,21/01/1948,75.8,>70,150.5,81.5,36.0,OBESE,145.0,67.0,78.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,01/09/2000,23.1,<25,175.5,90.4,29.4,OVERWEIGHT,140.0,92.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,17/02/1999,24.6,<25,175.5,90.4,29.4,OVERWEIGHT,140.0,92.0,48.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Female,Black African (unspecified),Black,True,01/05/1971,52.5,41-55,167.0,67.0,24.0,HEALTHY,108.0,73.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black other,Black,True,24/03/1969,54.6,41-55,165.4,90.0,32.9,OBESE,88.0,70.0,18.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black African (West Africa),Black,True,27/03/1975,48.5,41-55,184.0,90.0,26.6,OVERWEIGHT,124.0,74.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black African (West Africa),Black,True,06/06/1981,42.3,41-55,171.2,88.8,30.3,OBESE,132.0,86.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black African (West Africa),Black,True,18/01/1948,75.8,>70,151.0,65.9,28.9,OVERWEIGHT,132.0,78.0,54.0,NORMAL,True,False,False,False,True,False,False,False,Definitely yes,Abnormal
+30/09/2023,Male,Asian other,SE Asian,False,21/03/1945,78.6,>70,166.5,115.9,41.8,OBESE,150.0,74.0,76.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,03/08/1954,69.2,56-70,166.2,85.4,30.9,OBESE,137.0,86.0,51.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black African (West Africa),Black,True,06/09/1949,74.1,>70,160.5,91.7,35.6,OBESE,136.0,84.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2023,Female,Black Caribbean,Black,True,23/04/1972,51.5,41-55,179.5,88.0,27.3,OVERWEIGHT,118.0,83.0,35.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,11/02/1953,70.7,>70,160.0,74.0,28.9,OVERWEIGHT,128.0,73.0,55.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Abnormal
+25/10/2023,Male,Black African (West Africa),Black,True,04/07/1959,64.4,56-70,158.5,105.0,41.8,OBESE,120.0,80.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,20/12/1997,25.9,25-40,168.5,70.1,24.7,HEALTHY,113.0,79.0,34.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2023,Female,Black Caribbean,Black,True,02/04/1984,39.6,25-40,165.0,70.0,25.7,OVERWEIGHT,123.0,67.0,56.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,15/11/1996,27.0,25-40,168.0,106.6,37.8,OBESE,121.0,77.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Female,Black Caribbean,Black,True,12/12/1968,54.8,41-55,160.0,71.0,27.7,OVERWEIGHT,141.0,76.0,65.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/09/2023,Female,Black African (West Africa),Black,True,02/01/2004,19.8,<25,172.8,58.5,19.6,HEALTHY,135.0,90.0,45.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Asian other,SE Asian,False,21/08/1975,48.2,41-55,157.5,67.3,27.1,OVERWEIGHT,114.0,88.0,26.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2023,Male,Asian other,SE Asian,False,17/04/1969,54.6,41-55,168.0,129.1,45.7,OBESE,151.0,101.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,White British,White,False,14/04/1995,28.6,25-40,165.0,65.0,23.9,HEALTHY,95.0,63.0,32.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2023,Female,Black African (unspecified),Black,True,26/03/1990,33.6,25-40,161.5,95.0,36.4,OBESE,102.0,79.0,23.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2023,Male,Black African (West Africa),Black,True,18/09/1995,28.1,25-40,170.2,76.0,26.2,OVERWEIGHT,140.0,91.0,49.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Normal
+23/10/2023,Male,Black African (West Africa),Black,True,31/08/1964,59.2,56-70,160.5,74.0,28.7,OVERWEIGHT,120.0,88.0,32.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/10/2023,Female,Black African (unspecified),Black,True,07/09/1964,59.2,56-70,163.5,76.0,28.4,OVERWEIGHT,186.0,87.0,99.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2023,Female,Black African (West Africa),Black,True,08/04/1984,39.6,25-40,168.0,85.0,30.1,OBESE,126.0,69.0,57.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,17/04/1975,48.6,41-55,167.0,78.0,28.0,OVERWEIGHT,114.0,60.0,54.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,Normal
+23/10/2023,Female,Black African (West Africa),Black,True,01/01/1958,65.9,56-70,175.0,80.0,26.1,OVERWEIGHT,160.0,86.0,74.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+23/10/2023,Female,Black African (West Africa),Black,True,11/09/1988,35.1,25-40,157.0,88.4,35.9,OBESE,133.0,93.0,40.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,08/09/1970,53.2,41-55,169.5,82.0,28.5,OVERWEIGHT,122.0,75.0,47.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,31/05/1959,64.4,56-70,165.0,70.0,25.7,OVERWEIGHT,130.0,84.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+23/10/2023,Male,Black African (West Africa),Black,True,29/05/1967,56.4,56-70,169.0,60.0,21.0,HEALTHY,136.0,89.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+23/10/2023,Male,Mixed White/Black Caribbean,Mixed,True,10/07/1998,25.3,25-40,167.6,60.0,21.4,HEALTHY,125.0,86.0,39.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+23/10/2023,Male,Black African (unspecified),Black,True,30/08/1976,47.2,41-55,160.0,83.0,32.4,OBESE,146.0,96.0,50.0,HPT 1,False,False,False,False,False,False,False,True,Definitely not,Abnormal
+23/10/2023,Male,Black African (West Africa),Black,True,04/02/1975,48.7,41-55,162.0,90.0,34.3,OBESE,135.0,86.0,49.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+23/10/2023,Male,Black African (unspecified),Black,True,25/06/1985,38.4,25-40,167.6,74.0,26.3,OVERWEIGHT,117.0,77.0,40.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,Normal
+23/10/2023,Female,Black African (West Africa),Black,True,27/02/1957,66.7,56-70,161.8,75.0,28.6,OVERWEIGHT,151.0,76.0,75.0,HPT 1,True,False,False,False,True,False,False,False,Not sure,High Abnormal
+23/10/2023,Male,Black African (South Africa),Black,True,01/08/1975,48.3,41-55,174.5,81.0,26.6,OVERWEIGHT,138.0,86.0,52.0,NORMAL,False,False,False,False,False,False,True,True,Definitely not,Abnormal
+23/10/2023,Male,Black African (West Africa),Black,True,03/10/1969,54.1,41-55,162.0,105.0,40.0,OBESE,123.0,79.0,44.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/10/2023,Male,Black African (West Africa),Black,True,01/03/1979,44.7,41-55,157.5,57.0,23.0,HEALTHY,113.0,61.0,52.0,NORMAL,False,True,False,False,False,True,False,False,Not sure,Normal
+25/10/2023,Female,Black African (North Africa),Black,True,03/08/1959,64.3,56-70,172.0,67.0,22.6,HEALTHY,121.0,79.0,42.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+23/10/2023,Female,Asian other,SE Asian,False,10/08/1996,27.2,25-40,172.5,75.0,25.2,OVERWEIGHT,112.0,69.0,43.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Abnormal
+25/10/2023,Female,White other,White,False,11/02/1976,47.7,41-55,156.5,75.0,30.6,OBESE,210.0,116.0,94.0,HPT CRISIS,False,True,False,False,False,False,True,False,Not sure,Normal
+25/10/2023,Male,Asian other,SE Asian,False,05/02/1967,56.8,56-70,165.0,85.0,31.2,OBESE,139.0,83.0,56.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Normal
+25/10/2023,Male,White other,White,False,04/12/2001,21.9,<25,155.0,46.9,19.5,HEALTHY,105.0,62.0,43.0,NORMAL,False,False,False,False,True,False,False,False,Definitely not,Normal
+25/10/2023,Female,Mixed White/Black African,Mixed,True,20/10/1956,67.1,56-70,167.0,107.9,38.7,OBESE,134.0,65.0,69.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,05/02/2002,21.7,<25,152.0,48.0,20.8,HEALTHY,104.0,68.0,36.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,29/09/2005,18.1,<25,175.0,76.2,24.9,HEALTHY,130.0,71.0,59.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,21/01/1987,36.8,25-40,149.0,93.0,41.9,OBESE,128.0,78.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely yes,Normal
+25/10/2023,Male,White British,White,False,26/06/1960,63.4,56-70,156.0,59.0,24.2,HEALTHY,107.0,72.0,35.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,19/03/2001,22.6,<25,159.0,69.0,27.3,OVERWEIGHT,119.0,74.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,White other,White,False,02/06/1997,26.4,25-40,168.5,66.9,23.6,HEALTHY,133.0,81.0,52.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Abnormal
+25/10/2023,Female,Black African (West Africa),Black,True,18/09/1994,29.1,25-40,180.0,107.0,33.0,OBESE,156.0,91.0,65.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+23/10/2023,Male,Black African (West Africa),Black,True,16/10/2001,22.0,<25,170.0,74.0,25.6,OVERWEIGHT,129.0,79.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black Caribbean,Black,True,01/11/1998,25.0,<25,157.0,58.0,23.5,HEALTHY,108.0,65.0,43.0,NORMAL,True,False,False,False,True,False,False,False,Definitely not,Abnormal
+23/10/2023,Male,Black African (unspecified),Black,True,12/07/1970,53.3,41-55,152.0,106.0,45.9,OBESE,139.0,109.0,30.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (unspecified),Black,True,13/08/1963,60.2,56-70,165.0,98.0,36.0,OBESE,156.0,101.0,55.0,HPT 1,False,False,False,False,False,False,False,True,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,03/08/1982,41.3,41-55,180.0,72.0,22.2,HEALTHY,95.0,65.0,30.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+25/10/2023,Male,Asian other,SE Asian,False,14/12/1956,66.9,56-70,168.5,78.0,27.5,OVERWEIGHT,131.0,76.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+25/10/2023,Male,Black Caribbean,Black,True,18/10/2000,23.0,<25,163.5,67.1,25.1,OVERWEIGHT,132.0,72.0,60.0,NORMAL,False,False,False,False,False,False,False,True,Definitely not,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,06/05/2003,20.5,<25,169.5,69.2,24.1,HEALTHY,129.0,85.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,19/06/2003,20.4,<25,185.0,65.0,19.0,HEALTHY,112.0,87.0,25.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,Indian,Indian,False,02/08/2003,20.2,<25,161.0,68.0,26.2,OVERWEIGHT,135.0,71.0,64.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,02/09/1996,27.2,25-40,179.0,75.1,23.4,HEALTHY,145.0,74.0,71.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+25/10/2023,Female,Black African (East Africa),Black,True,12/02/1995,28.7,25-40,164.0,101.7,37.8,OBESE,120.0,80.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,28/12/1992,30.8,25-40,172.2,84.0,28.3,OVERWEIGHT,115.0,86.0,29.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,White British,White,False,18/06/1999,24.4,<25,162.0,62.0,23.6,HEALTHY,125.0,72.0,53.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (South Africa),Black,True,13/12/2002,20.9,<25,169.0,84.7,29.7,OVERWEIGHT,138.0,78.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+25/10/2023,Female,Black African (West Africa),Black,True,31/10/1988,35.0,25-40,158.0,67.0,26.8,OVERWEIGHT,127.0,85.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+25/10/2023,Female,Black African (East Africa),Black,True,22/09/1980,43.1,41-55,165.0,70.0,25.7,OVERWEIGHT,120.0,75.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Female,White other,White,False,31/10/1988,35.0,25-40,167.0,91.0,32.6,OBESE,143.0,97.0,46.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+28/10/2023,Male,Black African (unspecified),Black,True,01/01/1993,30.8,25-40,170.0,78.0,27.0,OVERWEIGHT,117.0,65.0,52.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,07/12/1989,33.9,25-40,164.0,81.0,30.1,OBESE,145.0,91.0,54.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Male,Black African (West Africa),Black,True,04/03/1972,51.7,41-55,154.5,92.4,38.7,OBESE,104.0,75.0,29.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Male,Black Caribbean,Black,True,06/03/1971,52.7,41-55,164.6,118.6,43.8,OBESE,137.0,92.0,45.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Female,Asian other,SE Asian,False,10/09/1996,27.1,25-40,169.1,88.2,30.8,OBESE,143.0,74.0,69.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (East Africa),Black,True,26/08/1957,66.2,56-70,167.0,98.0,35.1,OBESE,134.0,87.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+25/10/2023,Male,Black African (West Africa),Black,True,01/01/1993,30.8,25-40,173.0,85.0,28.4,OVERWEIGHT,117.0,72.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,10/12/1986,36.9,25-40,164.6,87.1,32.1,OBESE,133.0,87.0,46.0,NORMAL,False,False,False,False,False,False,False,True,Not sure,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,01/01/1999,24.8,<25,161.0,55.0,21.2,HEALTHY,114.0,69.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (West Africa),Black,True,18/12/2000,22.9,<25,160.0,59.0,23.0,HEALTHY,129.0,84.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Asian other,SE Asian,False,06/11/1978,45.0,41-55,170.0,90.0,31.1,OBESE,134.0,68.0,66.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+04/11/2023,Male,Black African (West Africa),Black,True,07/03/1985,38.7,25-40,165.0,79.7,29.3,OVERWEIGHT,131.0,91.0,40.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black Caribbean,Black,True,07/03/1985,38.7,25-40,161.0,76.0,29.3,OVERWEIGHT,145.0,78.0,67.0,HPT 1,False,False,False,False,False,False,False,True,Not sure,Normal
+25/10/2023,Female,Black Caribbean,Black,True,14/09/1968,55.1,56-70,161.0,73.7,28.4,OVERWEIGHT,156.0,98.0,58.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Male,Black African (unspecified),Black,True,13/06/1948,75.4,>70,158.0,76.0,30.4,OBESE,129.0,86.0,43.0,NORMAL,True,False,False,False,False,False,False,False,Definitely not,Abnormal
+28/10/2023,Male,Black African (West Africa),Black,True,29/10/1977,46.0,41-55,160.5,98.2,38.1,OBESE,215.0,120.0,95.0,HPT CRISIS,False,False,False,False,False,False,False,False,Not sure,Abnormal
+25/10/2023,Male,Black African (West Africa),Black,True,03/02/1984,39.8,25-40,170.0,80.0,27.7,OVERWEIGHT,107.0,80.0,27.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Male,Black African (Central Africa),Black,True,10/09/1996,27.1,25-40,176.0,90.8,29.3,OVERWEIGHT,143.0,98.0,45.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (unspecified),Black,True,28/04/1974,49.5,41-55,170.0,63.0,21.8,HEALTHY,118.0,71.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+25/10/2023,Male,Black African (unspecified),Black,True,07/03/2002,21.6,<25,165.0,60.0,22.0,HEALTHY,117.0,76.0,41.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Female,Black African (West Africa),Black,True,25/11/1983,40.0,25-40,163.0,89.0,33.5,OBESE,138.0,76.0,62.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Female,Asian other,SE Asian,False,09/06/2001,22.4,<25,170.0,82.0,28.4,OVERWEIGHT,124.0,82.0,42.0,NORMAL,False,False,False,False,False,False,True,True,Definitely yes,Normal
+28/10/2023,Female,Black Caribbean,Black,True,29/06/2002,21.3,<25,180.0,92.0,28.4,OVERWEIGHT,128.0,65.0,63.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Female,Black African (West Africa),Black,True,24/10/1952,71.1,>70,173.0,73.6,24.6,HEALTHY,177.0,90.0,87.0,HPT 2,True,False,False,False,False,True,False,False,Not sure,Abnormal
+28/10/2023,Female,Black African (East Africa),Black,True,01/10/1967,56.1,56-70,159.5,73.4,28.9,OVERWEIGHT,144.0,94.0,50.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,High Abnormal
+25/10/2023,Male,Black African (West Africa),Black,True,01/05/1966,57.5,56-70,166.0,86.5,31.4,OBESE,142.0,89.0,53.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (West Africa),Black,True,16/03/1955,68.7,56-70,152.0,74.7,32.3,OBESE,144.0,87.0,57.0,PRE HPT,False,False,False,False,False,False,False,False,Not sure,Abnormal
+28/10/2023,Male,Black African (West Africa),Black,True,15/02/1947,76.8,>70,169.0,72.0,25.2,OVERWEIGHT,130.0,91.0,39.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+28/10/2023,Female,Black African (West Africa),Black,True,26/05/2003,20.4,<25,162.0,67.9,25.9,OVERWEIGHT,131.0,67.0,64.0,NORMAL,True,False,False,False,True,False,False,False,Not sure,Normal
+28/10/2023,Male,Black African (unspecified),Black,True,30/09/1988,35.1,25-40,175.0,71.0,23.2,HEALTHY,173.0,115.0,58.0,HPT 2,True,False,False,False,True,False,False,False,Definitely yes,Normal
+28/10/2023,Female,Black African (West Africa),Black,True,01/01/1963,60.9,56-70,169.0,94.0,32.9,OBESE,139.0,93.0,46.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+28/10/2023,Male,Black African (West Africa),Black,True,22/04/1981,42.5,41-55,170.0,106.0,36.7,OBESE,104.0,77.0,27.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Male,Indian,Indian,False,05/12/1942,81.0,>70,169.0,88.0,30.8,OBESE,153.0,92.0,61.0,HPT 1,False,False,False,False,False,False,False,True,Not sure,Normal
+28/10/2023,Male,Black African (West Africa),Black,True,07/06/1956,67.4,56-70,179.0,76.0,23.7,HEALTHY,146.0,85.0,61.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+28/10/2023,Male,Black Caribbean,Black,True,26/01/1961,62.8,56-70,158.0,74.0,29.6,OVERWEIGHT,118.0,78.0,40.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Abnormal
+28/10/2023,Male,Black African (West Africa),Black,True,12/08/1992,31.2,25-40,187.0,97.2,27.8,OVERWEIGHT,130.0,81.0,49.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Male,Black Caribbean,Black,True,15/07/1954,69.3,56-70,159.0,69.0,27.3,OVERWEIGHT,154.0,93.0,61.0,HPT 1,True,False,False,False,True,False,True,False,Not sure,Abnormal
+28/10/2023,Male,Black African (West Africa),Black,True,05/01/1967,56.8,56-70,182.5,78.0,23.4,HEALTHY,182.0,96.0,86.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+28/10/2023,Male,White British,White,False,24/12/1998,24.9,<25,174.5,101.4,33.3,OBESE,154.0,90.0,64.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+30/09/2023,Male,Black African (unspecified),Black,True,13/12/1972,50.8,41-55,166.0,70.5,25.6,OVERWEIGHT,142.0,94.0,48.0,HPT 1,True,False,False,False,False,False,False,False,Not sure,Normal
+30/10/2023,Female,Black African (unspecified),Black,True,17/04/1938,85.6,>70,162.5,74.6,28.3,OVERWEIGHT,167.0,81.0,86.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Abnormal
+30/10/2023,Female,Black Caribbean,Black,True,30/08/1962,61.2,56-70,158.0,75.0,30.0,OBESE,131.0,87.0,44.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Abnormal
+30/10/2023,Female,Black Caribbean,Black,True,31/12/1956,66.9,56-70,176.7,61.6,19.7,HEALTHY,127.0,77.0,50.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/10/2023,Female,Black African (West Africa),Black,True,23/01/1969,54.8,41-55,183.0,80.0,23.9,HEALTHY,125.0,79.0,46.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/10/2023,Male,Black Caribbean,Black,True,07/08/1979,44.3,41-55,181.0,65.5,20.0,HEALTHY,125.0,88.0,37.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/10/2023,Male,Asian other,SE Asian,False,11/12/1962,60.9,56-70,163.0,65.0,24.5,HEALTHY,124.0,70.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+30/10/2023,Female,Black African (unspecified),Black,True,11/08/1996,27.2,25-40,181.0,106.0,32.4,OBESE,153.0,88.0,65.0,PRE HPT,False,False,False,False,False,False,False,False,Definitely not,Normal
+30/10/2023,Female,Black African (West Africa),Black,True,30/01/1997,26.8,25-40,157.5,85.0,34.3,OBESE,127.0,80.0,47.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Female,Black African (unspecified),Black,True,07/07/1965,58.4,56-70,168.5,75.0,26.4,OVERWEIGHT,125.0,74.0,51.0,NORMAL,True,False,False,False,True,False,False,True,Not sure,Abnormal
+04/11/2023,Male,Black African (unspecified),Black,True,30/09/1961,62.1,56-70,187.0,122.7,35.1,OBESE,170.0,110.0,60.0,HPT 2,False,False,False,False,False,False,False,False,Definitely not,High Abnormal
+04/11/2023,Female,Asian other,SE Asian,False,20/09/1977,46.2,41-55,165.0,84.0,30.9,OBESE,124.0,77.0,47.0,NORMAL,False,True,False,False,False,True,False,False,Definitely not,Normal
+04/11/2023,Female,Black African (West Africa),Black,True,25/07/1947,76.3,>70,161.4,66.8,25.6,OVERWEIGHT,140.0,74.0,66.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+04/11/2023,Female,Black African (unspecified),Black,True,16/10/1953,70.1,>70,171.1,69.0,23.6,HEALTHY,180.0,91.0,89.0,HPT 1,False,False,False,False,False,False,False,True,Not sure,Normal
+04/11/2023,Female,Black African (West Africa),Black,True,17/11/1956,67.0,56-70,156.1,81.5,33.4,OBESE,158.0,77.0,81.0,HPT 1,True,True,False,False,True,False,False,True,Definitely not,Normal
+04/11/2023,Female,Any other,Other,False,11/10/1972,51.1,41-55,179.0,91.1,28.4,OVERWEIGHT,108.0,65.0,43.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+04/11/2023,Male,Black African (West Africa),Black,True,22/05/1969,54.5,41-55,168.9,74.4,26.1,OVERWEIGHT,145.0,77.0,68.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,Normal
+04/11/2023,Female,Black African (West Africa),Black,True,26/11/1963,60.0,56-70,159.9,93.2,36.5,OBESE,136.0,75.0,61.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Female,Black Caribbean,Black,True,16/07/1983,40.3,41-55,163.5,67.0,25.1,OVERWEIGHT,131.0,77.0,54.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+04/11/2023,Female,Black African (West Africa),Black,True,09/09/1968,55.2,56-70,152.0,90.1,39.0,OBESE,142.0,93.0,49.0,HPT 1,True,False,False,False,False,False,False,False,Definitely not,Abnormal
+04/11/2023,Female,Black Caribbean,Black,True,26/08/1957,66.2,56-70,156.9,61.8,25.1,OVERWEIGHT,148.0,88.0,60.0,PRE HPT,False,True,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Male,Black African (unspecified),Black,True,21/10/1967,56.1,56-70,156.5,66.0,26.9,OVERWEIGHT,121.0,76.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+04/11/2023,Female,Black Caribbean,Black,True,09/09/1957,66.2,56-70,155.1,102.7,42.7,OBESE,135.0,87.0,48.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+04/11/2023,Female,Black Caribbean,Black,True,24/06/1984,39.4,25-40,167.0,60.0,21.5,HEALTHY,123.0,81.0,42.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Male,Black African (West Africa),Black,True,14/11/1982,41.0,41-55,166.0,84.2,30.6,OBESE,133.0,88.0,45.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Female,Black African (unspecified),Black,True,15/02/1967,56.8,56-70,159.8,116.8,45.7,OBESE,130.0,75.0,55.0,NORMAL,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Female,Black African (West Africa),Black,True,20/04/1972,51.6,41-55,159.9,83.5,32.7,OBESE,140.0,86.0,54.0,PRE HPT,False,False,False,False,True,False,False,False,Not sure,High Abnormal
+04/11/2023,Male,Black African (unspecified),Black,True,19/05/1967,56.5,56-70,155.8,138.3,57.0,OBESE,134.0,72.0,62.0,NORMAL,False,True,False,False,True,True,True,False,Not sure,High Abnormal
+04/11/2023,Female,Black African (West Africa),Black,True,12/12/1947,75.9,>70,165.9,71.4,25.9,OVERWEIGHT,134.0,98.0,36.0,PRE HPT,True,False,False,False,True,False,False,False,Not sure,Normal
+04/11/2023,Male,Pakistani,Indian,False,08/09/1970,53.2,41-55,175.8,109.1,35.3,OBESE,147.0,68.0,79.0,HPT 1,False,False,False,False,False,False,False,False,Definitely not,Normal
+04/11/2023,Female,Black African (West Africa),Black,True,12/09/1961,62.2,56-70,169.2,91.7,32.0,OBESE,175.0,90.0,85.0,HPT 2,False,False,False,False,False,False,False,False,Definitely yes,Normal
+25/10/2023,Female,Black Caribbean,Black,True,13/06/1948,75.4,>70,155.5,65.0,26.9,OVERWEIGHT,130.0,70.0,60.0,NORMAL,False,False,False,False,False,False,False,False,Not sure,Normal
+25/10/2023,Female,Black African (unspecified),Black,True,13/06/1948,75.4,>70,167.0,87.0,31.2,OBESE,156.0,100.0,56.0,HPT 1,False,False,False,False,False,False,False,False,Not sure,High Abnormal

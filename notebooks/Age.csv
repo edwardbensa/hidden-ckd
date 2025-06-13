@@ -1,0 +1,962 @@
+Age,Ethnicity_Black,BP_Category,uACR
+76.5,True,NORMAL,Abnormal
+52.8,True,NORMAL,Abnormal
+18.1,True,NORMAL,Normal
+54.0,True,PRE HPT,Abnormal
+43.0,True,HPT 1,Abnormal
+53.2,True,NORMAL,Abnormal
+64.8,True,PRE HPT,Abnormal
+47.0,True,NORMAL,Normal
+34.8,True,NORMAL,Normal
+23.5,True,NORMAL,Abnormal
+34.8,True,NORMAL,Normal
+30.8,True,NORMAL,Abnormal
+48.3,True,HPT 1,Abnormal
+67.3,True,HPT 2,Abnormal
+66.9,True,PRE HPT,Abnormal
+31.1,True,NORMAL,Normal
+44.5,True,NORMAL,Normal
+69.3,False,HPT 1,Normal
+60.2,True,NORMAL,Normal
+60.6,True,NORMAL,Abnormal
+65.4,True,PRE HPT,Abnormal
+75.8,True,NORMAL,Normal
+53.0,True,NORMAL,Normal
+46.5,True,HPT 1,Abnormal
+46.5,True,NORMAL,Normal
+63.0,True,HPT 1,Abnormal
+21.9,True,NORMAL,Abnormal
+56.4,True,NORMAL,Abnormal
+42.4,True,HPT 1,Abnormal
+60.1,True,NORMAL,Abnormal
+52.1,True,HPT 1,Normal
+41.4,False,PRE HPT,Normal
+53.6,True,NORMAL,Normal
+42.3,True,NORMAL,High Abnormal
+47.9,True,PRE HPT,Normal
+57.9,True,HPT 1,Normal
+25.7,True,NORMAL,Normal
+44.3,True,NORMAL,Normal
+44.3,True,NORMAL,Normal
+73.7,True,NORMAL,Abnormal
+72.7,True,HPT 1,Normal
+52.9,True,NORMAL,Normal
+39.9,True,HPT 1,High Abnormal
+43.5,True,PRE HPT,Abnormal
+68.9,False,NORMAL,Abnormal
+57.9,False,PRE HPT,Normal
+49.3,True,HPT 1,Abnormal
+47.0,True,NORMAL,Normal
+54.8,True,PRE HPT,Normal
+48.8,True,NORMAL,Abnormal
+64.3,True,NORMAL,Abnormal
+42.0,True,NORMAL,Abnormal
+59.4,True,HPT 1,High Abnormal
+91.0,True,NORMAL,Normal
+86.9,True,HPT 2,Abnormal
+43.3,True,HPT 1,Abnormal
+54.2,False,PRE HPT,Normal
+64.0,True,NORMAL,Normal
+53.7,True,NORMAL,Abnormal
+63.6,True,NORMAL,Abnormal
+41.2,True,NORMAL,Abnormal
+55.6,True,NORMAL,Normal
+54.6,True,NORMAL,Abnormal
+45.4,True,NORMAL,High Abnormal
+42.3,False,HPT 1,Normal
+26.7,True,NORMAL,Abnormal
+62.6,True,NORMAL,Abnormal
+90.6,True,HPT 1,Normal
+62.4,True,HPT 1,Normal
+75.6,True,PRE HPT,Abnormal
+24.8,True,NORMAL,Abnormal
+51.3,True,PRE HPT,Abnormal
+60.0,True,NORMAL,Abnormal
+55.3,True,PRE HPT,Abnormal
+52.2,True,PRE HPT,Abnormal
+27.6,True,NORMAL,Normal
+29.2,False,NORMAL,Normal
+86.1,False,PRE HPT,Normal
+83.4,True,NORMAL,Abnormal
+78.2,True,PRE HPT,Abnormal
+78.8,True,PRE HPT,Normal
+92.1,True,NORMAL,Abnormal
+53.5,True,HPT 1,Abnormal
+70.1,True,HPT 2,Abnormal
+33.2,True,HPT 1,Abnormal
+50.2,True,PRE HPT,Abnormal
+72.6,True,NORMAL,Normal
+62.6,True,NORMAL,High Abnormal
+70.0,True,NORMAL,Abnormal
+42.4,True,PRE HPT,Normal
+43.0,True,NORMAL,Abnormal
+54.1,True,NORMAL,Normal
+43.9,True,NORMAL,Abnormal
+41.5,True,HPT 1,Normal
+54.3,True,NORMAL,Abnormal
+66.7,True,NORMAL,Normal
+64.0,True,NORMAL,Normal
+60.5,True,NORMAL,Abnormal
+58.7,True,PRE HPT,Abnormal
+46.2,True,NORMAL,Normal
+58.6,True,NORMAL,Normal
+45.0,False,NORMAL,Normal
+65.1,True,NORMAL,Normal
+60.8,True,NORMAL,Normal
+38.6,False,HPT 1,Normal
+34.4,True,NORMAL,Normal
+55.0,True,HPT 1,Abnormal
+60.2,True,HPT 1,Normal
+62.4,True,NORMAL,Abnormal
+55.6,True,NORMAL,Abnormal
+55.2,False,NORMAL,Abnormal
+82.3,True,NORMAL,Abnormal
+63.7,True,PRE HPT,Normal
+63.7,True,PRE HPT,Normal
+63.1,True,NORMAL,High Abnormal
+51.5,True,NORMAL,Abnormal
+58.9,True,HPT 1,Normal
+52.2,True,NORMAL,Abnormal
+56.6,True,NORMAL,Normal
+55.7,True,NORMAL,Normal
+59.4,True,NORMAL,Normal
+65.2,True,HPT 1,High Abnormal
+40.1,True,PRE HPT,Abnormal
+48.2,True,NORMAL,Abnormal
+71.5,True,PRE HPT,Abnormal
+60.1,True,PRE HPT,Abnormal
+55.6,True,NORMAL,Abnormal
+51.0,True,NORMAL,High Abnormal
+55.1,True,NORMAL,Normal
+53.3,True,HPT 1,Abnormal
+51.8,True,NORMAL,Abnormal
+57.1,True,NORMAL,Normal
+29.0,True,NORMAL,Normal
+44.8,True,NORMAL,Abnormal
+44.8,False,NORMAL,Normal
+45.1,True,NORMAL,High Abnormal
+39.4,False,NORMAL,Abnormal
+24.9,True,HPT 1,Normal
+37.8,True,HPT 1,High Abnormal
+32.2,True,HPT 1,Normal
+77.6,False,NORMAL,High Abnormal
+66.0,True,HPT 2,High Abnormal
+51.9,True,PRE HPT,Abnormal
+58.1,True,HPT 1,Abnormal
+55.8,True,HPT 1,High Abnormal
+27.4,True,NORMAL,Abnormal
+67.9,True,NORMAL,Abnormal
+46.0,True,HPT 1,Normal
+37.4,True,NORMAL,Normal
+25.6,True,NORMAL,Normal
+36.4,True,NORMAL,Normal
+30.9,True,NORMAL,Abnormal
+42.1,True,NORMAL,Abnormal
+34.1,False,NORMAL,Abnormal
+61.8,True,PRE HPT,Abnormal
+51.2,True,PRE HPT,Abnormal
+42.1,True,NORMAL,Abnormal
+46.1,True,PRE HPT,Abnormal
+46.1,True,PRE HPT,Normal
+83.6,True,HPT 1,Abnormal
+65.4,True,NORMAL,Abnormal
+58.5,True,HPT 1,Abnormal
+54.9,True,NORMAL,Normal
+58.5,True,NORMAL,Normal
+22.1,False,NORMAL,Normal
+24.9,True,PRE HPT,Abnormal
+22.0,True,NORMAL,Normal
+34.1,True,PRE HPT,Abnormal
+45.4,True,PRE HPT,Normal
+33.4,True,NORMAL,Abnormal
+75.6,True,NORMAL,Normal
+32.1,True,PRE HPT,Normal
+47.4,True,NORMAL,Normal
+38.3,True,NORMAL,Normal
+32.5,True,NORMAL,Normal
+37.3,True,NORMAL,Normal
+58.4,True,NORMAL,Abnormal
+46.9,True,NORMAL,Normal
+39.8,True,NORMAL,Abnormal
+48.6,True,NORMAL,Normal
+44.1,True,NORMAL,Normal
+43.5,False,HPT 1,Normal
+38.3,True,PRE HPT,Abnormal
+58.6,True,NORMAL,Normal
+56.0,True,NORMAL,Abnormal
+29.1,True,NORMAL,Normal
+58.3,True,HPT 1,Normal
+60.9,False,HPT 1,Normal
+45.8,True,NORMAL,Normal
+50.0,False,NORMAL,Abnormal
+37.4,True,PRE HPT,Normal
+45.8,True,PRE HPT,Normal
+45.2,True,NORMAL,Abnormal
+60.6,True,NORMAL,Normal
+50.8,True,PRE HPT,Abnormal
+49.2,True,HPT 1,Normal
+46.7,True,NORMAL,Abnormal
+44.9,True,NORMAL,Normal
+58.6,True,NORMAL,Normal
+52.2,True,NORMAL,High Abnormal
+75.5,True,NORMAL,Abnormal
+64.2,True,NORMAL,Normal
+45.4,True,NORMAL,Abnormal
+43.7,True,NORMAL,Abnormal
+56.8,True,HPT 1,Abnormal
+49.0,True,NORMAL,Normal
+53.8,True,HPT 1,Abnormal
+48.1,True,HPT 1,Normal
+62.1,True,HPT 1,Normal
+24.0,True,NORMAL,Normal
+58.9,True,HPT 1,Normal
+46.1,True,NORMAL,Abnormal
+37.7,True,NORMAL,High Abnormal
+46.1,False,HPT 1,Abnormal
+70.2,True,HPT 1,Normal
+59.3,True,NORMAL,Abnormal
+14.4,True,NORMAL,Abnormal
+61.5,True,PRE HPT,High Abnormal
+30.9,True,NORMAL,Normal
+49.8,True,PRE HPT,Normal
+47.3,False,HPT CRISIS,Abnormal
+27.0,True,NORMAL,Abnormal
+57.9,True,HPT 1,Abnormal
+54.7,True,HPT 2,Abnormal
+65.8,True,HPT 2,Abnormal
+44.4,False,HPT 2,Normal
+31.6,True,NORMAL,Abnormal
+55.2,True,NORMAL,Abnormal
+62.2,True,HPT 1,Normal
+69.4,True,HPT 1,Abnormal
+54.7,True,NORMAL,Abnormal
+56.6,True,NORMAL,Abnormal
+59.4,True,HPT 1,Abnormal
+49.1,True,HPT 1,Normal
+57.2,True,NORMAL,Abnormal
+69.1,True,HPT 2,Abnormal
+57.1,True,NORMAL,Abnormal
+55.7,True,PRE HPT,Normal
+71.2,True,HPT 1,Abnormal
+66.5,True,HPT 1,Abnormal
+68.4,True,HPT 2,High Abnormal
+50.4,True,NORMAL,Normal
+48.0,True,NORMAL,Normal
+35.2,True,NORMAL,Normal
+65.2,False,HPT 1,Abnormal
+61.4,False,HPT 2,Normal
+56.1,True,HPT 1,High Abnormal
+50.0,True,NORMAL,Normal
+50.5,True,PRE HPT,Normal
+21.1,True,HPT 2,Abnormal
+27.0,True,NORMAL,Normal
+36.3,True,NORMAL,Normal
+46.2,True,NORMAL,Normal
+54.9,True,NORMAL,Abnormal
+75.4,True,NORMAL,High Abnormal
+50.3,True,NORMAL,Abnormal
+55.9,True,HPT 1,Abnormal
+53.0,True,NORMAL,Abnormal
+61.7,True,HPT 1,Abnormal
+20.8,True,NORMAL,Normal
+63.2,True,PRE HPT,Abnormal
+61.2,True,HPT 1,Abnormal
+41.2,True,NORMAL,Abnormal
+44.7,True,HPT 2,Abnormal
+56.5,True,HPT 1,Normal
+44.5,True,NORMAL,Normal
+61.6,True,NORMAL,Normal
+29.1,True,NORMAL,Abnormal
+64.8,True,NORMAL,Normal
+55.7,True,NORMAL,Normal
+44.4,True,PRE HPT,High Abnormal
+30.0,True,NORMAL,Normal
+46.9,False,HPT 1,Normal
+50.3,True,HPT 1,High Abnormal
+51.0,True,HPT 1,High Abnormal
+72.8,True,HPT 2,Normal
+19.3,True,NORMAL,Normal
+41.0,True,HPT 1,Abnormal
+58.3,True,HPT 1,Normal
+34.2,True,HPT 1,Abnormal
+43.6,True,PRE HPT,Abnormal
+28.2,True,PRE HPT,High Abnormal
+64.6,True,NORMAL,Normal
+59.4,True,NORMAL,Abnormal
+48.3,True,NORMAL,Abnormal
+57.2,True,HPT 2,High Abnormal
+35.0,True,NORMAL,Abnormal
+54.4,True,NORMAL,Normal
+22.6,True,NORMAL,Abnormal
+45.1,False,NORMAL,Normal
+40.2,False,NORMAL,Normal
+41.1,True,NORMAL,Abnormal
+51.0,True,NORMAL,Abnormal
+58.0,False,HPT 2,Abnormal
+28.2,True,NORMAL,Normal
+65.0,True,HPT 1,Abnormal
+37.5,True,NORMAL,Abnormal
+48.5,True,HPT CRISIS,Abnormal
+38.1,True,HPT 1,Abnormal
+52.6,False,PRE HPT,Normal
+53.3,True,HPT 1,Abnormal
+58.9,True,HPT 1,Normal
+46.4,True,HPT 2,Abnormal
+56.4,True,NORMAL,Abnormal
+52.6,True,NORMAL,Abnormal
+59.0,True,NORMAL,Abnormal
+54.8,True,HPT 1,Abnormal
+53.3,True,HPT 1,Normal
+56.9,True,HPT 1,Normal
+53.6,True,HPT 2,Abnormal
+67.7,True,NORMAL,Abnormal
+39.9,True,HPT 1,Abnormal
+69.0,True,NORMAL,Abnormal
+58.0,True,HPT 1,Abnormal
+40.0,True,NORMAL,Abnormal
+52.3,True,HPT 2,Abnormal
+56.7,True,HPT 1,Abnormal
+36.2,True,NORMAL,Abnormal
+54.1,True,HPT 2,Normal
+63.0,True,NORMAL,Abnormal
+46.2,True,NORMAL,High Abnormal
+58.3,True,NORMAL,High Abnormal
+54.9,True,NORMAL,Abnormal
+41.9,True,HPT 1,Abnormal
+64.2,True,HPT 2,Abnormal
+46.7,True,HPT 1,Normal
+56.6,True,HPT 2,Abnormal
+61.0,True,HPT 1,Normal
+59.7,True,HPT 1,Normal
+51.8,True,PRE HPT,Abnormal
+46.3,True,NORMAL,Abnormal
+56.2,True,PRE HPT,Normal
+58.9,True,PRE HPT,Normal
+56.7,False,NORMAL,Normal
+34.6,True,NORMAL,Normal
+47.8,True,PRE HPT,Normal
+61.3,True,HPT 1,Normal
+57.7,True,NORMAL,Abnormal
+47.3,True,HPT 2,Abnormal
+58.2,False,NORMAL,Abnormal
+23.8,True,NORMAL,Normal
+56.2,True,NORMAL,Abnormal
+39.1,False,HPT 1,Normal
+55.3,False,NORMAL,Abnormal
+57.0,True,HPT 2,Normal
+36.4,True,NORMAL,Normal
+75.9,True,PRE HPT,Normal
+59.7,True,NORMAL,Abnormal
+42.6,True,NORMAL,Abnormal
+63.0,True,NORMAL,Abnormal
+34.3,False,NORMAL,Normal
+42.9,True,NORMAL,Abnormal
+52.4,True,NORMAL,Normal
+60.2,True,NORMAL,Normal
+36.6,True,NORMAL,Normal
+35.1,True,NORMAL,Normal
+27.2,True,NORMAL,Normal
+60.0,True,NORMAL,Abnormal
+47.8,False,NORMAL,Normal
+32.3,True,NORMAL,Normal
+47.5,True,NORMAL,Abnormal
+32.7,True,NORMAL,Normal
+67.7,False,NORMAL,Normal
+55.9,True,NORMAL,Abnormal
+30.0,True,NORMAL,Normal
+55.0,True,HPT 1,Abnormal
+35.0,False,NORMAL,Abnormal
+60.6,True,NORMAL,Abnormal
+65.0,False,NORMAL,Abnormal
+70.6,True,NORMAL,Normal
+67.3,True,PRE HPT,Normal
+73.4,True,PRE HPT,High Abnormal
+38.5,False,NORMAL,Normal
+66.8,True,NORMAL,Normal
+63.6,True,NORMAL,Normal
+60.4,True,PRE HPT,Abnormal
+73.2,True,PRE HPT,Normal
+69.3,True,NORMAL,Abnormal
+21.8,True,NORMAL,Normal
+52.9,True,PRE HPT,Abnormal
+51.0,True,HPT 1,Normal
+41.2,True,HPT 2,Abnormal
+51.1,True,NORMAL,Normal
+52.0,True,NORMAL,Abnormal
+33.9,True,NORMAL,Normal
+45.5,True,PRE HPT,Abnormal
+32.5,True,HPT 1,High Abnormal
+31.9,True,NORMAL,Normal
+41.6,True,NORMAL,Normal
+66.5,True,HPT 1,Abnormal
+64.6,True,HPT 1,Abnormal
+55.0,True,NORMAL,Normal
+57.0,True,HPT 1,Normal
+26.8,False,NORMAL,Normal
+56.4,True,NORMAL,Abnormal
+46.2,True,HPT 2,High Abnormal
+50.1,True,NORMAL,Normal
+63.2,False,HPT CRISIS,Abnormal
+48.8,False,NORMAL,Abnormal
+42.3,True,NORMAL,Normal
+48.3,True,NORMAL,Abnormal
+55.5,True,NORMAL,Abnormal
+37.4,True,NORMAL,Normal
+57.9,True,PRE HPT,Abnormal
+48.5,True,HPT 1,Normal
+54.4,True,HPT 2,Abnormal
+51.1,False,PRE HPT,Normal
+53.1,True,HPT 2,Normal
+54.9,True,NORMAL,Normal
+59.6,True,HPT 2,Abnormal
+64.3,True,HPT 2,Normal
+60.1,True,HPT 1,Abnormal
+72.8,True,HPT 2,High Abnormal
+61.1,True,PRE HPT,Abnormal
+54.6,True,PRE HPT,Abnormal
+55.4,True,HPT 1,Normal
+62.2,True,NORMAL,Normal
+51.5,True,NORMAL,Abnormal
+27.7,True,NORMAL,Normal
+50.7,True,HPT 1,Normal
+63.4,False,NORMAL,Abnormal
+54.0,True,HPT 1,High Abnormal
+30.5,True,NORMAL,Abnormal
+58.1,False,NORMAL,Abnormal
+30.1,False,NORMAL,Abnormal
+59.6,True,HPT 1,Normal
+29.9,True,NORMAL,Abnormal
+60.8,True,HPT 1,Normal
+57.0,True,PRE HPT,Abnormal
+42.3,True,NORMAL,Abnormal
+49.3,False,HPT 1,Normal
+70.3,True,NORMAL,Abnormal
+46.7,True,HPT 1,Abnormal
+46.2,True,PRE HPT,Normal
+52.1,True,NORMAL,Normal
+53.6,True,PRE HPT,Normal
+45.8,True,NORMAL,Normal
+67.1,True,NORMAL,Normal
+62.7,True,PRE HPT,Abnormal
+55.0,False,HPT 1,Normal
+20.2,True,NORMAL,Normal
+80.8,True,HPT 1,Normal
+54.3,True,PRE HPT,Abnormal
+34.5,True,HPT 1,Normal
+63.0,True,NORMAL,Abnormal
+57.5,False,NORMAL,Normal
+43.4,True,NORMAL,Normal
+47.0,True,NORMAL,Abnormal
+71.3,True,NORMAL,High Abnormal
+38.4,True,NORMAL,Normal
+54.1,True,NORMAL,Normal
+43.4,False,NORMAL,Normal
+67.9,True,NORMAL,High Abnormal
+22.3,True,NORMAL,Abnormal
+53.3,True,NORMAL,Normal
+55.6,True,PRE HPT,Abnormal
+49.6,True,NORMAL,Normal
+60.3,True,NORMAL,Abnormal
+62.0,True,NORMAL,Abnormal
+54.2,True,NORMAL,Abnormal
+20.6,True,NORMAL,Abnormal
+39.2,True,PRE HPT,Normal
+46.1,True,HPT 2,Abnormal
+53.1,False,NORMAL,Normal
+45.7,True,NORMAL,Normal
+62.5,True,NORMAL,Normal
+49.0,True,NORMAL,Abnormal
+57.3,True,NORMAL,High Abnormal
+48.0,True,NORMAL,Abnormal
+47.7,True,NORMAL,Normal
+60.0,True,PRE HPT,Normal
+67.8,True,NORMAL,High Abnormal
+37.4,True,NORMAL,Normal
+60.3,True,HPT 2,Normal
+61.4,True,PRE HPT,Abnormal
+47.3,True,NORMAL,Abnormal
+59.4,True,NORMAL,Normal
+61.0,True,NORMAL,Abnormal
+75.0,True,PRE HPT,High Abnormal
+66.0,False,PRE HPT,Normal
+56.8,True,PRE HPT,Abnormal
+31.3,True,NORMAL,Normal
+52.1,True,PRE HPT,Abnormal
+64.0,True,HPT 2,Normal
+60.8,False,NORMAL,Abnormal
+47.6,True,HPT 1,Abnormal
+38.4,True,NORMAL,High Abnormal
+38.7,True,NORMAL,Normal
+56.2,True,PRE HPT,Abnormal
+71.0,True,NORMAL,Normal
+65.7,True,NORMAL,Abnormal
+62.6,True,PRE HPT,Normal
+61.1,True,HPT 2,High Abnormal
+68.4,True,NORMAL,Normal
+21.1,True,NORMAL,Abnormal
+68.8,True,NORMAL,Normal
+58.4,False,HPT 1,Normal
+41.5,True,NORMAL,Normal
+29.0,True,NORMAL,Abnormal
+24.2,True,NORMAL,Normal
+58.5,True,NORMAL,Normal
+60.9,True,PRE HPT,Abnormal
+44.1,True,NORMAL,Normal
+53.5,True,HPT 1,Normal
+53.2,True,HPT 1,Normal
+62.8,True,PRE HPT,Abnormal
+71.8,True,NORMAL,High Abnormal
+84.6,True,NORMAL,Abnormal
+71.3,True,PRE HPT,Abnormal
+82.9,True,PRE HPT,Normal
+58.4,True,NORMAL,Normal
+65.9,True,NORMAL,Abnormal
+62.6,True,HPT 1,Normal
+60.6,False,NORMAL,Normal
+53.9,True,HPT 1,Normal
+57.1,True,PRE HPT,Normal
+46.7,False,HPT 1,Normal
+67.0,True,NORMAL,Normal
+49.0,True,NORMAL,Abnormal
+41.3,False,NORMAL,Normal
+44.5,True,NORMAL,Abnormal
+53.7,True,PRE HPT,Normal
+44.1,True,PRE HPT,Normal
+39.8,True,NORMAL,High Abnormal
+71.1,False,HPT 1,Abnormal
+51.8,True,HPT CRISIS,Abnormal
+47.7,True,NORMAL,Normal
+46.4,False,HPT 1,Normal
+31.0,True,NORMAL,Abnormal
+58.0,True,NORMAL,Normal
+58.8,True,NORMAL,Normal
+24.3,True,NORMAL,Normal
+50.2,True,HPT 1,Normal
+35.4,False,NORMAL,Normal
+33.6,False,NORMAL,Normal
+40.9,True,NORMAL,Normal
+50.6,True,NORMAL,Normal
+58.5,True,HPT 1,Abnormal
+31.2,True,NORMAL,Abnormal
+57.0,True,NORMAL,Abnormal
+52.4,True,NORMAL,Abnormal
+50.2,True,NORMAL,Abnormal
+44.9,True,NORMAL,Abnormal
+30.7,True,NORMAL,Abnormal
+39.0,True,NORMAL,Normal
+42.1,True,PRE HPT,Abnormal
+45.0,True,NORMAL,Abnormal
+62.2,True,PRE HPT,Abnormal
+62.3,True,NORMAL,Abnormal
+51.2,True,HPT 2,High Abnormal
+29.4,True,NORMAL,Abnormal
+47.4,True,PRE HPT,Abnormal
+37.0,True,NORMAL,Abnormal
+62.1,True,HPT 1,Abnormal
+53.4,True,PRE HPT,Abnormal
+57.8,True,HPT 1,Normal
+36.4,True,NORMAL,High Abnormal
+54.1,True,PRE HPT,Normal
+54.3,True,PRE HPT,Normal
+47.7,True,HPT 1,Abnormal
+37.1,True,NORMAL,High Abnormal
+44.1,True,NORMAL,Abnormal
+41.8,True,NORMAL,Normal
+44.3,True,PRE HPT,Normal
+45.8,True,NORMAL,Normal
+55.9,True,HPT 1,Abnormal
+54.9,False,NORMAL,Normal
+60.9,True,HPT 1,Normal
+57.6,True,NORMAL,Normal
+74.8,True,NORMAL,Abnormal
+49.4,True,NORMAL,Abnormal
+56.1,True,PRE HPT,Abnormal
+59.0,True,HPT 1,Abnormal
+33.3,True,NORMAL,Abnormal
+45.4,False,NORMAL,Normal
+27.1,True,NORMAL,Abnormal
+61.6,True,NORMAL,Normal
+54.8,True,HPT 1,Abnormal
+53.8,False,PRE HPT,Abnormal
+54.3,True,PRE HPT,Abnormal
+51.2,True,PRE HPT,Abnormal
+26.5,True,PRE HPT,Normal
+54.8,False,HPT 1,Abnormal
+52.5,True,HPT 1,Abnormal
+61.7,True,PRE HPT,Normal
+63.2,False,HPT 1,Normal
+44.0,True,HPT 2,Abnormal
+42.2,True,NORMAL,Abnormal
+63.7,True,HPT 1,Abnormal
+54.7,True,NORMAL,Normal
+58.1,True,HPT 2,Normal
+53.4,True,HPT 1,Abnormal
+50.3,True,HPT 1,Abnormal
+72.0,True,HPT 2,Abnormal
+63.0,False,HPT 1,Normal
+61.4,True,PRE HPT,Abnormal
+40.3,True,NORMAL,Normal
+44.9,False,NORMAL,Normal
+49.9,True,NORMAL,Abnormal
+56.1,True,NORMAL,Abnormal
+46.8,True,NORMAL,Normal
+53.4,True,HPT 1,Abnormal
+57.3,True,NORMAL,Normal
+37.3,True,HPT 1,Abnormal
+51.4,False,HPT 1,Normal
+58.5,False,HPT 2,Normal
+67.2,True,NORMAL,Normal
+44.7,True,PRE HPT,Normal
+66.2,True,NORMAL,Abnormal
+81.6,False,HPT 1,Normal
+75.1,True,HPT 2,Abnormal
+60.9,True,HPT 1,Normal
+25.4,True,NORMAL,Normal
+53.5,True,PRE HPT,Normal
+18.6,True,NORMAL,Abnormal
+67.6,True,PRE HPT,Normal
+55.5,True,HPT 2,Abnormal
+88.2,True,HPT 2,Normal
+48.1,True,NORMAL,Normal
+44.4,True,NORMAL,Abnormal
+63.8,True,NORMAL,Normal
+44.4,True,NORMAL,Normal
+33.8,True,PRE HPT,Normal
+58.5,True,PRE HPT,Abnormal
+55.3,True,NORMAL,Normal
+41.2,False,NORMAL,Normal
+61.8,False,HPT 2,Normal
+53.1,True,NORMAL,Normal
+19.9,True,PRE HPT,Abnormal
+45.5,True,PRE HPT,Normal
+81.4,True,PRE HPT,Abnormal
+60.0,True,NORMAL,Normal
+59.0,True,NORMAL,Normal
+56.4,True,NORMAL,Abnormal
+57.6,True,NORMAL,Abnormal
+42.7,True,NORMAL,Normal
+27.7,True,NORMAL,Normal
+35.9,True,NORMAL,Normal
+47.3,True,NORMAL,Normal
+45.8,True,NORMAL,Normal
+48.3,True,NORMAL,Normal
+56.9,True,NORMAL,Normal
+59.8,True,NORMAL,Abnormal
+63.0,True,NORMAL,Normal
+41.3,True,NORMAL,Normal
+43.8,True,HPT 1,Abnormal
+43.8,True,HPT 1,Abnormal
+60.4,True,NORMAL,Normal
+57.5,True,PRE HPT,Abnormal
+76.3,True,NORMAL,Abnormal
+50.0,True,HPT 1,Abnormal
+51.2,True,NORMAL,Normal
+62.9,True,NORMAL,Abnormal
+61.2,True,PRE HPT,Abnormal
+60.4,True,NORMAL,Abnormal
+62.5,True,PRE HPT,Abnormal
+19.7,True,PRE HPT,Normal
+55.8,True,PRE HPT,Abnormal
+59.6,True,HPT 1,Normal
+63.8,True,NORMAL,Normal
+64.0,True,HPT 1,Abnormal
+43.5,True,PRE HPT,Normal
+60.3,True,HPT 2,Normal
+52.1,True,HPT 2,Abnormal
+63.5,True,NORMAL,Abnormal
+63.4,True,HPT 2,Normal
+69.7,True,HPT 1,Abnormal
+46.2,True,HPT 2,Normal
+60.7,True,NORMAL,Normal
+63.7,True,NORMAL,Normal
+58.2,True,PRE HPT,Normal
+22.4,True,PRE HPT,Abnormal
+54.2,True,HPT 1,Abnormal
+51.8,True,NORMAL,Abnormal
+79.7,True,HPT 1,Normal
+52.9,True,HPT 1,Normal
+66.9,True,HPT 1,Normal
+33.8,True,NORMAL,Normal
+40.3,True,PRE HPT,Normal
+48.5,True,NORMAL,Normal
+19.0,False,PRE HPT,Normal
+55.9,True,PRE HPT,Normal
+55.9,True,PRE HPT,Abnormal
+71.2,True,PRE HPT,Abnormal
+57.4,True,NORMAL,Normal
+54.7,True,NORMAL,Normal
+60.0,True,NORMAL,High Abnormal
+60.3,True,HPT 1,Normal
+49.3,False,NORMAL,Normal
+56.0,True,HPT 1,Normal
+49.0,False,HPT 1,Normal
+60.9,True,NORMAL,Abnormal
+47.8,True,NORMAL,Normal
+41.9,True,NORMAL,Normal
+60.3,True,PRE HPT,Normal
+62.0,True,HPT 1,Abnormal
+57.1,True,HPT 1,Abnormal
+58.2,True,PRE HPT,Normal
+63.0,False,HPT 1,Normal
+62.1,False,NORMAL,Normal
+61.8,True,NORMAL,Normal
+42.2,True,PRE HPT,Abnormal
+43.5,False,HPT 1,Normal
+45.6,True,NORMAL,Abnormal
+65.0,True,NORMAL,Normal
+41.5,True,HPT 1,Abnormal
+34.8,True,PRE HPT,High Abnormal
+58.5,True,NORMAL,Normal
+45.4,True,NORMAL,Normal
+34.2,True,PRE HPT,Normal
+71.0,True,NORMAL,Abnormal
+52.4,True,HPT 2,Normal
+41.7,True,NORMAL,Normal
+54.7,False,PRE HPT,Normal
+54.6,True,NORMAL,Normal
+47.1,True,HPT 1,Abnormal
+55.0,True,HPT CRISIS,Normal
+49.9,True,HPT 1,Normal
+45.5,True,HPT 2,Normal
+50.0,True,NORMAL,Normal
+39.5,True,NORMAL,Normal
+27.5,True,PRE HPT,Normal
+35.8,True,NORMAL,Abnormal
+28.9,True,NORMAL,Normal
+54.5,True,NORMAL,Normal
+40.8,True,NORMAL,Normal
+40.8,True,NORMAL,Abnormal
+36.6,True,HPT 1,High Abnormal
+60.3,True,PRE HPT,Abnormal
+36.0,False,NORMAL,Abnormal
+47.2,True,PRE HPT,High Abnormal
+48.9,True,NORMAL,Normal
+39.5,True,HPT 1,Normal
+42.8,False,NORMAL,Normal
+84.5,True,HPT 2,Normal
+48.0,True,PRE HPT,Normal
+50.5,True,HPT 1,Normal
+36.6,True,PRE HPT,High Abnormal
+64.0,True,NORMAL,Normal
+48.7,True,HPT 1,Normal
+46.3,True,PRE HPT,Normal
+80.0,False,HPT CRISIS,High Abnormal
+36.0,True,NORMAL,Normal
+46.8,False,NORMAL,Normal
+38.5,True,HPT 2,Abnormal
+56.4,True,NORMAL,Abnormal
+51.1,True,PRE HPT,Normal
+23.1,True,NORMAL,Normal
+33.2,True,HPT 1,Abnormal
+49.6,True,HPT 2,Abnormal
+41.8,True,PRE HPT,Abnormal
+36.5,True,HPT 1,Normal
+53.8,True,NORMAL,Normal
+54.6,True,HPT 1,Normal
+57.0,True,NORMAL,Abnormal
+35.6,False,NORMAL,Normal
+35.6,True,HPT 1,Normal
+56.2,True,NORMAL,Normal
+53.6,True,NORMAL,Normal
+47.1,True,NORMAL,Normal
+40.7,False,NORMAL,High Abnormal
+59.0,False,NORMAL,Abnormal
+55.9,False,NORMAL,Normal
+40.5,True,NORMAL,Abnormal
+34.1,False,HPT 1,Normal
+42.9,True,NORMAL,Normal
+47.7,True,NORMAL,Normal
+34.4,False,NORMAL,Normal
+54.7,True,NORMAL,Normal
+42.1,True,PRE HPT,Abnormal
+56.0,True,NORMAL,Normal
+25.7,True,NORMAL,Normal
+53.5,True,HPT 2,Normal
+51.9,True,HPT CRISIS,Normal
+44.9,True,NORMAL,Normal
+61.8,True,PRE HPT,Normal
+58.2,True,NORMAL,Normal
+53.2,False,NORMAL,Normal
+67.5,False,NORMAL,Normal
+67.5,True,NORMAL,Normal
+69.5,True,PRE HPT,Normal
+62.6,True,HPT 1,Normal
+60.4,True,PRE HPT,High Abnormal
+73.6,True,HPT 1,Normal
+66.3,True,NORMAL,Normal
+54.0,True,HPT 1,Normal
+50.3,True,HPT 1,Normal
+23.1,True,HPT 1,Normal
+44.8,True,NORMAL,Normal
+60.1,True,NORMAL,Abnormal
+71.3,True,NORMAL,Normal
+54.8,True,NORMAL,Abnormal
+51.2,True,NORMAL,Abnormal
+37.3,True,NORMAL,Normal
+27.0,True,NORMAL,Abnormal
+74.1,False,HPT 2,Normal
+49.0,True,PRE HPT,Normal
+39.6,True,NORMAL,Abnormal
+63.7,True,HPT 2,Abnormal
+45.4,True,NORMAL,Abnormal
+78.0,True,NORMAL,Normal
+18.5,True,NORMAL,Normal
+56.3,True,NORMAL,Normal
+53.8,True,HPT 1,Normal
+54.6,True,HPT 1,Normal
+44.5,False,NORMAL,Normal
+58.4,False,NORMAL,Normal
+59.1,True,PRE HPT,Normal
+30.1,True,NORMAL,Normal
+25.2,True,NORMAL,Normal
+61.3,True,NORMAL,Normal
+66.4,True,NORMAL,High Abnormal
+59.2,True,NORMAL,Normal
+63.4,True,HPT 1,Normal
+66.1,True,NORMAL,Normal
+60.7,True,HPT 1,Normal
+63.0,True,HPT 1,Abnormal
+75.8,True,HPT 1,Normal
+23.1,True,HPT 1,Normal
+24.6,True,HPT 1,Normal
+52.5,True,NORMAL,Normal
+54.6,True,NORMAL,Normal
+48.5,True,NORMAL,Normal
+42.3,True,NORMAL,Normal
+75.8,True,NORMAL,Abnormal
+78.6,False,HPT 1,Normal
+69.2,True,NORMAL,Normal
+74.1,True,NORMAL,Normal
+51.5,True,NORMAL,Normal
+70.7,True,NORMAL,Abnormal
+64.4,True,NORMAL,Normal
+25.9,True,NORMAL,Normal
+39.6,True,NORMAL,Normal
+27.0,True,NORMAL,Normal
+54.8,True,HPT 1,Normal
+19.8,True,PRE HPT,Normal
+48.2,False,NORMAL,Abnormal
+54.6,False,HPT 1,Normal
+28.6,False,NORMAL,Normal
+33.6,True,NORMAL,Normal
+28.1,True,HPT 1,Normal
+59.2,True,NORMAL,Normal
+59.2,True,PRE HPT,Normal
+39.6,True,NORMAL,Normal
+48.6,True,NORMAL,Normal
+65.9,True,PRE HPT,Abnormal
+35.1,True,PRE HPT,Normal
+53.2,True,NORMAL,Normal
+64.4,True,NORMAL,Normal
+56.4,True,NORMAL,Normal
+25.3,True,NORMAL,Normal
+47.2,True,HPT 1,Abnormal
+48.7,True,NORMAL,Normal
+38.4,True,NORMAL,Normal
+66.7,True,HPT 1,High Abnormal
+48.3,True,NORMAL,Abnormal
+54.1,True,NORMAL,Normal
+44.7,True,NORMAL,Normal
+64.3,True,NORMAL,Normal
+27.2,False,NORMAL,Abnormal
+47.7,False,HPT CRISIS,Normal
+56.8,False,NORMAL,Normal
+21.9,False,NORMAL,Normal
+67.1,True,NORMAL,Normal
+21.7,True,NORMAL,Normal
+18.1,True,NORMAL,Normal
+36.8,True,NORMAL,Normal
+63.4,False,NORMAL,Normal
+22.6,True,NORMAL,Normal
+26.4,False,NORMAL,Abnormal
+29.1,True,HPT 1,Abnormal
+22.0,True,NORMAL,Normal
+25.0,True,NORMAL,Abnormal
+53.3,True,PRE HPT,Normal
+60.2,True,HPT 1,Normal
+41.3,True,NORMAL,Normal
+66.9,False,NORMAL,Abnormal
+23.0,True,NORMAL,Normal
+20.5,True,NORMAL,Normal
+20.4,True,NORMAL,Normal
+20.2,False,NORMAL,Normal
+27.2,True,HPT 1,Abnormal
+28.7,True,NORMAL,Normal
+30.8,True,NORMAL,Normal
+24.4,False,NORMAL,Normal
+20.9,True,NORMAL,Abnormal
+35.0,True,NORMAL,Abnormal
+43.1,True,NORMAL,Normal
+35.0,False,HPT 1,Normal
+30.8,True,NORMAL,Normal
+33.9,True,HPT 1,Normal
+51.7,True,NORMAL,Normal
+52.7,True,PRE HPT,Normal
+27.1,False,HPT 1,Normal
+66.2,True,NORMAL,Abnormal
+30.8,True,NORMAL,Normal
+36.9,True,NORMAL,Normal
+24.8,True,NORMAL,Normal
+22.9,True,NORMAL,Normal
+45.0,False,NORMAL,Normal
+38.7,True,PRE HPT,Normal
+38.7,True,HPT 1,Normal
+55.1,True,HPT 1,Normal
+75.4,True,NORMAL,Abnormal
+46.0,True,HPT CRISIS,Abnormal
+39.8,True,NORMAL,Normal
+27.1,True,HPT 1,Normal
+49.5,True,NORMAL,Normal
+21.6,True,NORMAL,Normal
+40.0,True,NORMAL,Normal
+22.4,False,NORMAL,Normal
+21.3,True,NORMAL,Normal
+71.1,True,HPT 2,Abnormal
+56.1,True,HPT 1,High Abnormal
+57.5,True,PRE HPT,Normal
+68.7,True,PRE HPT,Abnormal
+76.8,True,PRE HPT,Normal
+20.4,True,NORMAL,Normal
+35.1,True,HPT 2,Normal
+60.9,True,PRE HPT,Abnormal
+42.5,True,NORMAL,Normal
+81.0,False,HPT 1,Normal
+67.4,True,PRE HPT,Normal
+62.8,True,NORMAL,Abnormal
+31.2,True,NORMAL,Normal
+69.3,True,HPT 1,Abnormal
+56.8,True,HPT 1,Normal
+24.9,False,HPT 1,Normal
+50.8,True,HPT 1,Normal
+85.6,True,PRE HPT,Abnormal
+61.2,True,NORMAL,Abnormal
+66.9,True,NORMAL,Normal
+54.8,True,NORMAL,Normal
+44.3,True,NORMAL,Normal
+60.9,False,NORMAL,Normal
+27.2,True,PRE HPT,Normal
+26.8,True,NORMAL,Normal
+58.4,True,NORMAL,Abnormal
+62.1,True,HPT 2,High Abnormal
+46.2,False,NORMAL,Normal
+76.3,True,HPT 1,Normal
+70.1,True,HPT 1,Normal
+67.0,True,HPT 1,Normal
+51.1,False,NORMAL,Normal
+54.5,True,HPT 1,Normal
+60.0,True,NORMAL,Normal
+40.3,True,NORMAL,Normal
+55.2,True,HPT 1,Abnormal
+66.2,True,PRE HPT,Normal
+56.1,True,NORMAL,Normal
+66.2,True,NORMAL,Normal
+39.4,True,NORMAL,Normal
+41.0,True,NORMAL,Normal
+56.8,True,NORMAL,Normal
+51.6,True,PRE HPT,High Abnormal
+56.5,True,NORMAL,High Abnormal
+75.9,True,PRE HPT,Normal
+53.2,False,HPT 1,Normal
+62.2,True,HPT 2,Normal
+75.4,True,NORMAL,Normal
+75.4,True,HPT 1,High Abnormal
