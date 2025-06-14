@@ -1,15 +1,9 @@
 # Hidden CKD
-
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
-
-kidney screening data analysis
+Kidney screening data analysis
 
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
@@ -20,11 +14,9 @@ kidney screening data analysis
 │
 ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models             <- Trained and serialised models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering)
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
 │                         src and configuration for tools like black
@@ -57,7 +49,7 @@ kidney screening data analysis
     │
     └── plotting                
         ├── __init__.py 
-        └── plots.py            <- Code to create visualizations 
+        └── plots.py            <- Code to create visualisations 
 ```
 
 --------
