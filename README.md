@@ -7,10 +7,9 @@ Kidney Care UK [estimates](https://kidneycareuk.org/news-from-kidney-care-uk/one
 
 ```
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── README.md          <- The top-level README for using this project.
 ├── data
 │   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
@@ -41,7 +40,7 @@ Kidney Care UK [estimates](https://kidneycareuk.org/news-from-kidney-care-uk/one
     │
     ├── data                
     │   ├── __init__.py 
-    │   ├── make_dataset.py     <- Scripts to download or generate data          
+    │   ├── clean_data.py       <- Scripts to clean data          
     │   └── prepropcessing.py   <- Code to create features and targets for modeling
     │
     ├── modeling                
