@@ -1,4 +1,7 @@
-from src.config import PROCESSED_DATA_DIR, MODELS_DIR
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from import_helper import config
 
 # Importing modules
 import pandas as pd
@@ -7,7 +10,6 @@ from sklearn.compose import make_column_transformer
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import OrdinalEncoder
-from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import PowerTransformer
 from sklearn.impute import SimpleImputer
 import joblib
@@ -28,13 +30,13 @@ ml_vars = [
 ]
 
 # Importing processed data
-data = pd.read_csv(PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
+data = pd.read_csv(config.PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
 
 
 # Creating preprocessing pipelines for both numeric and nominal and ordinal data.
 num_features = ['Age', 'Height', 'Weight', 'Systolic', 'Diastolic']
 num_transformer = Pipeline(steps=[
-    ('scaler', StandardScaler())])
+    ('power_transform', PowerTransformer(method='yeo-johnson'))])
 
 nom_features = ['S_Ethnicity', 'Family_KD']
 nom_transformer = Pipeline(steps=[
@@ -63,11 +65,11 @@ preprocessor = ColumnTransformer(
 
 # Save preprocessor as pickle file
 preprocessor_filename = 'preprocessor-02.pkl'
-joblib.dump(preprocessor, MODELS_DIR / preprocessor_filename)
+joblib.dump(preprocessor, config.MODELS_DIR / preprocessor_filename)
 
 # Alternate preprocessing to convert 'uACR' to binary variable
 data['uACR'] = data['uACR'].replace({1:0, 2:1})
 
 # Save alternate preprocessor as pickle file
 preprocessor_filename = 'preprocessor-01.pkl'
-joblib.dump(preprocessor, MODELS_DIR / preprocessor_filename)
+joblib.dump(preprocessor, config.MODELS_DIR / preprocessor_filename)

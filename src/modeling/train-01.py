@@ -1,4 +1,7 @@
-from src.config import MODELS_DIR, PROCESSED_DATA_DIR
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from import_helper import config
 
 # Importing modules
 import pandas as pd
@@ -28,14 +31,14 @@ ml_vars = [
 ]
 
 # Importing processed data
-data = pd.read_csv(PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
+data = pd.read_csv(config.PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
 
 # Remapping uACR to High Abnormal uACR
 data['uACR'] = data['uACR'].apply(lambda x: 'High Abnormal' in x)
 
 # Loading preprocessing model
 preprocessor_filename = 'preprocessor-01.pkl'
-preprocessor = joblib.load(MODELS_DIR / preprocessor_filename) 
+preprocessor = joblib.load(config.MODELS_DIR / preprocessor_filename) 
 
 # Transforming data and making a dataframe out of the transformed data
 data = preprocessor.fit_transform(data)
@@ -129,10 +132,10 @@ print("\nClassification Report:\n", classification_rep)
 
 # Save the model as pickle file
 model_filename = 'train-01.pkl'
-joblib.dump(clf, MODELS_DIR / model_filename) 
+joblib.dump(clf, config.MODELS_DIR / model_filename) 
 
 # Load the model from the file 
-model = joblib.load(MODELS_DIR / model_filename) 
+model = joblib.load(config.MODELS_DIR / model_filename) 
 
 # Use the loaded model to make predictions 
 model.predict(X_test)

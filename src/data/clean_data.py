@@ -1,10 +1,16 @@
-from src.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
+import sys
+from pathlib import Path
+
+# Add the src directory to the path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from import_helper import config
 
 # Importing libraries
 import numpy as np
 import pandas as pd
 
-raw_data = pd.read_csv(RAW_DATA_DIR / "hidden_ckd_raw.csv")
+raw_data = pd.read_csv(config.RAW_DATA_DIR / "hidden_ckd_raw.csv")
 
 # Filtering out all rows with uACR results that are not Normal, Abnormal or High Abnormal
 raw_data = raw_data[(raw_data['uACR'] == "Normal") | (raw_data['uACR'] == "Abnormal") | (raw_data['uACR'] == "High abnormal")]
@@ -113,4 +119,4 @@ data = data[['Date',
              'uACR']]
 
 # Exporting dataframe to csv
-data.to_csv(PROCESSED_DATA_DIR / 'hidden_ckd_processed.csv', index = False)
+data.to_csv(config.PROCESSED_DATA_DIR / 'hidden_ckd_processed.csv', index = False)

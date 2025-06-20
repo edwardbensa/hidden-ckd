@@ -1,4 +1,7 @@
-from src.config import MODELS_DIR, PROCESSED_DATA_DIR
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from import_helper import config
 
 # Importing modules
 import pandas as pd
@@ -23,13 +26,13 @@ ml_vars = [
 ]
 
 # Importing processed data
-data = pd.read_csv(PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
+data = pd.read_csv(config.PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
 
 
 
 # Loading preprocessing model
 preprocessor_filename = 'preprocessor-02.pkl'
-preprocessor = joblib.load(MODELS_DIR / preprocessor_filename) 
+preprocessor = joblib.load(config.MODELS_DIR / preprocessor_filename) 
 
 # Transforming data and making a dataframe out of the transformed data
 data = preprocessor.fit_transform(data)
@@ -49,7 +52,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random
 
 # Loading prediction model
 clf_filename = 'train-02.pkl'
-clf = joblib.load(MODELS_DIR / clf_filename) 
+clf = joblib.load(config.MODELS_DIR / clf_filename) 
 
 # Use the loaded model to make predictions 
 clf.predict(X_test)
