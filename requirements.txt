@@ -7,4 +7,6 @@ pip
 python-dotenv
 tqdm
 typer
+scikit-learn
+imbalanced-learn
 -e .
