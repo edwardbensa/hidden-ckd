@@ -7,7 +7,7 @@ from loguru import logger
 load_dotenv()
 
 # Paths
-PROJ_ROOT = Path('C:/DS/.projects/Hidden CKD').resolve()
+PROJ_ROOT = Path('https://raw.githubusercontent.com/edwardbensa/hidden-ckd/main/').resolve()
 logger.info(f"PROJ_ROOT path is: {PROJ_ROOT}")
 
 DATA_DIR = PROJ_ROOT / "data"
@@ -23,7 +23,6 @@ REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
 # If tqdm is installed, configure loguru with tqdm.write
-# https://github.com/Delgan/loguru/issues/135
 try:
     from tqdm import tqdm
 
