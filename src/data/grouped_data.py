@@ -1,7 +1,6 @@
-from src.config import PROCESSED_DATA_DIR
-
-# Importing libraries
+# Importing modules
 import pandas as pd
+from src.config import PROCESSED_DATA_DIR
 
 data = pd.read_csv(PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")
 

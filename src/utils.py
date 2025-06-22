@@ -1,6 +1,3 @@
-# src/utils.py
-
-import pandas as pd
 from imblearn.combine import SMOTEENN
 from sklearn.model_selection import StratifiedShuffleSplit, GridSearchCV, train_test_split
 from sklearn.metrics import accuracy_score, recall_score, classification_report, confusion_matrix, ConfusionMatrixDisplay
@@ -9,7 +6,7 @@ from xgboost import XGBClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
-from import_helper import config
+from src import config
 
 def preprocess_data(X, y, target_mapping):
     '''Applies target encoding and resamples data.'''

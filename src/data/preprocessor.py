@@ -1,9 +1,4 @@
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-from import_helper import config
-
-# Importing modules
+# Import modules
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.compose import make_column_transformer
@@ -13,6 +8,7 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import PowerTransformer
 from sklearn.impute import SimpleImputer
 import joblib
+from src.config import PROCESSED_DATA_DIR, MODELS_DIR, MODEL_DATA_DIR
 
 
 features = [
@@ -28,8 +24,8 @@ features = [
     'Has_Diabetes',
 ]
 
-# Importing processed data
-data = pd.read_csv(config.PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[features]
+# Import processed data
+data = pd.read_csv(PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[features]
 
 
 # Creating preprocessing pipelines for both numeric and nominal and ordinal data.
@@ -65,9 +61,9 @@ preprocessor = ColumnTransformer(
 # Save preprocessor as pickle file
 preprocessor.fit(data)
 preprocessor_filename = 'preprocessor.pkl'
-joblib.dump(preprocessor, config.MODELS_DIR / preprocessor_filename)
+joblib.dump(preprocessor, MODELS_DIR / preprocessor_filename)
 
 # Save to CSV
 data = preprocessor.transform(data)
 data = pd.DataFrame(data=data)
-data.to_csv(config.MODEL_DATA_DIR / 'features.csv', index=False)
+data.to_csv(MODEL_DATA_DIR / 'features.csv', index=False)

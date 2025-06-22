@@ -1,9 +1,8 @@
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-from import_helper import config
-
 import pandas as pd
+from sklearn.pipeline import Pipeline
+import joblib
+from src.config import MODELS_DIR
+
 
 # Input
 data = pd.DataFrame([{
@@ -20,12 +19,10 @@ data = pd.DataFrame([{
 }])
 
 # Load models
-import joblib
-preprocessor = joblib.load(config.MODELS_DIR / 'preprocessor.pkl')
-model = joblib.load(config.MODELS_DIR / 'train.pkl')
+preprocessor = joblib.load(MODELS_DIR / 'preprocessor.pkl')
+model = joblib.load(MODELS_DIR / 'train.pkl')
 
 # Run pipeline
-from sklearn.pipeline import Pipeline
 full_pipeline = Pipeline(steps=[
     ('preprocessing', preprocessor),
     ('model', model)
