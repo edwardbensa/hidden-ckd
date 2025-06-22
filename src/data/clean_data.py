@@ -6,7 +6,9 @@ from src.config import RAW_DATA_DIR, PROCESSED_DATA_DIR
 raw_data = pd.read_csv(RAW_DATA_DIR / "hidden_ckd_raw.csv")
 
 # Filtering out all rows with uACR results that are not Normal, Abnormal or High Abnormal
-raw_data = raw_data[(raw_data['uACR'] == "Normal") | (raw_data['uACR'] == "Abnormal") | (raw_data['uACR'] == "High abnormal")]
+raw_data = raw_data[(raw_data['uACR'] == "Normal") |
+                    (raw_data['uACR'] == "Abnormal") |
+                    (raw_data['uACR'] == "High abnormal")]
 
 # Renaming specific row values
 raw_data['uACR']=raw_data['uACR'].replace({'High abnormal': 'High Abnormal'})

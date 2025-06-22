@@ -3,6 +3,7 @@ import pandas as pd
 from src.config import MODEL_DATA_DIR, PROCESSED_DATA_DIR
 from src.utils import preprocess_data, stratified_split, random_split, train_xg, train_rf
 
+
 # Load features, target, and target encoding
 X = pd.read_csv(MODEL_DATA_DIR / 'features.csv')
 y = pd.read_csv(PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")['CKD_Risk']
