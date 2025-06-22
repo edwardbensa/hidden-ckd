@@ -1,8 +1,7 @@
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from import_helper import config
-from import_helper import utils
+from import_helper import config, utils
 from utils import preprocess_data, stratified_split, random_split, train_xg, train_rf
 import pandas as pd
 
