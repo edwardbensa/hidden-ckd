@@ -15,7 +15,7 @@ from sklearn.impute import SimpleImputer
 import joblib
 
 
-ml_vars = [
+features = [
     'Age',
     'Height',
     'Weight',
@@ -26,11 +26,10 @@ ml_vars = [
     'Gender',
     'Has_KD',
     'Has_Diabetes',
-    'uACR'
 ]
 
 # Importing processed data
-data = pd.read_csv(config.PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[ml_vars]
+data = pd.read_csv(config.PROCESSED_DATA_DIR / "hidden_ckd_processed.csv")[features]
 
 
 # Creating preprocessing pipelines for both numeric and nominal and ordinal data.
@@ -41,19 +40,19 @@ num_transformer = Pipeline(steps=[
 nom_features = ['S_Ethnicity', 'Family_KD']
 nom_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
-    ('onehot', OneHotEncoder(handle_unknown='ignore'))])
+    ('onehot', OneHotEncoder(handle_unknown='ignore')),
+    #('ordinal_encode', OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)),
+    ])
 
-ord_features = ['Gender', 'Has_KD', 'Has_Diabetes','uACR']
+ord_features = ['Gender', 'Has_KD', 'Has_Diabetes']
 
 gender_values = [['Female', 'Male']]
 binary_values = [[False, True]]
-uACR_values = [['Normal', 'Abnormal', 'High Abnormal']]
 
 ord_transformer = make_column_transformer(
     (OrdinalEncoder(categories=gender_values), ['Gender']),
     (OrdinalEncoder(categories=binary_values), ['Has_KD']),
     (OrdinalEncoder(categories=binary_values), ['Has_Diabetes']),
-    (OrdinalEncoder(categories=uACR_values), ['uACR']),
 )
 
 preprocessor = ColumnTransformer(
@@ -64,12 +63,11 @@ preprocessor = ColumnTransformer(
 
 
 # Save preprocessor as pickle file
-preprocessor_filename = 'preprocessor-02.pkl'
+preprocessor.fit(data)
+preprocessor_filename = 'preprocessor.pkl'
 joblib.dump(preprocessor, config.MODELS_DIR / preprocessor_filename)
 
-# Alternate preprocessing to convert 'uACR' to binary variable
-data['uACR'] = data['uACR'].replace({1:0, 2:1})
-
-# Save alternate preprocessor as pickle file
-preprocessor_filename = 'preprocessor-01.pkl'
-joblib.dump(preprocessor, config.MODELS_DIR / preprocessor_filename)
+# Save to CSV
+data = preprocessor.transform(data)
+data = pd.DataFrame(data=data)
+data.to_csv(config.MODEL_DATA_DIR / 'features.csv', index=False)

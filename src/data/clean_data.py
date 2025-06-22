@@ -90,6 +90,21 @@ data['Age'] = data['Age'].round(1)
 # Creating an 'Age Category' column
 data['Age_Category'] = pd.cut(data['Age'], bins=[0, 25, 40, 55, 70, float('inf')], labels=['<25', '25-40', '41-55', '56-70', '>70']).astype(str)
 
+# Create column to determine CKD risk
+def ckd_risk(row):
+    if row['uACR'] == 'High Abnormal' and row['Has_Diabetes']:
+        return 'Moderate'
+    elif (row['Systolic'] < 140 and row['Diastolic'] < 90 and
+          row['uACR'] == 'Normal' and not row['Has_Diabetes'] and
+          row['Family_KD'] != 'Definitely Yes'):
+        return 'Low'
+    elif row['Systolic'] > 180 or row['Diastolic'] > 120 or row['uACR'] == 'High Abnormal':
+        return 'High'
+    else:
+        return 'Moderate'
+
+data['CKD_Risk'] = data.apply(ckd_risk, axis=1)
+
 # Final processed dataframe
 data = data[['Date',
              'Gender',
@@ -116,7 +131,8 @@ data = data[['Date',
              'Cholesterol_Meds',
              'Other_Meds',
              'Family_KD',
-             'uACR']]
+             'uACR',
+             'CKD_Risk']]
 
 # Exporting dataframe to csv
 data.to_csv(config.PROCESSED_DATA_DIR / 'hidden_ckd_processed.csv', index = False)
