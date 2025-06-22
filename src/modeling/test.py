@@ -11,6 +11,8 @@ X_test = pd.read_csv(config.MODEL_DATA_DIR / 'test.csv').iloc[:, :-1]
 y_test = pd.read_csv(config.MODEL_DATA_DIR / 'test.csv').iloc[:, -1]
 target_mapping = {'Low': 0, 'Moderate': 1, 'High': 2}
 
+#t
+
 # Load model
 model_filename = 'train.pkl'
 model = load_model(model_filename)
