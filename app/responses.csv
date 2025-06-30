@@ -1,0 +1,2 @@
+Timestamp,Gender,Ethnicity,S_Ethnicity,Age,Height,Weight,Systolic,Diastolic,Family_KD,Has_KD,Has_Diabetes,Prediction
+2025-06-30 20:45:35,Male,Mixed White/Asian,Mixed,40.0,182.0,92.0,120.0,80.0,Definitely not,False,False,0

@@ -3,13 +3,15 @@ from tkinter import ttk, messagebox
 import pandas as pd
 from sklearn.pipeline import Pipeline
 import joblib
-from src.config import MODELS_DIR
+import csv
+from datetime import datetime
+from src.config import MODELS_DIR, APP_DIR
 
-class MedicalPredictionGUI:
+class CKDPredictionGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Medical Prediction System")
-        self.root.geometry("500x650")
+        self.root.title("CKD Risk Prediction")
+        self.root.geometry("500x700")
         self.root.resizable(True, True)
         
         # Initialize models
@@ -40,96 +42,121 @@ class MedicalPredictionGUI:
         main_frame.columnconfigure(1, weight=1)
         
         # Title
-        title_label = ttk.Label(main_frame, text="Medical Prediction System", 
+        title_label = ttk.Label(main_frame, text="CKD Risk Prediction System", 
                                font=('Arial', 16, 'bold'))
         title_label.grid(row=0, column=0, columnspan=2, pady=(0, 20))
         
         row = 1
         
+        # Gender
+        ttk.Label(main_frame, text="Gender:").grid(row=row, column=0, sticky=tk.W, pady=5)
+        self.gender_var = tk.StringVar()
+        gender_combo = ttk.Combobox(main_frame, textvariable=self.gender_var,
+                                   values=["Male", "Female"],
+                                   state="readonly", width=12)
+        gender_combo.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
+        row += 1
+
         # Age
         ttk.Label(main_frame, text="Age:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.age_var = tk.StringVar(value="46")
+        self.age_var = tk.StringVar()
         age_entry = ttk.Entry(main_frame, textvariable=self.age_var, width=15)
         age_entry.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
         # Height
         ttk.Label(main_frame, text="Height (cm):").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.height_var = tk.StringVar(value="178")
+        self.height_var = tk.StringVar()
         height_entry = ttk.Entry(main_frame, textvariable=self.height_var, width=15)
         height_entry.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
         # Weight
         ttk.Label(main_frame, text="Weight (kg):").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.weight_var = tk.StringVar(value="80")
+        self.weight_var = tk.StringVar()
         weight_entry = ttk.Entry(main_frame, textvariable=self.weight_var, width=15)
         weight_entry.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
         # Systolic BP
         ttk.Label(main_frame, text="Systolic BP:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.systolic_var = tk.StringVar(value="180")
+        self.systolic_var = tk.StringVar()
         systolic_entry = ttk.Entry(main_frame, textvariable=self.systolic_var, width=15)
         systolic_entry.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
         # Diastolic BP
         ttk.Label(main_frame, text="Diastolic BP:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.diastolic_var = tk.StringVar(value="120")
+        self.diastolic_var = tk.StringVar()
         diastolic_entry = ttk.Entry(main_frame, textvariable=self.diastolic_var, width=15)
         diastolic_entry.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
         # Ethnicity
+        self.ethnicity_map = {
+        'Black African (Central Africa)': 'Black',
+        'Black African (East Africa)': 'Black',
+        'Black African (North Africa)': 'Black',
+        'Black African (South Africa)': 'Black',
+        'Black African (West Africa)': 'Black',
+        'Black African (Other)': 'Black',
+        'Black Caribbean': 'Black',
+        'Black (Other)': 'Black',
+        'Mixed White/Asian': 'Mixed',
+        'Mixed White/Black African': 'Mixed',
+        'Mixed White/Black Caribbean': 'Mixed',
+        'Mixed (Other)': 'Mixed',
+        'White British': 'White',
+        'White Gypsy/Traveller': 'White',
+        'White Irish': 'White',
+        'White (Other)': 'White',
+        'Pakistani': 'South Asian',
+        'Indian': 'South Asian',
+        'Bangladeshi': 'South Asian',
+        'East Asian': 'Other',
+        'South East Asian': 'Other',
+        'Other': 'Other',
+        }
+
         ttk.Label(main_frame, text="Ethnicity:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.ethnicity_var = tk.StringVar(value="Black")
+        self.ethnicity_var = tk.StringVar()
         ethnicity_combo = ttk.Combobox(main_frame, textvariable=self.ethnicity_var, 
-                                      values=["Black", "White", "Asian", "Hispanic", "Other"],
+                                      values=list(self.ethnicity_map.keys()),
                                       state="readonly", width=12)
         ethnicity_combo.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
         # Family KD
-        ttk.Label(main_frame, text="Family Kidney Disease:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.family_kd_var = tk.StringVar(value="Not sure")
+        ttk.Label(main_frame, text="Do you have a family \nhistory of kidney disease?:").grid(row=row, column=0, sticky=tk.W, pady=5)
+        self.family_kd_var = tk.StringVar()
         family_kd_combo = ttk.Combobox(main_frame, textvariable=self.family_kd_var,
-                                      values=["Yes", "No", "Not sure"],
+                                      values=["Definitely yes", "Definitely not", "Not sure"],
                                       state="readonly", width=12)
         family_kd_combo.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         row += 1
         
-        # Gender
-        ttk.Label(main_frame, text="Gender:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.gender_var = tk.StringVar(value="Female")
-        gender_combo = ttk.Combobox(main_frame, textvariable=self.gender_var,
-                                   values=["Male", "Female"],
-                                   state="readonly", width=12)
-        gender_combo.grid(row=row, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
-        row += 1
-        
         # Has KD
-        ttk.Label(main_frame, text="Has Kidney Disease:").grid(row=row, column=0, sticky=tk.W, pady=5)
+        ttk.Label(main_frame, text="Have you been diagnosed \nwith kidney disease?:").grid(row=row, column=0, sticky=tk.W, pady=5)
         self.has_kd_var = tk.BooleanVar(value=False)
         has_kd_check = ttk.Checkbutton(main_frame, variable=self.has_kd_var)
         has_kd_check.grid(row=row, column=1, sticky=tk.W, pady=5, padx=(10, 0))
         row += 1
         
         # Has Diabetes
-        ttk.Label(main_frame, text="Has Diabetes:").grid(row=row, column=0, sticky=tk.W, pady=5)
-        self.has_diabetes_var = tk.BooleanVar(value=True)
+        ttk.Label(main_frame, text="Have you been diagnosed \nwith diabetes?:").grid(row=row, column=0, sticky=tk.W, pady=5)
+        self.has_diabetes_var = tk.BooleanVar(value=False)
         has_diabetes_check = ttk.Checkbutton(main_frame, variable=self.has_diabetes_var)
         has_diabetes_check.grid(row=row, column=1, sticky=tk.W, pady=5, padx=(10, 0))
         row += 1
         
         # Predict Button
-        predict_button = ttk.Button(main_frame, text="Make Prediction", 
+        predict_button = ttk.Button(main_frame, text="Get Results", 
                                    command=self.make_prediction, style='Accent.TButton')
         predict_button.grid(row=row, column=0, columnspan=2, pady=20)
         row += 1
         
         # Results Frame
-        results_frame = ttk.LabelFrame(main_frame, text="Prediction Results", padding="10")
+        results_frame = ttk.LabelFrame(main_frame, text="Risk Prediction and Recommendation", padding="10")
         results_frame.grid(row=row, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(10, 0))
         results_frame.columnconfigure(0, weight=1)
         
@@ -137,12 +164,6 @@ class MedicalPredictionGUI:
         self.results_text = tk.Text(results_frame, height=6, wrap=tk.WORD, 
                                    font=('Courier', 10))
         self.results_text.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
-        
-        # Scrollbar for results
-        scrollbar = ttk.Scrollbar(results_frame, orient=tk.VERTICAL, 
-                                 command=self.results_text.yview)
-        scrollbar.grid(row=0, column=1, sticky=(tk.N, tk.S))
-        self.results_text.configure(yscrollcommand=scrollbar.set)
         
         # Clear Results Button
         clear_button = ttk.Button(results_frame, text="Clear Results", 
@@ -192,7 +213,7 @@ class MedicalPredictionGUI:
                 'Weight': float(self.weight_var.get()),
                 'Systolic': float(self.systolic_var.get()),
                 'Diastolic': float(self.diastolic_var.get()),
-                'S_Ethnicity': self.ethnicity_var.get(),
+                'S_Ethnicity': self.ethnicity_map.get(self.ethnicity_var.get()),
                 'Family_KD': self.family_kd_var.get(),
                 'Gender': self.gender_var.get(),
                 'Has_KD': self.has_kd_var.get(),
@@ -209,6 +230,12 @@ class MedicalPredictionGUI:
             
             # Display results
             self.display_results(data, prediction)
+
+            # Store prediction
+            self.prediction = prediction
+
+            # Save results to CSV
+            self.save_to_csv(data)
             
         except Exception as e:
             messagebox.showerror("Prediction Error", f"Error making prediction: {str(e)}")
@@ -216,24 +243,59 @@ class MedicalPredictionGUI:
     def display_results(self, data, prediction):
         """Display prediction results"""
         self.results_text.delete(1.0, tk.END)
+
+        # Convert prediction to a readable message
+        if prediction == 0:
+            message = "CKD Risk: Low Risk \nTake it easy"
+        elif prediction == 1:
+            message = "CKD Risk: Moderate Risk \nWe recommend a few lifestyle changes to mitigate your risk"
+        elif prediction == 2:
+            message = "CKD Risk: High \nWe recommend a GP visit immediately"
+        else:
+            message = "Unknown prediction result"
         
-        result_text = "PREDICTION RESULTS\n"
-        result_text += "=" * 40 + "\n\n"
-        
-        result_text += "Input Data:\n"
-        result_text += "-" * 20 + "\n"
-        for column, value in data.iloc[0].items():
-            result_text += f"{column}: {value}\n"
-        
-        result_text += f"\nPrediction: {prediction[0]}\n"
-        result_text += f"Prediction Type: {type(prediction[0])}\n"
-        
-        # Add interpretation if prediction is binary
-        if isinstance(prediction[0], (bool, int)) and prediction[0] in [0, 1, True, False]:
-            interpretation = "Positive" if prediction[0] else "Negative"
-            result_text += f"Interpretation: {interpretation}\n"
+        result_text = message
         
         self.results_text.insert(1.0, result_text)
+
+    def save_to_csv(self, data):
+        entry = data.copy()
+        entry['Ethnicity'] = self.ethnicity_var.get()
+        entry['Prediction'] = self.prediction
+        entry['Timestamp'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        cols = [
+            'Timestamp',
+            'Gender',
+            'Ethnicity',
+            'S_Ethnicity',
+            'Age',
+            'Height',
+            'Weight',
+            'Systolic',
+            'Diastolic',
+            'Family_KD',
+            'Has_KD',
+            'Has_Diabetes',
+            'Prediction']
+        entry = entry[cols]
+
+        filename = APP_DIR / 'responses.csv'
+        fieldnames = cols
+
+        # Check if the file exists to write headers if needed
+        try:
+            with open(filename, 'r'):
+                file_exists = True
+        except FileNotFoundError:
+            file_exists = False
+
+        with open(filename, mode='a', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+
+            if not file_exists:
+                writer.writeheader()  # write header only once
+
+            writer.writerow(entry.iloc[0].to_dict())
     
     def clear_results(self):
         """Clear the results text area"""
@@ -241,7 +303,7 @@ class MedicalPredictionGUI:
 
 def main():
     root = tk.Tk()
-    app = MedicalPredictionGUI(root)
+    app = CKDPredictionGUI(root)
     root.mainloop()
 
 if __name__ == "__main__":

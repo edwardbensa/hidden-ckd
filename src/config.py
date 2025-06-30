@@ -19,6 +19,8 @@ MODEL_DATA_DIR = DATA_DIR / "model"
 
 MODELS_DIR = PROJ_ROOT / "models"
 
+APP_DIR = PROJ_ROOT / "app"
+
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 

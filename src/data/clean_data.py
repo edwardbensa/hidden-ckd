@@ -26,19 +26,19 @@ raw_data['S_Ethnicity'] = raw_data['Ethnicity'].replace({
     'Black African (unspecified)' : 'Black',
     'Black Caribbean' : 'Black',
     'Black other' : 'Black',
-    'Indian' : 'Indian',
     'Mixed White/Asian' : 'Mixed',
     'Mixed White/Black African' : 'Mixed',
     'Mixed White/Black Caribbean' : 'Mixed',
     'Mixed other' : 'Mixed',
-    'Pakistani' : 'Indian',
     'White British' : 'White',
     'White Gypsy/Traveller' : 'White',
     'White Irish' : 'White',
     'White other' : 'White',
-    'Any other' : 'Other',
-    'Asian other' : 'SE Asian',
-    'Bangladeshi' : 'Indian'})
+    'Asian other' : 'Asian other',
+    'Pakistani' : 'South Asian',
+    'Indian' : 'South Asian',
+    'Bangladeshi' : 'South Asian',
+    'Any other' : 'Other'})
 
 # Adding another column that simply shows whether the ethicity is black or not
 raw_data['Ethnicity_Black'] = raw_data['Ethnicity'].str.contains('Black')
