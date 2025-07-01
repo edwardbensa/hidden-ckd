@@ -6,14 +6,11 @@ Kidney Care UK [estimates](https://kidneycareuk.org/news-from-kidney-care-uk/one
 ## Project Organisation
 
 ```
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for using this project.
 ├── data
-│   ├── external       <- Data from third-party sources.
+│   ├── model          <- Preprocessed data for machine learning, test data.
 │   ├── processed      <- The final, canonical data sets for modelling.
 │   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
 ├── models             <- Trained and serialised models, model predictions, or model summaries
 │
@@ -32,7 +29,7 @@ Kidney Care UK [estimates](https://kidneycareuk.org/news-from-kidney-care-uk/one
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── src   <- Source code for use in this project.
+└── src                <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes src a Python module
     │
@@ -42,7 +39,7 @@ Kidney Care UK [estimates](https://kidneycareuk.org/news-from-kidney-care-uk/one
     │
     ├── data                
     │   ├── __init__.py 
-    │   ├── clean_data.py       <- Scripts to clean data          
+    │   ├── clean_data.py       <- Scripts to clean raw data          
     │   └── prepropcessor.py    <- Code to create features and targets for modelling
     │
     ├── modeling                
