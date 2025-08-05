@@ -1,7 +1,8 @@
 # Import modules
 import pandas as pd
 from src.config import MODEL_DATA_DIR, PROCESSED_DATA_DIR
-from src.utils import preprocess_data, stratified_split, random_split, train_xg, train_rf
+from src.utils.model_utils import preprocess_data, stratified_split, random_split
+from src.utils.models import train_xg, train_rf
 
 
 # Load features, target, and target encoding
@@ -21,5 +22,5 @@ test_df = pd.concat([pd.DataFrame(X_test), pd.DataFrame(y_test)], axis=1)
 test_df.to_csv(MODEL_DATA_DIR / 'test.csv', index=False)
 
 # Train Model
-train_xg(X_train, y_train)
-#train_rf(X_train, X_test, y_train, y_test)
+train_xg(X_train, y_train, 'train_bp.pkl')
+#train_rf(X_train, X_test, y_train, y_test, 'train_bp')

@@ -1,7 +1,10 @@
 # Import modules
 import pandas as pd
 from src.config import MODEL_DATA_DIR, PROCESSED_DATA_DIR
-from src.utils import preprocess_data, stratified_split, random_split, train_xg, train_rf, load_model, evaluate_model
+from src.utils.model_utils import (preprocess_data, stratified_split, random_split,
+                                   load_model, evaluate_model)
+from src.utils.models import train_xg, train_rf
+
 
 # Choose model
 model_choices = ['xgboost', 'randomforest']

@@ -6,15 +6,15 @@ from src.config import MODELS_DIR
 
 # Input
 data = pd.DataFrame([{
-    'Age': 70,
+    'Age': 50,
     'Height': 159,
-    'Weight': 120,
+    'Weight': 100,
     'Systolic': 120,
     'Diastolic': 80,
-    'S_Ethnicity': 'Black',
+    'S_Ethnicity': 'White',
     'Family_KD': 'Definitely not',
-    'Gender': 'Female',
-    'Has_KD': False,
+    'Gender': 'Male',
+    'Has_Hpt': False,
     'Has_Diabetes': True,
 }])
 

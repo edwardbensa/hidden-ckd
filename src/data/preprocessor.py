@@ -20,7 +20,7 @@ features = [
     'S_Ethnicity',
     'Family_KD',
     'Gender',
-    'Has_KD',
+    'Has_Hpt',
     'Has_Diabetes',
 ]
 
@@ -40,14 +40,14 @@ nom_transformer = Pipeline(steps=[
     #('ordinal_encode', OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)),
     ])
 
-ord_features = ['Gender', 'Has_KD', 'Has_Diabetes']
+ord_features = ['Gender', 'Has_Hpt', 'Has_Diabetes']
 
 gender_values = [['Female', 'Male']]
 binary_values = [[False, True]]
 
 ord_transformer = make_column_transformer(
     (OrdinalEncoder(categories=gender_values), ['Gender']),
-    (OrdinalEncoder(categories=binary_values), ['Has_KD']),
+    (OrdinalEncoder(categories=binary_values), ['Has_Hpt']),
     (OrdinalEncoder(categories=binary_values), ['Has_Diabetes']),
 )
 

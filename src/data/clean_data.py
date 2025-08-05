@@ -55,8 +55,12 @@ raw_data.drop(raw_data[raw_data['BMI Category'] == "UNDERWEIGHT"].index, inplace
 # Adding a column that calculates pulse pressure
 raw_data['Pulse_Pressure'] = raw_data['Systolic'] - raw_data['Diastolic']
 
+# Adding a column that calculates mean arterial pressure
+raw_data['MAP'] = raw_data['Diastolic'] + raw_data['Pulse_Pressure']/3
+raw_data['MAP'] = raw_data['MAP'].round(1)
+
 # Splitting the "Medical Conditions" column into the constituent medical conditions
-raw_data['Has_High_BP'] = raw_data['Medical Conditions'].apply(lambda x: 'High blood pressure' in x)
+raw_data['Has_Hpt'] = raw_data['Medical Conditions'].apply(lambda x: 'High blood pressure' in x)
 raw_data['Has_Diabetes'] = raw_data['Medical Conditions'].apply(lambda x: 'Diabetes' in x)
 raw_data['Has_KD'] = raw_data['Medical Conditions'].apply(lambda x: 'Kidney disease' in x)
 raw_data['Has_HD'] = raw_data['Medical Conditions'].apply(lambda x: 'Heart disease (heart attack, angina, heart failure)' in x)
@@ -85,16 +89,20 @@ data['Age'] = data['Age'].round(1)
 # Creating an 'Age Category' column
 data['Age_Category'] = pd.cut(data['Age'], bins=[0, 25, 40, 55, 70, float('inf')], labels=['<25', '25-40', '41-55', '56-70', '>70']).astype(str)
 
-# Create column to determine CKD risk
+# Creating column to determine CKD risk
 def ckd_risk(row):
-    if row['uACR'] == 'High Abnormal' and row['Has_Diabetes']:
-        return 'Moderate'
-    elif (row['Systolic'] < 140 and row['Diastolic'] < 90 and
-          row['uACR'] == 'Normal' and not row['Has_Diabetes'] and
-          row['Family_KD'] != 'Definitely Yes'):
-        return 'Low'
-    elif row['Systolic'] > 180 or row['Diastolic'] > 120 or row['uACR'] == 'High Abnormal':
+    if (row['Systolic'] >= 180 or
+        row['Diastolic'] >= 120 or
+        row['uACR'] == 'High Abnormal'):
         return 'High'
+    elif (row['Systolic'] < 140 and
+          row['Diastolic'] < 90 and
+          row['uACR'] == 'Normal' and
+          row['Family_KD'] != 'Definitely Yes' and
+          row['Has_Hpt'] == False and
+          row['Has_Diabetes'] == False and
+          row['Has_HD'] == False):
+        return 'Low'
     else:
         return 'Moderate'
 
@@ -116,8 +124,9 @@ data = data[['Date',
              'Systolic',
              'Diastolic',
              'Pulse_Pressure',
+             'MAP',
              'BP_Category',
-             'Has_High_BP',
+             'Has_Hpt',
              'Has_Diabetes',
              'Has_KD',
              'Has_HD',

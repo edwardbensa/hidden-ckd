@@ -279,7 +279,7 @@ class CKDPredictionGUI:
             'Prediction']
         entry = entry[cols]
 
-        filename = APP_DIR / 'responses.csv'
+        filename = APP_DIR / 'responses_tk.csv'
         fieldnames = cols
 
         # Check if the file exists to write headers if needed

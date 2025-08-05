@@ -1,2 +1,12 @@
 Timestamp,Gender,Ethnicity,S_Ethnicity,Age,Height,Weight,Systolic,Diastolic,Family_KD,Has_KD,Has_Diabetes,Prediction
 2025-06-30 20:45:35,Male,Mixed White/Asian,Mixed,40.0,182.0,92.0,120.0,80.0,Definitely not,False,False,0
+2025-07-01 13:39:02,Male,Mixed White/Asian,Mixed,40.0,182.0,92.0,120.0,80.0,,False,False,0
+2025-07-01 15:01:18,Male,Mixed White/Asian,Mixed,40.0,182.0,92.0,120.0,80.0,,False,False,0
+2025-07-19 16:47:24,Female,Mixed White/Asian,Mixed,25.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:47:57,Female,Black African (Central Africa),Black,25.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:47:58,Female,Black African (Central Africa),Black,25.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:47:59,Female,Black African (Central Africa),Black,25.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:48:00,Female,Black African (Central Africa),Black,25.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:48:14,Female,Black African (Central Africa),Black,55.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:48:14,Female,Black African (Central Africa),Black,55.0,160.0,54.0,120.0,80.0,Not sure,False,False,0
+2025-07-19 16:48:23,Female,Black African (Central Africa),Black,55.0,160.0,54.0,210.0,180.0,Not sure,False,False,2
