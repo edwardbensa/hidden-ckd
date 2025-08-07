@@ -8,12 +8,8 @@ import csv
 from datetime import datetime
 import os
 
-# Assuming MODELS_DIR and APP_DIR are defined in a config similar to your Tkinter app
-# For demonstration, I'll define them here. In a real app, manage these paths carefully.
-# You might need to adjust these paths based on where your models and CSV will be stored
-# relative to your Dash app's execution location.
-MODELS_DIR = os.path.join(os.path.dirname(__file__), 'models') # Assuming 'models' directory in the same place as your app.py
-APP_DIR = os.path.dirname(__file__) # Assuming 'responses.csv' will be in the same place as your app.py
+MODELS_DIR = os.path.join(os.path.dirname(__file__), 'models')
+APP_DIR = os.path.dirname(__file__)
 
 # Load models outside the app layout/callbacks to avoid reloading on every request
 preprocessor = None
@@ -77,13 +73,43 @@ app.layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            dbc.Label("Height (cm):"),
-            dbc.Input(id='height-input', type='number', placeholder='Enter Height (cm)'),
-        ], width=6),
+            dbc.Label("Height:"),
+            dbc.Input(id='height-input-visible', type='number', placeholder='Enter Height'),
+        ], width=4),
         dbc.Col([
-            dbc.Label("Weight (kg):"),
-            dbc.Input(id='weight-input', type='number', placeholder='Enter Weight (kg)'),
-        ], width=6),
+            dbc.Label("Unit:"),
+            dbc.RadioItems(
+                options=[
+                    {'label': 'cm', 'value': 'cm'},
+                    {'label': 'ft', 'value': 'ft'}
+                ],
+                value='cm',
+                id='height-unit-radio',
+                inline=True
+            ),
+        ], width=2),
+        dbc.Input(id='height-input-cm', type='hidden') # Hidden input for cm
+    ], className="mb-3"),
+
+    dbc.Row([
+        dbc.Col([
+            dbc.Label("Weight:"),
+            dbc.Input(id='weight-input-visible', type='number', placeholder='Enter Weight'),
+        ], width=4),
+        dbc.Col([
+            dbc.Label("Unit:"),
+            dbc.RadioItems(
+                options=[
+                    {'label': 'kg', 'value': 'kg'},
+                    {'label': 'stone', 'value': 'st'},
+                    {'label': 'lbs', 'value': 'lbs'}
+                ],
+                value='kg',
+                id='weight-unit-radio',
+                inline=True
+            ),
+        ], width=2),
+        dbc.Input(id='weight-input-kg', type='hidden') # Hidden input for kg
     ], className="mb-3"),
 
     dbc.Row([
@@ -124,11 +150,11 @@ app.layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            dbc.Label("Have you ever been diagnosed with kidney disease?"),
+            dbc.Label("Have you been diagnosed with hypertension?"),
             dbc.Checklist(
                 options=[{"label": "Yes", "value": True}],
                 value=[],
-                id="has-kd-input",
+                id="has-hpt-input",
                 switch=True,
             ),
         ], width=6),
@@ -143,6 +169,76 @@ app.layout = dbc.Container([
         ], width=6),
     ], className="mb-4"),
 
+    html.Hr(),
+    html.H4("Optional Information for Future Research", className="text-center my-4"),
+    html.P(
+        "Please feel free to share the following information. This data will not be used in the current prediction but will aid in future research. Your participation is completely voluntary.",
+        className="text-center"
+    ),
+
+    dbc.Row([
+        dbc.Col([
+            dbc.Label("Have you been diagnosed with heart disease?"),
+            dbc.Checklist(
+                options=[{"label": "Yes", "value": True}],
+                value=[],
+                id="has-heart-disease-input",
+                switch=True,
+            ),
+        ], width=6),
+        dbc.Col([
+            dbc.Label("Have you been diagnosed with kidney disease?"),
+            dbc.Checklist(
+                options=[{"label": "Yes", "value": True}],
+                value=[],
+                id="has-kidney-disease-input",
+                switch=True,
+            ),
+        ], width=6),
+    ], className="mb-4"),
+
+    dbc.Row([
+        dbc.Col([
+            dbc.Label("Are you currently taking medication for your blood pressure?"),
+            dbc.Checklist(
+                options=[{"label": "Yes", "value": True}],
+                value=[],
+                id="taking-bp-meds-input",
+                switch=True,
+            ),
+        ], width=4),
+        dbc.Col([
+            dbc.Label("Are you currently taking medication for diabetes?"),
+            dbc.Checklist(
+                options=[{"label": "Yes", "value": True}],
+                value=[],
+                id="taking-diabetes-meds-input",
+                switch=True,
+            ),
+        ], width=4),
+        dbc.Col([
+            dbc.Label("Are you currently taking medication for high cholesterol?"),
+            dbc.Checklist(
+                options=[{"label": "Yes", "value": True}],
+                value=[],
+                id="taking-cholesterol-meds-input",
+                switch=True,
+            ),
+        ], width=4),
+    ], className="mb-4"),
+
+    dbc.Row([
+        dbc.Col([
+            dbc.Label("Are you currently taking any other medication?"),
+            dbc.Checklist(
+                options=[{"label": "Yes", "value": True}],
+                value=[],
+                id="taking-other-meds-input",
+                switch=True,
+            ),
+        ], width=12),
+    ], className="mb-4"),
+
     dbc.Button("Get Results", id='predict-button', color="primary", className="me-2"),
     dbc.Button("Clear Results", id='clear-button', color="secondary", className="ms-2"),
 
@@ -155,7 +251,8 @@ app.layout = dbc.Container([
         ])
     ], className="mt-4"),
 
-    dcc.Store(id='prediction-store') # To store the prediction value across callbacks
+    dcc.Store(id='prediction-store'),
+
 ])
 
 def validate_inputs(age, height, weight, systolic, diastolic):
@@ -175,21 +272,51 @@ def validate_inputs(age, height, weight, systolic, diastolic):
         return "Diastolic BP must be between 1 and 200."
     return None
 
+# Separate callback for height conversion
+@app.callback(
+    Output('height-input-cm', 'value'),
+    Input('height-input-visible', 'value'),
+    Input('height-unit-radio', 'value')
+)
+def convert_height(height_value, unit):
+    if height_value is None:
+        return None
+    if unit == 'ft':
+        return float(height_value) * 30.48
+    return float(height_value)
+
+# Separate callback for weight conversion
+@app.callback(
+    Output('weight-input-kg', 'value'),
+    Input('weight-input-visible', 'value'),
+    Input('weight-unit-radio', 'value')
+)
+def convert_weight(weight_value, unit):
+    if weight_value is None:
+        return None
+    if unit == 'st':
+        return float(weight_value) * 6.35029
+    elif unit == 'lbs':
+        return float(weight_value) * 0.453592
+    return float(weight_value)
+
+# The main prediction callback
 @app.callback(
     [Output('results-output', 'children'),
      Output('prediction-store', 'data')],
     [Input('predict-button', 'n_clicks')],
     [State('gender-input', 'value'),
      State('age-input', 'value'),
-     State('height-input', 'value'),
-     State('weight-input', 'value'),
+     State('height-input-cm', 'value'),
+     State('weight-input-kg', 'value'),
      State('systolic-input', 'value'),
      State('diastolic-input', 'value'),
      State('ethnicity-input', 'value'),
      State('family-kd-input', 'value'),
-     State('has-kd-input', 'value'),
+     State('has-hpt-input', 'value'),
      State('has-diabetes-input', 'value')]
 )
+
 def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
                     ethnicity, family_kd, has_kd, has_diabetes):
     if n_clicks is None:
@@ -253,28 +380,44 @@ def clear_results(n_clicks):
     return dash.no_update
 
 @app.callback(
-    Output('dummy-output-for-saving', 'children'), # A dummy output since we are performing a side effect
+    Output('dummy-output-for-saving', 'children'),
     [Input('prediction-store', 'data')],
     [State('gender-input', 'value'),
      State('age-input', 'value'),
-     State('height-input', 'value'),
-     State('weight-input', 'value'),
+     State('height-input-cm', 'value'),
+     State('weight-input-kg', 'value'),
      State('systolic-input', 'value'),
      State('diastolic-input', 'value'),
      State('ethnicity-input', 'value'),
      State('family-kd-input', 'value'),
-     State('has-kd-input', 'value'),
-     State('has-diabetes-input', 'value')],
+     State('has-hpt-input', 'value'),
+     State('has-diabetes-input', 'value'),
+     State('has-heart-disease-input', 'value'),
+     State('has-kidney-disease-input', 'value'),
+     State('taking-bp-meds-input', 'value'),
+     State('taking-diabetes-meds-input', 'value'),
+     State('taking-cholesterol-meds-input', 'value'),
+     State('taking-other-meds-input', 'value')],
     prevent_initial_call=True
-)
+    )
+
 def save_to_csv(prediction_data, gender, age, height, weight, systolic, diastolic,
-                ethnicity, family_kd, has_kd, has_diabetes):
+                ethnicity, family_kd, has_hpt, has_diabetes,
+                has_heart_disease, has_kidney_disease, taking_bp_meds,
+                taking_diabetes_meds, taking_cholesterol_meds, taking_other_meds):
     if prediction_data is None:
         return ""
 
     try:
-        has_kd_bool = bool(has_kd)
+        # Convert checklist values to boolean
+        has_hpt_bool = bool(has_hpt)
         has_diabetes_bool = bool(has_diabetes)
+        has_heart_disease_bool = bool(has_heart_disease)
+        has_kidney_disease_bool = bool(has_kidney_disease)
+        taking_bp_meds_bool = bool(taking_bp_meds)
+        taking_diabetes_meds_bool = bool(taking_diabetes_meds)
+        taking_cholesterol_meds_bool = bool(taking_cholesterol_meds)
+        taking_other_meds_bool = bool(taking_other_meds)
 
         entry_data = {
             'Timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -287,28 +430,36 @@ def save_to_csv(prediction_data, gender, age, height, weight, systolic, diastoli
             'Systolic': systolic,
             'Diastolic': diastolic,
             'Family_KD': family_kd,
-            'Has_KD': has_kd_bool,
+            'Has_HPT': has_hpt_bool,
             'Has_Diabetes': has_diabetes_bool,
+            'Has_Heart_Disease': has_heart_disease_bool,
+            'Has_Kidney_Disease': has_kidney_disease_bool,
+            'Taking_BP_Meds': taking_bp_meds_bool,
+            'Taking_Diabetes_Meds': taking_diabetes_meds_bool,
+            'Taking_Cholesterol_Meds': taking_cholesterol_meds_bool,
+            'Taking_Other_Meds': taking_other_meds_bool,
             'Prediction': prediction_data
         }
         
-        # Create a DataFrame for consistent structure with your original code
         entry_df = pd.DataFrame([entry_data])
 
         filename = os.path.join(APP_DIR, 'responses.csv')
+        # Update the columns list to include the new fields
         cols = [
             'Timestamp', 'Gender', 'Ethnicity', 'S_Ethnicity', 'Age', 'Height',
-            'Weight', 'Systolic', 'Diastolic', 'Family_KD', 'Has_KD', 'Has_Diabetes', 'Prediction'
+            'Weight', 'Systolic', 'Diastolic', 'Family_KD', 'Has_HPT', 'Has_Diabetes',
+            'Has_Heart_Disease', 'Has_Kidney_Disease', 'Taking_BP_Meds',
+            'Taking_Diabetes_Meds', 'Taking_Cholesterol_Meds', 'Taking_Other_Meds',
+            'Prediction'
         ]
         
-        # Check if the file exists to write headers if needed
         file_exists = os.path.exists(filename) and os.path.getsize(filename) > 0
 
         with open(filename, mode='a', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=cols)
 
             if not file_exists:
-                writer.writeheader()  # write header only once
+                writer.writeheader()
 
             writer.writerow(entry_df.iloc[0].to_dict())
         return "Data saved successfully!"
