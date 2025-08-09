@@ -1,15 +1,15 @@
 from dash import dcc, html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
-from app import app
 from pages import home, form, findings
+from app import app
 
 # Sidebar layout
 sidebar = dbc.Nav(
     [
         dbc.NavLink("Home", href="/", active="exact"),
-        dbc.NavLink("Form", href="/form", active="exact"),
         dbc.NavLink("Findings", href="/findings", active="exact"),
+        dbc.NavLink("Predict Your CKD Risk", href="/form", active="exact"),
     ],
     vertical=True,
     pills=True,

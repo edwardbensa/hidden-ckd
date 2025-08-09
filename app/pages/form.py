@@ -1,15 +1,13 @@
 import os
 import csv
 from datetime import datetime
-import dash
-from dash import dcc, html, Input, Output, State
+from dash import dcc, html, Input, Output, State, callback
 import dash_bootstrap_components as dbc
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from src.config import APP_DIR
 from src.utils.model_utils import load_model
 
-# Load models outside the app layout/callbacks to avoid reloading on every request
 basic_preprocessor = None
 scaler = None
 classifier_bp = None
@@ -50,9 +48,7 @@ ethnicity_map = {
     'Other': 'Other',
 }
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-app.layout = dbc.Container([
+layout = dbc.Container([
     html.H1("CKD Risk Prediction", className="text-left my-4"),
 
     dbc.Row([
@@ -311,7 +307,7 @@ app.layout = dbc.Container([
 ])
 
 # Callback for height conversion
-@app.callback(
+@callback(
     Output('height-input-cm', 'value'),
     Input('height-input-visible', 'value'),
     Input('height-unit-radio', 'value')
@@ -324,7 +320,7 @@ def convert_height(height_value, unit):
     return float(height_value)
 
 # Callback for weight conversion
-@app.callback(
+@callback(
     Output('weight-input-kg', 'value'),
     Input('weight-input-visible', 'value'),
     Input('weight-unit-radio', 'value')
@@ -339,7 +335,7 @@ def convert_weight(weight_value, unit):
     return float(weight_value)
 
 # Callback for toggling BP inputs
-@app.callback(
+@callback(
     [Output('systolic-input', 'disabled'),
      Output('diastolic-input', 'disabled')],
     [Input('bp-readings-switch', 'value')]
@@ -349,7 +345,7 @@ def toggle_bp_inputs(bp_switch_value):
     return is_disabled, is_disabled
 
 # Callback for updating diabetes label
-@app.callback(
+@callback(
     Output("diabetes-label-text", "children"),
     Input("has-diabetes-input", "value")
 )
@@ -359,7 +355,7 @@ def update_diabetes_label(value):
     return " No"
 
 # Callback for updating hypertension label
-@app.callback(
+@callback(
     Output("hpt-label-text", "children"),
     Input("has-hpt-input", "value")
 )
@@ -369,7 +365,7 @@ def update_hpt_label(value):
     return " No"
 
 # Callback for opening Optional Section
-@app.callback(
+@callback(
     Output("collapse", "is_open"),
     Input("collapse-button", "n_clicks"),
     State("collapse", "is_open"),
@@ -380,7 +376,7 @@ def toggle_collapse(n, is_open):
     return is_open
 
 # The main prediction callback
-@app.callback(
+@callback(
     [Output('results-output', 'children'),
      Output('prediction-store', 'data')],
     [Input('predict-button', 'n_clicks')],
@@ -473,7 +469,7 @@ def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
     except Exception as e:
         return f"Prediction Error: {str(e)}", None
 
-@app.callback(
+@callback(
     Output('results-output', 'children', allow_duplicate=True), # Allow duplicate output for clearing
     [Input('clear-button', 'n_clicks')],
     prevent_initial_call=True
@@ -483,7 +479,7 @@ def clear_results(n_clicks):
         return ""
     return dash.no_update
 
-@app.callback(
+@callback(
     Output('dummy-output-for-saving', 'children'),
     [Input('prediction-store', 'data')],
     [State('gender-input', 'value'),
@@ -569,7 +565,3 @@ def save_to_csv(prediction_data, gender, age, height, weight, systolic, diastoli
         return "Data saved successfully!"
     except Exception as e:
         return f"Error saving data: {str(e)}"
-
-
-if __name__ == '__main__':
-    app.run(debug=True)

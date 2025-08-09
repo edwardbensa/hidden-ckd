@@ -1,7 +1,7 @@
+.gitignore
 src/__pycache__
 notebooks/.ipynb_checkpoints
 .DS_Store
 app/__pycache__
 app/pages/__pycache__
 app/tk
-.gitignore
