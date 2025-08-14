@@ -1,6 +1,6 @@
 import pandas as pd
 import seaborn as sns
-from imblearn.over_sampling import SMOTE
+from imblearn.over_sampling import SMOTE, ADASYN
 from sklearn.model_selection import StratifiedShuffleSplit, train_test_split
 from sklearn.metrics import (accuracy_score, classification_report,
                              confusion_matrix, ConfusionMatrixDisplay)
@@ -15,7 +15,7 @@ def resample_data(X, y, target_mapping):
     y = y.map(target_mapping)
 
     # Balance the data with SMOTEENN
-    resampler = SMOTE(sampling_strategy='all', random_state=42)
+    resampler = SMOTE(sampling_strategy='all', random_state=6)
     X_res, y_res = resampler.fit_resample(X, y)
 
     # Balance the data with SMOTEENN
@@ -24,23 +24,23 @@ def resample_data(X, y, target_mapping):
     return X_res, y_res
 
 
-def stratified_split(X_over, y_over, test_size=0.25, random_state=42):
+def stratified_split(X, y, test_size=0.25, random_state=42):
     '''Splits data into stratified train and test sets.'''
     split = StratifiedShuffleSplit(n_splits=1, test_size=test_size, random_state=random_state)
-    for train_idx, test_idx in split.split(X_over, y_over):
-        X_train, X_test = X_over.iloc[train_idx], X_over.iloc[test_idx]
-        y_train, y_test = y_over.iloc[train_idx], y_over.iloc[test_idx]
+    for train_idx, test_idx in split.split(X, y):
+        X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
+        y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
     return X_train, X_test, y_train, y_test
 
 
-def random_split(X_over, y_over, test_size=0.25, random_state=42):
+def random_split(X, y, test_size=0.25, random_state=42):
     '''Splits data into randomly sampled train and test sets.'''
     # Shuffle dataframes and resetting indices after shuffling
-    X_over = X_over.sample(frac=1, random_state=42).reset_index(drop=True)
-    y_over = y_over.sample(frac=1, random_state=42).reset_index(drop=True)
+    X = X.sample(frac=1, random_state=42).reset_index(drop=True)
+    y = y.sample(frac=1, random_state=42).reset_index(drop=True)
 
     # Split oversampled data into test and train sets
-    X_train, X_test, y_train, y_test = train_test_split(X_over, y_over,
+    X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                         test_size=test_size,
                                                         random_state=random_state)
 
@@ -48,12 +48,12 @@ def random_split(X_over, y_over, test_size=0.25, random_state=42):
 
 
 def load_model(model_filename):
-    """Loads a trained model from disk."""
+    '''Loads a trained model from disk.'''
     return joblib.load(config.MODELS_DIR / model_filename)
 
 
 def evaluate_model(model, X_test, y_test, target_mapping):
-    """Evaluates the model's performance and displays classification results."""
+    '''Evaluates the model's performance and displays classification results.'''
     # Create ordered label names
     label_names = [label for label, _ in sorted(target_mapping.items(), key=lambda item: item[1])]
 
@@ -94,3 +94,10 @@ def evaluate_model(model, X_test, y_test, target_mapping):
 
     plt.tight_layout()
     plt.show()
+
+
+def translate_predictions(y_pred, target_mapping):
+    '''Translates model predictions back to original labels.'''
+    # Create a reverse mapping from encoded values to original labels
+    reverse_mapping = {v: k for k, v in target_mapping.items()}
+    return [f'{reverse_mapping[pred]} Risk' for pred in y_pred]

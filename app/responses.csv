@@ -1,0 +1,3 @@
+Timestamp,Gender,Ethnicity,S_Ethnicity,Age,Height,Weight,Systolic,Diastolic,Family_KD,Has_HPT,Has_Diabetes,Has_Heart_Disease,Has_Kidney_Disease,Taking_BP_Meds,Taking_Diabetes_Meds,Taking_Cholesterol_Meds,Taking_Other_Meds,Prediction
+2025-08-14 15:13:56,Male,Black African (Central Africa),Black,74,158,90,,,Definitely not,False,False,False,False,False,False,False,False,0
+2025-08-14 16:06:10,Male,Black African (Central Africa),Black,45,178,75,,,Definitely not,False,False,False,False,False,False,False,False,0

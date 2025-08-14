@@ -1,21 +1,15 @@
-import os
 import csv
 from datetime import datetime
-from dash import dcc, html, Input, Output, State, callback
+from dash import dcc, html, Input, Output, State, callback, no_update
 import dash_bootstrap_components as dbc
 import pandas as pd
-from sklearn.pipeline import Pipeline
 from src.config import APP_DIR
 from src.utils.model_utils import load_model
 
-basic_preprocessor = None
-scaler = None
-classifier_bp = None
-classifier_nobp = None
-
+# Load models
 try:
-    basic_preprocessor = load_model('basic_preprocessor_bp.pkl')
-    scaler = load_model('scaler_bp.pkl')
+    basic_preprocessor_bp = load_model('basic_preprocessor_bp.pkl')
+    basic_preprocessor_nobp = load_model('basic_preprocessor_nobp.pkl')
     classifier_bp = load_model('classifier_bp.pkl')
     classifier_nobp = load_model('classifier_nobp.pkl')
 except FileNotFoundError:
@@ -304,6 +298,8 @@ layout = dbc.Container([
 
     dcc.Store(id='prediction-store'),
 
+    html.Div(id='dummy-output-for-saving', style={'display': 'none'}),
+
 ])
 
 # Callback for height conversion
@@ -393,7 +389,7 @@ def toggle_collapse(n, is_open):
      State('bp-readings-switch', 'value')]
 )
 def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
-                    ethnicity, family_kd, has_kd, has_diabetes, bp_switch_value):
+                    ethnicity, family_kd, has_hpt, has_diabetes, bp_switch_value):
     if n_clicks is None:
         return "", None
 
@@ -403,7 +399,7 @@ def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
         # Validate all fields if BP readings are provided
         if not all([age, height, weight, systolic, diastolic]):
             validation_error = "All numerical fields must be filled."
-        elif not (1 <= age <= 120):
+        elif not (1 <= age <= 100):
             validation_error = "Age must be between 1 and 100."
         elif not (1 <= height <= 250):
             validation_error = "Height must be between 1 and 250 cm."
@@ -417,7 +413,7 @@ def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
         # Validate only core fields if BP readings are not provided
         if not all([age, height, weight]):
             validation_error = "Age, Height, and Weight must be filled."
-        elif not (1 <= age <= 120):
+        elif not (1 <= age <= 100):
             validation_error = "Age must be between 1 and 120."
         elif not (1 <= height <= 250):
             validation_error = "Height must be between 1 and 250 cm."
@@ -434,38 +430,58 @@ def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
             'Age': float(age), 'Height': float(height), 'Weight': float(weight),
             'Systolic': float(systolic), 'Diastolic': float(diastolic),
             'S_Ethnicity': ethnicity_map.get(ethnicity), 'Family_KD': family_kd,
-            'Gender': gender, 'Has_KD': bool(has_kd), 'Has_Diabetes': bool(has_diabetes),
+            'Gender': gender, 'Has_Hpt': bool(has_hpt), 'Has_Diabetes': bool(has_diabetes),
         }])
+        X_transformed = basic_preprocessor_bp.transform(data)
     else:
         selected_model = classifier_nobp
         data = pd.DataFrame([{
             'Age': float(age), 'Height': float(height), 'Weight': float(weight),
             'S_Ethnicity': ethnicity_map.get(ethnicity), 'Family_KD': family_kd,
-            'Gender': gender, 'Has_KD': bool(has_kd), 'Has_Diabetes': bool(has_diabetes),
+            'Gender': gender, 'Has_Hpt': bool(has_hpt), 'Has_Diabetes': bool(has_diabetes),
         }])
+        X_transformed = basic_preprocessor_nobp.transform(data)
 
     # --- Prediction and Result Formatting ---
     if selected_model is None:
         return "Error: Models not loaded properly.", None
 
     try:
-        full_pipeline = Pipeline(steps=[
-            ('basic_preprocessor', basic_preprocessor),
-            ('scaler', scaler),
-            ('model', classifier_bp)
-        ])
-        prediction = full_pipeline.predict(data)[0]
+        prediction = selected_model.predict(X_transformed)[0]
+        probabilities = selected_model.predict_proba(X_transformed)[0]
 
+        # Define messages and recommendations based on the prediction
+        risk_level = ""
+        recommendation = ""
         if prediction == 0:
-            message = "CKD Risk: Low Risk \nTake it easy"
+            risk_level = "Low"
+            recommendation = "Maintain your current healthy lifestyle and continue to monitor your health."
         elif prediction == 1:
-            message = "CKD Risk: Moderate Risk \nWe recommend a few lifestyle changes to mitigate your risk"
+            risk_level = "Moderate"
+            recommendation = "We recommend a few lifestyle changes to mitigate your risk, such as regular exercise and a balanced diet. Consider consulting a healthcare professional for a more personalized plan."
         elif prediction == 2:
-            message = "CKD Risk: High \nWe recommend a GP visit immediately"
+            risk_level = "High"
+            recommendation = "We recommend a GP visit immediately for a full check-up and further medical advice."
         else:
-            message = "Unknown prediction result"
+            return "Unknown prediction result", None
 
-        return message, prediction
+        # Format the probabilities into a readable string
+        prob_report = "\n".join([
+            f"  - Low Risk: {probabilities[0]:.2%}",
+            f"  - Moderate Risk: {probabilities[1]:.2%}",
+            f"  - High Risk: {probabilities[2]:.2%}"
+        ])
+
+        # Combine all parts into a single output string
+        final_message = (
+            f"Predicted CKD Risk: {risk_level}\n\n"
+            f"Risk Probabilities:\n"
+            f"{prob_report}\n\n"
+            f"Recommendation:\n"
+            f"  - {recommendation}"
+        )
+        
+        return final_message, prediction
     except Exception as e:
         return f"Prediction Error: {str(e)}", None
 
@@ -477,7 +493,7 @@ def make_prediction(n_clicks, gender, age, height, weight, systolic, diastolic,
 def clear_results(n_clicks):
     if n_clicks:
         return ""
-    return dash.no_update
+    return no_update
 
 @callback(
     Output('dummy-output-for-saving', 'children'),
@@ -505,63 +521,49 @@ def save_to_csv(prediction_data, gender, age, height, weight, systolic, diastoli
                 ethnicity, family_kd, has_hpt, has_diabetes,
                 has_heart_disease, has_kidney_disease, taking_bp_meds,
                 taking_diabetes_meds, taking_cholesterol_meds, taking_other_meds):
+    """Saves prediction data and user inputs to a CSV file."""
     if prediction_data is None:
         return ""
 
     try:
-        # Convert checklist values to boolean
-        has_hpt_bool = bool(has_hpt)
-        has_diabetes_bool = bool(has_diabetes)
-        has_heart_disease_bool = bool(has_heart_disease)
-        has_kidney_disease_bool = bool(has_kidney_disease)
-        taking_bp_meds_bool = bool(taking_bp_meds)
-        taking_diabetes_meds_bool = bool(taking_diabetes_meds)
-        taking_cholesterol_meds_bool = bool(taking_cholesterol_meds)
-        taking_other_meds_bool = bool(taking_other_meds)
-
+        # Prepare the data dictionary
         entry_data = {
             'Timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             'Gender': gender,
             'Ethnicity': ethnicity,
-            'S_Ethnicity': ethnicity_map.get(ethnicity),
+            'S_Ethnicity': ethnicity_map.get(ethnicity, 'Other'),
             'Age': age,
             'Height': height,
             'Weight': weight,
-            'Systolic': systolic,
-            'Diastolic': diastolic,
+            'Systolic': systolic if systolic is not None else '',
+            'Diastolic': diastolic if diastolic is not None else '',
             'Family_KD': family_kd,
-            'Has_HPT': has_hpt_bool,
-            'Has_Diabetes': has_diabetes_bool,
-            'Has_Heart_Disease': has_heart_disease_bool,
-            'Has_Kidney_Disease': has_kidney_disease_bool,
-            'Taking_BP_Meds': taking_bp_meds_bool,
-            'Taking_Diabetes_Meds': taking_diabetes_meds_bool,
-            'Taking_Cholesterol_Meds': taking_cholesterol_meds_bool,
-            'Taking_Other_Meds': taking_other_meds_bool,
+            'Has_Hpt': bool(has_hpt),
+            'Has_Diabetes': bool(has_diabetes),
+            'Has_Heart_Disease': bool(has_heart_disease),
+            'Has_Kidney_Disease': bool(has_kidney_disease),
+            'Taking_BP_Meds': bool(taking_bp_meds),
+            'Taking_Diabetes_Meds': bool(taking_diabetes_meds),
+            'Taking_Cholesterol_Meds': bool(taking_cholesterol_meds),
+            'Taking_Other_Meds': bool(taking_other_meds),
             'Prediction': prediction_data
         }
-        
-        entry_df = pd.DataFrame([entry_data])
 
-        filename = os.path.join(APP_DIR, 'responses.csv')
-        # Update the columns list to include the new fields
-        cols = [
-            'Timestamp', 'Gender', 'Ethnicity', 'S_Ethnicity', 'Age', 'Height',
-            'Weight', 'Systolic', 'Diastolic', 'Family_KD', 'Has_HPT', 'Has_Diabetes',
-            'Has_Heart_Disease', 'Has_Kidney_Disease', 'Taking_BP_Meds',
-            'Taking_Diabetes_Meds', 'Taking_Cholesterol_Meds', 'Taking_Other_Meds',
-            'Prediction'
-        ]
-        
-        file_exists = os.path.exists(filename) and os.path.getsize(filename) > 0
+        # Use pathlib to create the file path
+        filename = APP_DIR / 'responses.csv'
+        cols = list(entry_data.keys())
+
+        file_exists = filename.exists()
 
         with open(filename, mode='a', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=cols)
 
-            if not file_exists:
+            if not file_exists or filename.stat().st_size == 0:
                 writer.writeheader()
 
-            writer.writerow(entry_df.iloc[0].to_dict())
+            writer.writerow(entry_data)
         return "Data saved successfully!"
+
     except Exception as e:
-        return f"Error saving data: {str(e)}"
+        print(f"Error saving data to CSV: {e}")
+        return "Error saving data. Please check the server logs."
