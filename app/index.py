@@ -16,7 +16,7 @@ sidebar = dbc.Nav(
     className="bg-light",
 )
 
-app.layout = dbc.Container([
+app.layout = dbc.Container([ # type: ignore
     dcc.Location(id="url"),
     dbc.Row([
         dbc.Col(
@@ -28,7 +28,7 @@ app.layout = dbc.Container([
     ]),
 ], fluid=True)
 
-@app.callback(
+@app.callback( # type: ignore
     Output("page-content", "children"),
     Input("url", "pathname")
 )
@@ -42,4 +42,4 @@ def render_page_content(pathname):
     return html.P("404 - Page not found")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

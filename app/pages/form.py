@@ -54,25 +54,18 @@ layout = dbc.Container([
                          {'label': 'Female', 'value': 'Female'},
                          {'label': 'Prefer not to say', 'value': 'Prefer not to say'}],
                 placeholder="Select Gender",
-                style={'width': '100%'}
             ),
-        ], width=4),
-    ], className="mb-3"),
-
-    dbc.Row([
+        ], md=6),
         dbc.Col([
             dbc.Label("Age:"),
             dbc.Input(id='age-input', type='number', placeholder='Enter Age'),
-        ], width=4),
+        ], md=6),
     ], className="mb-3"),
 
     dbc.Row([
         dbc.Col([
             dbc.Label("Weight:"),
             dbc.Input(id='weight-input-visible', type='number', placeholder='Enter Weight'),
-        ], width=2),
-        dbc.Col([
-            dbc.Label("Unit:"),
             dbc.RadioItems(
                 options=[
                     {'label': 'kg', 'value': 'kg'},
@@ -81,19 +74,12 @@ layout = dbc.Container([
                 ],
                 value='kg',
                 id='weight-unit-radio',
-                inline=True
+                inline=True,
             ),
-        ], width=2),
-        dbc.Input(id='weight-input-kg', type='hidden'),
-    ], className="mb-3"),
-
-    dbc.Row([
+        ], md=6),
         dbc.Col([
             dbc.Label("Height:"),
             dbc.Input(id='height-input-visible', type='number', placeholder='Enter Height'),
-        ], width=2),
-        dbc.Col([
-            dbc.Label("Unit:"),
             dbc.RadioItems(
                 options=[
                     {'label': 'cm', 'value': 'cm'},
@@ -101,9 +87,10 @@ layout = dbc.Container([
                 ],
                 value='cm',
                 id='height-unit-radio',
-                inline=True
+                inline=True,
             ),
-        ], width=2),
+        ], md=6),
+        dbc.Input(id='weight-input-kg', type='hidden'),
         dbc.Input(id='height-input-cm', type='hidden'),
     ], className="mb-3"),
 
@@ -114,9 +101,20 @@ layout = dbc.Container([
                 id='ethnicity-input',
                 options=[{'label': k, 'value': k} for k in ethnicity_map.keys()],
                 placeholder="Select Ethnicity",
-                style={'width': '100%'}
             ),
-        ], width=4),
+        ], md=6),
+        dbc.Col([
+            dbc.Label("Do you have a family history of kidney disease?:"),
+            dcc.Dropdown(
+                id='family-kd-input',
+                options=[
+                    {'label': 'Yes', 'value': 'Definitely yes'},
+                    {'label': 'No', 'value': 'Definitely not'},
+                    {'label': 'Not sure', 'value': 'Not sure'}
+                ],
+                placeholder="Select Option",
+            ),
+        ], md=6),
     ], className="mb-3"),
 
     dbc.Row([
@@ -135,37 +133,18 @@ layout = dbc.Container([
         dbc.Col([
             dbc.Label("Systolic BP:"),
             dbc.Input(id='systolic-input', type='number', placeholder='Enter Systolic BP'),
-        ], width=4),
-    ], className="mb-3"),
-
-    dbc.Row([
+        ], md=6),
         dbc.Col([
             dbc.Label("Diastolic BP:"),
             dbc.Input(id='diastolic-input', type='number', placeholder='Enter Diastolic BP'),
-        ], width=4),
-    ], className="mb-3"),
-
-    dbc.Row([
-        dbc.Col([
-            dbc.Label("Do you have a family history of kidney disease?:"),
-            dcc.Dropdown(
-                id='family-kd-input',
-                options=[
-                    {'label': 'Yes', 'value': 'Definitely yes'},
-                    {'label': 'No', 'value': 'Definitely not'},
-                    {'label': 'Not sure', 'value': 'Not sure'}
-                ],
-                placeholder="Select Option",
-                style={'width': '100%'}
-            ),
-        ], width=4),
+        ], md=6),
     ], className="mb-3"),
 
     dbc.Row([
         dbc.Col([
             dbc.Label("Have you been diagnosed with any of the following?"),
-        ], width=6),
-    ], className="mb-2"),
+        ], width=12, className="mb-2"),
+    ]),
 
     dbc.Row([
         dbc.Col([
@@ -177,7 +156,7 @@ layout = dbc.Container([
                 id="has-diabetes-input",
                 switch=True,
             ),
-        ], width=2),
+        ], md=6),
         dbc.Col([
             dbc.Label("Hypertension:  "),
             html.Span(id="hpt-label-text"),
@@ -187,7 +166,7 @@ layout = dbc.Container([
                 id="has-hpt-input",
                 switch=True,
             ),
-        ], width=2),
+        ], md=6),
     ], className="mb-4"),
 
     dbc.Row([
@@ -222,7 +201,7 @@ layout = dbc.Container([
                                 id="has-heart-disease-input",
                                 switch=True,
                             ),
-                        ], width=6),
+                        ], md=6),
                         dbc.Col([
                             dbc.Label("Have you been diagnosed with kidney disease?"),
                             dbc.Checklist(
@@ -231,7 +210,7 @@ layout = dbc.Container([
                                 id="has-kidney-disease-input",
                                 switch=True,
                             ),
-                        ], width=6),
+                        ], md=6),
                     ], className="mb-4"),
 
                     dbc.Row([
@@ -243,7 +222,7 @@ layout = dbc.Container([
                                 id="taking-bp-meds-input",
                                 switch=True,
                             ),
-                        ], width=4),
+                        ], md=4),
                         dbc.Col([
                             dbc.Label("Are you currently taking medication for diabetes?"),
                             dbc.Checklist(
@@ -252,7 +231,7 @@ layout = dbc.Container([
                                 id="taking-diabetes-meds-input",
                                 switch=True,
                             ),
-                        ], width=4),
+                        ], md=4),
                         dbc.Col([
                             dbc.Label("Are you currently taking medication for high cholesterol?"),
                             dbc.Checklist(
@@ -261,7 +240,7 @@ layout = dbc.Container([
                                 id="taking-cholesterol-meds-input",
                                 switch=True,
                             ),
-                        ], width=4),
+                        ], md=4),
                     ], className="mb-4"),
 
                     dbc.Row([
@@ -279,7 +258,7 @@ layout = dbc.Container([
             )
         ],
     ),
-    
+
     dbc.Row([
         dbc.Col([
             dbc.Button("Get Results", id='predict-button', color="primary", className="me-2"),
@@ -299,7 +278,6 @@ layout = dbc.Container([
     dcc.Store(id='prediction-store'),
 
     html.Div(id='dummy-output-for-saving', style={'display': 'none'}),
-
 ])
 
 # Callback for height conversion

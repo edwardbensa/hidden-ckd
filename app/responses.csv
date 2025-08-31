@@ -1,3 +1,10 @@
 Timestamp,Gender,Ethnicity,S_Ethnicity,Age,Height,Weight,Systolic,Diastolic,Family_KD,Has_HPT,Has_Diabetes,Has_Heart_Disease,Has_Kidney_Disease,Taking_BP_Meds,Taking_Diabetes_Meds,Taking_Cholesterol_Meds,Taking_Other_Meds,Prediction
 2025-08-14 15:13:56,Male,Black African (Central Africa),Black,74,158,90,,,Definitely not,False,False,False,False,False,False,False,False,0
 2025-08-14 16:06:10,Male,Black African (Central Africa),Black,45,178,75,,,Definitely not,False,False,False,False,False,False,False,False,0
+2025-08-14 16:20:50,Male,Black African (East Africa),Black,57,182,100,,,Definitely not,False,False,False,False,False,False,False,False,2
+2025-08-14 16:21:17,Male,Black African (East Africa),Black,57,182,100,120,80,Definitely not,False,False,False,False,False,False,False,False,0
+2025-08-19 13:36:37,Female,Black African (West Africa),Black,55,160,63,118,89,Definitely yes,True,False,False,False,False,False,False,False,1
+2025-08-19 13:49:30,Male,Black African (West Africa),Black,57,164,63,122,89,Definitely yes,True,True,False,False,False,False,False,False,1
+2025-08-19 13:50:04,Male,Black African (West Africa),Black,57,164,63,122,89,Definitely yes,True,True,False,False,False,False,False,False,1
+2025-09-01 00:07:34,Male,Black African (Central Africa),Black,57,179,80,,,Definitely not,False,False,False,False,False,False,False,False,1
+2025-09-01 00:07:54,Male,Black African (Central Africa),Black,57,179,80,120,80,Definitely not,False,False,False,False,False,False,False,False,0

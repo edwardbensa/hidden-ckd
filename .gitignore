@@ -5,3 +5,5 @@ notebooks/.ipynb_checkpoints
 app/__pycache__
 app/pages/__pycache__
 app/tk
+data/external/open_postcode_geo.csv
+data/external/hiddenckd_postcodes.csv
